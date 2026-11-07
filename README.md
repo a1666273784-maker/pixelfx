@@ -4,15 +4,19 @@
 
 # pixelfx.
 
-**<!-- count -->244<!-- /count --> pixel art effects and animations, every one a small piece of code.** Fire,
+**<!-- count -->249<!-- /count --> pixel art effects and animations, every one a small piece of code.** Fire,
 explosions, magic, weather, UI, pickups, critters and more. Play them live, recolor and mirror them, drop them into
 a browser game, or export sprite sheets for any engine. Plus a Claude Code skill that makes new ones the way a
 picky pixel artist would: draft, render, look, refine.
 
+Four of them are a whole boss fight's worth of pure VFX out of one strict eight-colour palette, with a
+single-file showcase that plays them and exports sprite sheets: [`beast-vfx.html`](beast-vfx.html), documented in
+[docs/BEAST.md](docs/BEAST.md).
+
 Every effect that involves a character is **acted out**: he winds up, lets go, freezes on contact and recovers, and a
 target takes the hit. Twelve whole moves chain the effects into attacks from wind-up to recovery.
 
-**[open the gallery](https://patch-gg.github.io/pixelfx/)** · [catalog](docs/CATALOG.md) · [acting](#acting) ·
+**[the 山海 boss showcase](beast-vfx.html)** (one file, open it) · **[open the gallery](https://patch-gg.github.io/pixelfx/)** · [catalog](docs/CATALOG.md) · [acting](#acting) ·
 [the skill](#the-skill) · [make your own](#make-your-own) · [how it works](#how-it-works)
 
 The method is [Hugo Duprez](https://x.com/HugoDuprez)'s, from [How to make (good) pixel art effects with
@@ -26,8 +30,9 @@ the idea at library scale, with a skill to keep going.
 <!-- catalog -->
 | category | effects | some of them |
 |---|---|---|
+| **山海 boss** | 4 | 山海焚天 · sky burning, 赤金裂爪 · scarlet gold claw, 青岚瑞火弹 · jade cloud fireball, 踏炎连环阵 · stampede flame array |
 | **moves** | 12 | arrow shot, dash strike, earth stomp, fireball throw, ground pound, holy smite… |
-| **fire** | 12 | brazier, campfire, candle, fire breath, fire ring, fire tornado… |
+| **fire** | 13 | brazier, campfire, candle, fire breath, fire ring, fire tornado… |
 | **explosions** | 12 | barrel explosion, big explosion, cartoon pow, dirt explosion, firework burst, firework rocket… |
 | **water** | 12 | bubbles, drip, fountain, geyser, rain splash, ripples… |
 | **ice** | 10 | blizzard vortex, freeze, frost breath, frost nova, ice crystal, ice lance… |

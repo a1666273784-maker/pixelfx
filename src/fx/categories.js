@@ -1,6 +1,7 @@
 // The categories, in gallery order, with a line for each.
 
 export const categories = [
+  { id: "beast", name: "山海 boss", blurb: "one boss in eight colours: claws, a fire orb, an array of columns, and the sky burning" },
   { id: "moves", name: "moves", blurb: "whole attacks, wind-up to recovery, chained from the effects below" },
   { id: "fire", name: "fire", blurb: "torches, breath, pillars, walls of flame" },
   { id: "explosions", name: "explosions", blurb: "blasts, smoke, fireworks, mushroom clouds" },

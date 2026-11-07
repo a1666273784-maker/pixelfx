@@ -1,7 +1,18 @@
 # Catalog
 
-244 effects in 21 categories. Every one is a file in
+249 effects in 22 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
+
+## 山海 boss
+
+one boss in eight colours: claws, a fire orb, an array of columns, and the sky burning.
+
+| effect | id | | size | what it does |
+|---|---|---|---|---|
+| 山海焚天 · Sky Burning | `beast/burn-the-mountains` | one-shot 4.4s | 320×180 | The screen darkens, a giant gold bagua drinks the world in, then fire meteors pour down the diagonals and a sea of cloud fire rolls across the floor. |
+| 赤金裂爪 · Scarlet Gold Claw | `beast/claw-rift` | one-shot 2.72s | 320×180 | A three-hit claw combo: a flaming crescent with a gold rim, a crossing jade-and-fire X, and a ground smash under three twisting fire columns. |
+| 青岚瑞火弹 · Jade Cloud Fireball | `beast/jade-fire-orb` | one-shot 2.1s | 320×180 | A jade cloud vortex winds in to a gold core, then a fire comet with a curled cloud tail crosses the screen. Hit: white flash, rings, wind blades. Miss: it curls into smoke. |
+| 踏炎连环阵 · Stampede Flame Array | `beast/step-flame-array` | one-shot 2.7s | 320×180 | Gold cloud-thunder arrays flicker on across the floor, a bone and vermilion afterimage streaks the screen, then four jade and fire columns erupt in sequence and break apart. |
 
 ## moves
 
@@ -38,6 +49,7 @@ torches, breath, pillars, walls of flame.
 | Flame pillar | `fire/flame-pillar` | one-shot 5s | 184×256 | The floor cracks and glows, a column of fire erupts white-hot and roars, spewing embers and shedding flame, then collapses into rolling smoke. |
 | Flamethrower | `fire/flamethrower` | loop 1.6s | 184×104 | A pressurised jet shooting right: a blue pilot at the nozzle, a tight stream with surges racing down it, a sputter, burning drops falling off, a tip that curls up into smoke. |
 | Meteor | `fire/meteor` | one-shot 5s | 272×232 | A burning rock streaks in from the upper left in a comet of fire and smashes into the floor: a white flash, a fireball, rocks and brands thrown, a glowing crater that cools. |
+| Meteor shower | `fire/meteor-shower` | one-shot 3s | 260×170 | A staggered volley of small burning stones strikes the ground, scattering sparks and smoke over cooling craters. |
 | Spirit flame | `fire/spirit-flame` | loop 3s | 80×124 | A cold blue-teal ghost fire floating in the air: a bright rim round a hollow dark heart, a wave climbing its wispy tail, curls breaking off, cold sparks rising. |
 | Torch | `fire/torch` | loop 2s | 72×120 | A wall torch on an iron bracket: a licking flame leaping off a pitch-soaked wrap, licks and puffs torn off its tips, smoke, embers, a flickering light on the wall. |
 
