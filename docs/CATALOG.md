@@ -1,6 +1,6 @@
 # Catalog
 
-244 effects in 21 categories. Every one is a file in
+253 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -35,9 +35,14 @@ torches, breath, pillars, walls of flame.
 | Fire ring | `fire/fire-ring` | one-shot 3.9s | 224×128 | A white flash at the feet, then flames race outward along the floor in a ring, flaring as the front passes and burning down behind it over a smouldering scorch. |
 | Fire tornado | `fire/fire-tornado` | loop 2s | 120×152 | A spinning funnel of fire: spiral bands turning round it, licks flung off its sides, a ring of flame whirling at its foot, embers orbiting it in and out of view. |
 | Fireball | `fire/fireball` | loop 1.2s | 136×56 | A fireball flying right: a churning white-hot head with a corona of flame, a long torn tail of flame puffs cooling into smoke, embers shed behind. |
+| Flame array | `fire/flame-array` | one-shot 4.4s | 320×236 | Four yellow cloud-thunder arrays flicker on the floor, a bone-white and vermilion dash slices across, and four cyan-crimson fire pillars erupt and dissolve into embers. |
 | Flame pillar | `fire/flame-pillar` | one-shot 5s | 184×256 | The floor cracks and glows, a column of fire erupts white-hot and roars, spewing embers and shedding flame, then collapses into rolling smoke. |
+| Flame ridge | `fire/flame-ridge` | one-shot 3.5s | 280×124 | A magma seam races ahead as volcanic rock spikes crowned in fire burst up in a rising wave, surge white-hot, shatter into fireballs and smoke, and leave a breathing rift. |
 | Flamethrower | `fire/flamethrower` | loop 1.6s | 184×104 | A pressurised jet shooting right: a blue pilot at the nozzle, a tight stream with surges racing down it, a sputter, burning drops falling off, a tip that curls up into smoke. |
+| Giant meteor | `fire/giant-meteor` | one-shot 5.1s | 320×260 | A colossal magma-cracked asteroid screams down with trailing fragments, crushes into the floor, and erupts into a mushrooming fireball and breathing crater. |
 | Meteor | `fire/meteor` | one-shot 5s | 272×232 | A burning rock streaks in from the upper left in a comet of fire and smashes into the floor: a white flash, a fireball, rocks and brands thrown, a glowing crater that cools. |
+| Meteor shower | `fire/meteor-shower` | one-shot 3s | 260×170 | A staggered volley of small burning stones strikes the ground, scattering sparks and smoke over cooling craters. |
+| Qilin descent | `fire/qilin-descent` | one-shot 4.5s | 224×256 | Teal spirit rings contract under four hooffalls, blasting a shockwave and fiery cracks before a golden pillar wrapped in teal mane-fire erupts, shatters, and cools. |
 | Spirit flame | `fire/spirit-flame` | loop 3s | 80×124 | A cold blue-teal ghost fire floating in the air: a bright rim round a hollow dark heart, a wave climbing its wispy tail, curls breaking off, cold sparks rising. |
 | Torch | `fire/torch` | loop 2s | 72×120 | A wall torch on an iron bracket: a licking flame leaping off a pitch-soaked wrap, licks and puffs torn off its tips, smoke, embers, a flickering light on the wall. |
 
@@ -89,6 +94,8 @@ spikes, novas, freezing, shattering.
 | Freeze | `ice/freeze` | one-shot 4s | 176×128 | Frost races in and climbs the character, turning it to ice; a faceted block crystallizes round it pane by pane, glints, cracks and bursts, and the character thaws free. |
 | Frost breath | `ice/frost-breath` | loop 1.2s | 184×104 | A cone of icy wind blowing right: frost puffs billow out, swell and sink, wind streaks race through, ice crystals tumble and glint off a white-hot mouth. |
 | Frost nova | `ice/frost-nova` | one-shot 3.4s | 288×192 | Frost spirals into a spinning snowflake, then a wave blooms three rings of ice crystals round the caster; snow drifts, frost creeps, and the ice melts back into the floor. |
+| 霜牙·白虎破 | `ice/frost-tiger-rupture` | one-shot 4.5s | 320×176 | An overhead frost cleave slams into a flat shock ring and asymmetric tiger-stripe fissures; translucent hoarfrost breathes and thaws. No creature imagery. |
+| Frost tread | `ice/frost-tread` | one-shot 1.8s | 236×84 | Bounding white-tiger steps burst cyan-white frost rings and low upward-curling razor-edged cold wakes that cool into thin cyan mist and lingering frost granules. |
 | Ice crystal | `ice/ice-crystal` | loop 3s | 96×100 | A floating ice crystal turning slowly in its own cold light: its facets brighten and darken as they turn, glints flash on them, frost motes circle it. |
 | Ice lance | `ice/ice-lance` | loop 0.8s | 176×64 | A faceted ice spear flying right: a light pulse runs through its core, rings of cold air shear off the tip, frost peels off into a wake and crystals shed behind it. |
 | Ice shatter | `ice/ice-shatter` | one-shot 2.8s | 224×112 | A block of ice takes a hit from the left: it jolts, cracks race over its faces, it flashes white and bursts into chunks that tumble, bounce and skid off in a roll of ice dust. |
@@ -142,6 +149,8 @@ slashes, smears, cleaves, combos.
 | Claw swipe | `melee/claw-swipe` | one-shot 0.9s | 128×96 | Three claw marks rake down one after another, white-hot, cooling through orange to red, then close up from both ends and leave a dotted scar, with hot flecks and drips. |
 | Dagger flurry | `melee/dagger-flurry` | one-shot 0.95s | 148×104 | A flurry of small quick crescents at every angle in front of the fighter, each with a flick of sparks, finished by one big cut that glints and bursts. |
 | Double slash | `melee/double-slash` | one-shot 0.8s | 164×108 | A down cut, then an up cut that crosses it: the moment the X closes both strokes flash white, the crossing bursts with light and sparks, and a dotted X lingers. |
+| Ember claw | `melee/ember-claw` | one-shot 0.68s | 136×96 | Three staggered fiery claw arcs sweep from top-left to bottom-right as translucent heat trails, sparking a white-hot impact, a ring of ground embers and a fast-cooling flame. |
+| Frost blade | `melee/frost-blade` | one-shot 0.74s | 204×140 | An expansive overhead downward cleave with a 1-2px blood-red core, wide cyan-white cold wake and 1px white serrated frost rim erupts in snow shavings and blood stars. |
 | Hammer smash | `melee/hammer-smash` | one-shot 2s | 208×112 | A hammer drops in front in a wedge of motion: a white slam with rays, a dome of force, a dent with cracks, rocks thrown up that bounce and settle, and dust. |
 | Heavy cleave | `melee/heavy-cleave` | one-shot 1.9s | 208×116 | A glint over the head, then a thick ember arc accelerates over the top into the floor: a white slam, glowing cracks, dust rolling both ways, grit and rising embers. |
 | Scythe reap | `melee/scythe-reap` | one-shot 2.1s | 184×116 | A slow, huge dark crescent reaps round the front with a pale ghostly edge; it hangs, then tears away from the tail into curling wisps and cold vapour. |
