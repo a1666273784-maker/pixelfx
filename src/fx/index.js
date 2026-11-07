@@ -126,6 +126,7 @@ import * as projectiles_muzzle_shotgun from "./projectiles/muzzle-shotgun.js";
 import * as projectiles_muzzle_smg from "./projectiles/muzzle-smg.js";
 import * as projectiles_plasma_shot from "./projectiles/plasma-shot.js";
 import * as projectiles_rocket from "./projectiles/rocket.js";
+import * as projectiles_web_needle from "./projectiles/web-needle.js";
 import * as spawn_coin_drop from "./spawn/coin-drop.js";
 import * as spawn_disintegrate from "./spawn/disintegrate.js";
 import * as spawn_dissolve_burn from "./spawn/dissolve-burn.js";
@@ -383,6 +384,7 @@ export const effects = {
   "projectiles/muzzle-smg": projectiles_muzzle_smg,
   "projectiles/plasma-shot": projectiles_plasma_shot,
   "projectiles/rocket": projectiles_rocket,
+  "projectiles/web-needle": projectiles_web_needle,
   "spawn/coin-drop": spawn_coin_drop,
   "spawn/disintegrate": spawn_disintegrate,
   "spawn/dissolve-burn": spawn_dissolve_burn,
