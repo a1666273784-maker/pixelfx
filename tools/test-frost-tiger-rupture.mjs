@@ -55,6 +55,16 @@ const p = painterFor(direct).place(ox, oy);
 impl.drawBack(p); impl.draw(p);
 assert(!nonempty(direct.color) && !nonempty(direct.light), "direct create ends empty");
 
+// The anticipatory cleave must exist in the exported effect, not only the stock actor's poses.
+for (const time of [0.8, 0.8333333333, 0.8666666667]) {
+  const slash = createFx(mod, { x: ox, y: oy }), f = createFrame(w, h);
+  slash.update(time); slash.draw(f);
+  let bladePixels = 0;
+  for (let y = oy - 85; y < oy - 35; y++) for (let x = ox - 45; x < ox + 60; x++)
+    if (f.color[y*w+x] >>> 24) bladePixels++;
+  assert(bladePixels > 15, `missing overhead/downward cleave before impact at ${time}`);
+}
+
 // The exact contact frame and its successor must both contain a white-hot core.
 const hero = createFx(mod, { x: ox, y: oy }), heroFrame = createFrame(w, h);
 hero.update(0.9);

@@ -2,8 +2,8 @@ import { Particles, Lights, P, Rng, fit, band, flare, clamp, smooth, ease, TAU, 
 
 export const meta = {
   name: "霜牙·白虎破",
-  desc: "A sword strike ruptures a flat frost ring into asymmetric, branching tiger-stripe fissures; a translucent hoarfrost field breathes and slowly thaws. No creature imagery.",
-  tags: ["ice", "frost", "tiger", "rupture", "ground", "ultimate", "one-shot"],
+  desc: "An overhead frost cleave slams into a flat shock ring and asymmetric tiger-stripe fissures; translucent hoarfrost breathes and thaws. No creature imagery.",
+  tags: ["ice", "frost", "cleave", "sword", "tiger", "rupture", "ground", "ultimate", "one-shot"],
   size: [320, 176], origin: [160, 112], duration: 4.5, loop: false, fps: 30, bg: "ground", actor: 2,
   options: {
     palette: ["#08181c", "#0d2e34", "#12474f", "#196a74", "#21909c", "#37b8c4", "#79dde6", "#c4f4f8"],
@@ -11,12 +11,14 @@ export const meta = {
     gold: ["#1e1206", "#4a2c08", "#86520c", "#c48412", "#f0b424"], seed: 17,
   },
 };
-const HIT = 0.9, END = 4.5, REACH = 116, PLANE = 0.16;
+const SWING = 0.74, HIT = 0.9, END = 4.5, REACH = 116, PLANE = 0.16;
 const GUARD = { ...READY, weapon: "greatsword", two: true, fx: 5, fy: -23, bx: 1, by: -20, sa: -1.4 };
 const COCK = { ...GUARD, crouch: 3, lean: -3, turn: 1, fx: -6, fy: -38, bx: 3, by: -34, sa: -2.1 };
 const CUT = { ...GUARD, crouch: 8, lean: 2, fx: 1, fy: -9, bx: -3, by: -12, sa: 1.62, armsFront: true };
 export const act = {
-  poses: [[0, GUARD], [0.45, COCK], [0.83, { ...COCK, crouch: 5 }], [HIT, CUT, "snap"], [1.3, CUT], [2.4, GUARD, "line"], [END, READY]],
+  poses: [[0, GUARD], [0.45, COCK], [SWING, { ...COCK, crouch: 5 }],
+    [0.82, { ...GUARD, crouch: 3, lean: 1, fx: 8, fy: -30, bx: 3, by: -27, sa: -0.8 }, "snap"],
+    [0.867, { ...GUARD, crouch: 5, lean: 3, fx: 10, fy: -19, bx: 5, by: -20, sa: 0.45 }, "snap"], [HIT, CUT, "snap"], [1.3, CUT], [2.4, GUARD, "line"], [END, READY]],
   hits: [{ t: HIT, stop: 0.13, shake: 0.24, amp: 3, target: false }],
 };
 
@@ -82,6 +84,53 @@ export function create(o) {
       const h = q.h * Math.sin(Math.PI * u), w = q.w;
       p.polyline([[x - w, y], [x + w * 0.4, y - h], [x + w, y]], F[5], k);
       p.line(x + w * 0.4, y - h, x, y - 1, F[7], k);
+    }
+  };
+  // Original overhead-to-floor sweep: a blade-tip Bezier, not a creature silhouette.
+  // Its final point is exactly the rupture anchor. The raised-back section belongs behind the body.
+  const edge = (u) => {
+    const v = 1 - u;
+    const x = -25 * v ** 3 + 3 * 36 * v * v * u + 3 * 57 * v * u * u;
+    const y = -65 * v ** 3 - 3 * 84 * v * v * u - 3 * 23 * v * u * u - u ** 3;
+    const dx = 3 * 61 * v * v + 6 * 21 * v * u - 3 * 57 * u * u;
+    const dy = -3 * 19 * v * v + 6 * 61 * v * u + 3 * 22 * u * u;
+    const len = Math.hypot(dx, dy);
+    return { x, y, nx: -dy / len, ny: dx / len };
+  };
+  const cleave = (p, back) => {
+    // A restrained blade charge first, then a broad, fast downward smear.
+    if (back && t >= 0.52 && t < SWING) {
+      const k = smooth(0.52, 0.69, t);
+      p.polyline([[-8, -40], [-25, -65]], C[6], k);
+      p.glowLine(-8, -40, -25, -65, 7, C[5], k * 0.22);
+    }
+    if (t < SWING || t >= HIT + 0.12) return;
+    const head = ease.inQuad(clamp((t - SWING) / (HIT - SWING)));
+    const tail = Math.max(0, head - 0.65) + smooth(HIT, HIT + 0.12, t) * 0.65;
+    const alpha = 1 - smooth(HIT + 0.02, HIT + 0.12, t);
+    if (tail >= head) return;
+    const ink = Object.create(p);
+    ink.put = (x, y, c, a = 1) => p.blendPx(x, y, c, a);
+    const width = (u) => 14 * smooth(0, 0.22, head) * Math.sin(Math.PI * clamp((u - tail) / (head - tail))) ** 0.65;
+    for (let i = 0; i < 48; i++) {
+      const u0 = tail + (head - tail) * i / 48, u1 = tail + (head - tail) * (i + 1) / 48;
+      if ((u0 < 0.19) !== back) continue;
+      const a = edge(u0), b = edge(u1), wa = width(u0), wb = width(u1);
+      const at = (q, w, lane) => [q.x + q.nx * w * lane, q.y + q.ny * w * lane];
+      // Separate colored energy lanes and a neutral-white cutting edge, never a merged ramp.
+      for (const [lo, hi, col] of [[0, 0.35, C[6]], [0.35, 0.7, C[4]], [0.7, 1, C[2]]])
+        ink.poly([at(a, wa, lo), at(b, wb, lo), at(b, wb, hi), at(a, wa, hi)], col, alpha);
+      ink.polyline([[a.x, a.y], [b.x, b.y]], F[6], alpha);
+      if (i > 32) ink.polyline([[a.x + a.nx, a.y + a.ny], [b.x + b.nx, b.y + b.ny]], F[7], alpha);
+      if (i % 13 === 8 && wa > 4) {
+        // A few swept-back ice teeth, not an even comb along the whole blade.
+        ink.polyline([[a.x, a.y], [a.x - a.nx * 2 - a.ny * 3, a.y - a.ny * 2 + a.nx * 3]], F[5], alpha * 0.8);
+      }
+      if (i % 9 === 0) p.glow(a.x, a.y, 9, C[5], 0.18 * alpha);
+    }
+    if (!back && t < HIT) {
+      const tip = edge(head);
+      p.glow(tip.x, tip.y, 12, C[6], 0.28);
     }
   };
   const floor = (p) => {
@@ -156,7 +205,7 @@ export function create(o) {
     },
     drawBack(p) {
       if (t >= END) return;
-      floor(p); ring(p, true); ps.draw(p, "back");
+      cleave(p, true); floor(p); ring(p, true); ps.draw(p, "back");
     },
     draw(p) {
       if (t >= END) return;
@@ -168,6 +217,7 @@ export function create(o) {
         }
         p.glow(0, -1, 16 + u * 12, C[6], u * u * 0.38);
       }
+      cleave(p, false);
       ring(p, false);
       for (const s of shards) {
         const dx = Math.cos(s.a) * s.s, dy = Math.sin(s.a) * s.s;
