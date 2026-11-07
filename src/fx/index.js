@@ -19,9 +19,14 @@ import * as fire_fire_breath from "./fire/fire-breath.js";
 import * as fire_fire_ring from "./fire/fire-ring.js";
 import * as fire_fire_tornado from "./fire/fire-tornado.js";
 import * as fire_fireball from "./fire/fireball.js";
+import * as fire_flame_array from "./fire/flame-array.js";
 import * as fire_flame_pillar from "./fire/flame-pillar.js";
+import * as fire_flame_ridge from "./fire/flame-ridge.js";
 import * as fire_flamethrower from "./fire/flamethrower.js";
+import * as fire_giant_meteor from "./fire/giant-meteor.js";
 import * as fire_meteor from "./fire/meteor.js";
+import * as fire_meteor_shower from "./fire/meteor-shower.js";
+import * as fire_qilin_descent from "./fire/qilin-descent.js";
 import * as fire_spirit_flame from "./fire/spirit-flame.js";
 import * as fire_torch from "./fire/torch.js";
 import * as explosions_barrel_explosion from "./explosions/barrel-explosion.js";
@@ -52,6 +57,8 @@ import * as ice_blizzard_vortex from "./ice/blizzard-vortex.js";
 import * as ice_freeze from "./ice/freeze.js";
 import * as ice_frost_breath from "./ice/frost-breath.js";
 import * as ice_frost_nova from "./ice/frost-nova.js";
+import * as ice_frost_tiger_rupture from "./ice/frost-tiger-rupture.js";
+import * as ice_frost_tread from "./ice/frost-tread.js";
 import * as ice_ice_crystal from "./ice/ice-crystal.js";
 import * as ice_ice_lance from "./ice/ice-lance.js";
 import * as ice_ice_shatter from "./ice/ice-shatter.js";
@@ -84,6 +91,8 @@ import * as scifi_warp_out from "./scifi/warp-out.js";
 import * as melee_claw_swipe from "./melee/claw-swipe.js";
 import * as melee_dagger_flurry from "./melee/dagger-flurry.js";
 import * as melee_double_slash from "./melee/double-slash.js";
+import * as melee_ember_claw from "./melee/ember-claw.js";
+import * as melee_frost_blade from "./melee/frost-blade.js";
 import * as melee_hammer_smash from "./melee/hammer-smash.js";
 import * as melee_heavy_cleave from "./melee/heavy-cleave.js";
 import * as melee_scythe_reap from "./melee/scythe-reap.js";
@@ -267,9 +276,14 @@ export const effects = {
   "fire/fire-ring": fire_fire_ring,
   "fire/fire-tornado": fire_fire_tornado,
   "fire/fireball": fire_fireball,
+  "fire/flame-array": fire_flame_array,
   "fire/flame-pillar": fire_flame_pillar,
+  "fire/flame-ridge": fire_flame_ridge,
   "fire/flamethrower": fire_flamethrower,
+  "fire/giant-meteor": fire_giant_meteor,
   "fire/meteor": fire_meteor,
+  "fire/meteor-shower": fire_meteor_shower,
+  "fire/qilin-descent": fire_qilin_descent,
   "fire/spirit-flame": fire_spirit_flame,
   "fire/torch": fire_torch,
   "explosions/barrel-explosion": explosions_barrel_explosion,
@@ -300,6 +314,8 @@ export const effects = {
   "ice/freeze": ice_freeze,
   "ice/frost-breath": ice_frost_breath,
   "ice/frost-nova": ice_frost_nova,
+  "ice/frost-tiger-rupture": ice_frost_tiger_rupture,
+  "ice/frost-tread": ice_frost_tread,
   "ice/ice-crystal": ice_ice_crystal,
   "ice/ice-lance": ice_ice_lance,
   "ice/ice-shatter": ice_ice_shatter,
@@ -332,6 +348,8 @@ export const effects = {
   "melee/claw-swipe": melee_claw_swipe,
   "melee/dagger-flurry": melee_dagger_flurry,
   "melee/double-slash": melee_double_slash,
+  "melee/ember-claw": melee_ember_claw,
+  "melee/frost-blade": melee_frost_blade,
   "melee/hammer-smash": melee_hammer_smash,
   "melee/heavy-cleave": melee_heavy_cleave,
   "melee/scythe-reap": melee_scythe_reap,
