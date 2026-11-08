@@ -57,7 +57,6 @@ import * as ice_blizzard_vortex from "./ice/blizzard-vortex.js";
 import * as ice_freeze from "./ice/freeze.js";
 import * as ice_frost_breath from "./ice/frost-breath.js";
 import * as ice_frost_nova from "./ice/frost-nova.js";
-import * as ice_frost_tiger_rupture from "./ice/frost-tiger-rupture.js";
 import * as ice_frost_tread from "./ice/frost-tread.js";
 import * as ice_ice_crystal from "./ice/ice-crystal.js";
 import * as ice_ice_lance from "./ice/ice-lance.js";
@@ -89,6 +88,7 @@ import * as scifi_tractor_beam from "./scifi/tractor-beam.js";
 import * as scifi_warp_in from "./scifi/warp-in.js";
 import * as scifi_warp_out from "./scifi/warp-out.js";
 import * as melee_claw_swipe from "./melee/claw-swipe.js";
+import * as melee_crimson_gold_claw from "./melee/crimson-gold-claw.js";
 import * as melee_dagger_flurry from "./melee/dagger-flurry.js";
 import * as melee_double_slash from "./melee/double-slash.js";
 import * as melee_ember_claw from "./melee/ember-claw.js";
@@ -126,6 +126,7 @@ import * as projectiles_muzzle_shotgun from "./projectiles/muzzle-shotgun.js";
 import * as projectiles_muzzle_smg from "./projectiles/muzzle-smg.js";
 import * as projectiles_plasma_shot from "./projectiles/plasma-shot.js";
 import * as projectiles_rocket from "./projectiles/rocket.js";
+import * as projectiles_web_shot from "./projectiles/web-shot.js";
 import * as spawn_coin_drop from "./spawn/coin-drop.js";
 import * as spawn_disintegrate from "./spawn/disintegrate.js";
 import * as spawn_dissolve_burn from "./spawn/dissolve-burn.js";
@@ -314,7 +315,6 @@ export const effects = {
   "ice/freeze": ice_freeze,
   "ice/frost-breath": ice_frost_breath,
   "ice/frost-nova": ice_frost_nova,
-  "ice/frost-tiger-rupture": ice_frost_tiger_rupture,
   "ice/frost-tread": ice_frost_tread,
   "ice/ice-crystal": ice_ice_crystal,
   "ice/ice-lance": ice_ice_lance,
@@ -346,6 +346,7 @@ export const effects = {
   "scifi/warp-in": scifi_warp_in,
   "scifi/warp-out": scifi_warp_out,
   "melee/claw-swipe": melee_claw_swipe,
+  "melee/crimson-gold-claw": melee_crimson_gold_claw,
   "melee/dagger-flurry": melee_dagger_flurry,
   "melee/double-slash": melee_double_slash,
   "melee/ember-claw": melee_ember_claw,
@@ -383,6 +384,7 @@ export const effects = {
   "projectiles/muzzle-smg": projectiles_muzzle_smg,
   "projectiles/plasma-shot": projectiles_plasma_shot,
   "projectiles/rocket": projectiles_rocket,
+  "projectiles/web-shot": projectiles_web_shot,
   "spawn/coin-drop": spawn_coin_drop,
   "spawn/disintegrate": spawn_disintegrate,
   "spawn/dissolve-burn": spawn_dissolve_burn,

@@ -1,6 +1,6 @@
 # Catalog
 
-253 effects in 21 categories. Every one is a file in
+254 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -94,7 +94,6 @@ spikes, novas, freezing, shattering.
 | Freeze | `ice/freeze` | one-shot 4s | 176×128 | Frost races in and climbs the character, turning it to ice; a faceted block crystallizes round it pane by pane, glints, cracks and bursts, and the character thaws free. |
 | Frost breath | `ice/frost-breath` | loop 1.2s | 184×104 | A cone of icy wind blowing right: frost puffs billow out, swell and sink, wind streaks race through, ice crystals tumble and glint off a white-hot mouth. |
 | Frost nova | `ice/frost-nova` | one-shot 3.4s | 288×192 | Frost spirals into a spinning snowflake, then a wave blooms three rings of ice crystals round the caster; snow drifts, frost creeps, and the ice melts back into the floor. |
-| 霜牙·白虎破 | `ice/frost-tiger-rupture` | one-shot 4.5s | 320×176 | An overhead frost cleave slams into a flat shock ring and asymmetric tiger-stripe fissures; translucent hoarfrost breathes and thaws. No creature imagery. |
 | Frost tread | `ice/frost-tread` | one-shot 1.8s | 236×84 | Bounding white-tiger steps burst cyan-white frost rings and low upward-curling razor-edged cold wakes that cool into thin cyan mist and lingering frost granules. |
 | Ice crystal | `ice/ice-crystal` | loop 3s | 96×100 | A floating ice crystal turning slowly in its own cold light: its facets brighten and darken as they turn, glints flash on them, frost motes circle it. |
 | Ice lance | `ice/ice-lance` | loop 0.8s | 176×64 | A faceted ice spear flying right: a light pulse runs through its core, rings of cold air shear off the tip, frost peels off into a wake and crystals shed behind it. |
@@ -147,6 +146,7 @@ slashes, smears, cleaves, combos.
 | effect | id | | size | what it does |
 |---|---|---|---|---|
 | Claw swipe | `melee/claw-swipe` | one-shot 0.9s | 128×96 | Three claw marks rake down one after another, white-hot, cooling through orange to red, then close up from both ends and leave a dotted scar, with hot flecks and drips. |
+| Crimson gold claw | `melee/crimson-gold-claw` | one-shot 2.5s | 340×224 | Giant beast claw combo: a sweeping gold-rimmed crimson 3-talon arc, a wide crimson-jade cross rend, and a rune slam raising three towering spiral fire pillars. |
 | Dagger flurry | `melee/dagger-flurry` | one-shot 0.95s | 148×104 | A flurry of small quick crescents at every angle in front of the fighter, each with a flick of sparks, finished by one big cut that glints and bursts. |
 | Double slash | `melee/double-slash` | one-shot 0.8s | 164×108 | A down cut, then an up cut that crosses it: the moment the X closes both strokes flash white, the crossing bursts with light and sparks, and a dotted X lingers. |
 | Ember claw | `melee/ember-claw` | one-shot 0.68s | 136×96 | Three staggered fiery claw arcs sweep from top-left to bottom-right as translucent heat trails, sparking a white-hot impact, a ring of ground embers and a fast-cooling flame. |
@@ -198,6 +198,7 @@ bullets, rockets, lasers, arrows.
 | SMG burst | `projectiles/muzzle-smg` | loop 1s | 112×72 | Sustained fire at twelve rounds a second: each shot a different spiky flash with a white core, sparks, smoke wisps piling up and drifting, brass casings bouncing on the floor. |
 | Plasma shot | `projectiles/plasma-shot` | loop 0.8s | 144×60 | A glowing plasma blob: hot knots churning in its core, a corona crackling over its skin, its tail necking into droplets that tear off, cool and wink out behind. |
 | Rocket | `projectiles/rocket` | loop 1.2s | 288×76 | A steel rocket roars along: a flickering jet with shock diamonds and a white-hot nozzle, a thick billowing smoke trail lit by the flame, sparks shed behind. |
+| Web shot | `projectiles/web-shot` | one-shot 1.6s | 220×116 | A hand spins sticky silk into a three-strand shot, then a trembling web unravels from its rim. |
 
 ## spawn & death
 
