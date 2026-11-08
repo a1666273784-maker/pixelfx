@@ -145,6 +145,7 @@ import * as arcane_arcane_missiles from "./arcane/arcane-missiles.js";
 import * as arcane_arcane_orb from "./arcane/arcane-orb.js";
 import * as arcane_blink_in from "./arcane/blink-in.js";
 import * as arcane_blink_out from "./arcane/blink-out.js";
+import * as arcane_lacquer_ward from "./arcane/lacquer-ward.js";
 import * as arcane_magic_circle_cast from "./arcane/magic-circle-cast.js";
 import * as arcane_mana_burst from "./arcane/mana-burst.js";
 import * as arcane_portal from "./arcane/portal.js";
@@ -407,6 +408,7 @@ export const effects = {
   "arcane/arcane-orb": arcane_arcane_orb,
   "arcane/blink-in": arcane_blink_in,
   "arcane/blink-out": arcane_blink_out,
+  "arcane/lacquer-ward": arcane_lacquer_ward,
   "arcane/magic-circle-cast": arcane_magic_circle_cast,
   "arcane/mana-burst": arcane_mana_burst,
   "arcane/portal": arcane_portal,
