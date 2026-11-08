@@ -1,6 +1,6 @@
 # Catalog
 
-258 effects in 21 categories. Every one is a file in
+259 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -231,6 +231,7 @@ portals, runes, missiles, beams.
 | Arcane orb | `arcane/arcane-orb` | loop 2.4s | 136×112 | A floating orb of smoky violet glass with a swirl turning round a white-hot heart, two tilted rings of light orbiting behind and in front. |
 | Blink in | `arcane/blink-in` | one-shot 1.4s | 136×96 | Glittering bits spiral in to a point of light that opens into a line, then into a white silhouette that cools into the caster. |
 | Blink out | `arcane/blink-out` | one-shot 1.6s | 136×96 | The caster crackles with gathering light, flashes white, squeezes into a line of light that collapses and pops away in sparks. |
+| Lacquer ward | `arcane/lacquer-ward` | loop 3.6s | 268×144 | Black lacquer climbs from underfoot to coat the body in a mirror-gloss membrane with flowing golden huiwen, shattering heavy strikes in gold seals and glossy black splatter. |
 | Magic circle cast | `arcane/magic-circle-cast` | one-shot 3.9s | 200×220 | A circle draws itself on the floor, runes ignite one by one, it flashes, and a column of light fires up and breaks apart into glints. |
 | Mana burst | `arcane/mana-burst` | one-shot 1.8s | 208×150 | Energy rushes into a point and blows out in a white flash and rings, flinging glowing runes that flare and pop into sparks one after another. |
 | Portal | `arcane/portal` | loop 2.4s | 152×116 | An upright rift: fibrous spiral arms wind down into the dark, a lit rim wobbles, motes and streaks are pulled in, the floor glows. |
