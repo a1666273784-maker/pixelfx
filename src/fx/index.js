@@ -58,6 +58,7 @@ import * as ice_freeze from "./ice/freeze.js";
 import * as ice_frost_breath from "./ice/frost-breath.js";
 import * as ice_frost_nova from "./ice/frost-nova.js";
 import * as ice_frost_tread from "./ice/frost-tread.js";
+import * as ice_ice_burst from "./ice/ice-burst.js";
 import * as ice_ice_crystal from "./ice/ice-crystal.js";
 import * as ice_ice_lance from "./ice/ice-lance.js";
 import * as ice_ice_shatter from "./ice/ice-shatter.js";
@@ -316,6 +317,7 @@ export const effects = {
   "ice/frost-breath": ice_frost_breath,
   "ice/frost-nova": ice_frost_nova,
   "ice/frost-tread": ice_frost_tread,
+  "ice/ice-burst": ice_ice_burst,
   "ice/ice-crystal": ice_ice_crystal,
   "ice/ice-lance": ice_ice_lance,
   "ice/ice-shatter": ice_ice_shatter,
