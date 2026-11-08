@@ -11,6 +11,7 @@ import * as moves_lightning_call from "./moves/lightning-call.js";
 import * as moves_meteor_call from "./moves/meteor-call.js";
 import * as moves_pistol_shots from "./moves/pistol-shots.js";
 import * as moves_rocket_launcher from "./moves/rocket-launcher.js";
+import * as moves_rockfall_call from "./moves/rockfall-call.js";
 import * as moves_sword_combo from "./moves/sword-combo.js";
 import * as fire_brazier from "./fire/brazier.js";
 import * as fire_campfire from "./fire/campfire.js";
@@ -192,6 +193,7 @@ import * as nature_healing_bloom from "./nature/healing-bloom.js";
 import * as nature_leaf_storm from "./nature/leaf-storm.js";
 import * as nature_poison_cloud from "./nature/poison-cloud.js";
 import * as nature_quake from "./nature/quake.js";
+import * as nature_rockfall from "./nature/rockfall.js";
 import * as nature_root_snare from "./nature/root-snare.js";
 import * as nature_spore_burst from "./nature/spore-burst.js";
 import * as nature_thorns from "./nature/thorns.js";
@@ -270,6 +272,7 @@ export const effects = {
   "moves/meteor-call": moves_meteor_call,
   "moves/pistol-shots": moves_pistol_shots,
   "moves/rocket-launcher": moves_rocket_launcher,
+  "moves/rockfall-call": moves_rockfall_call,
   "moves/sword-combo": moves_sword_combo,
   "fire/brazier": fire_brazier,
   "fire/campfire": fire_campfire,
@@ -451,6 +454,7 @@ export const effects = {
   "nature/leaf-storm": nature_leaf_storm,
   "nature/poison-cloud": nature_poison_cloud,
   "nature/quake": nature_quake,
+  "nature/rockfall": nature_rockfall,
   "nature/root-snare": nature_root_snare,
   "nature/spore-burst": nature_spore_burst,
   "nature/thorns": nature_thorns,
