@@ -28,6 +28,7 @@ import * as fire_giant_meteor from "./fire/giant-meteor.js";
 import * as fire_meteor from "./fire/meteor.js";
 import * as fire_meteor_shower from "./fire/meteor-shower.js";
 import * as fire_qilin_descent from "./fire/qilin-descent.js";
+import * as fire_qilin_roar from "./fire/qilin-roar.js";
 import * as fire_spirit_flame from "./fire/spirit-flame.js";
 import * as fire_torch from "./fire/torch.js";
 import * as explosions_barrel_explosion from "./explosions/barrel-explosion.js";
@@ -291,6 +292,7 @@ export const effects = {
   "fire/meteor": fire_meteor,
   "fire/meteor-shower": fire_meteor_shower,
   "fire/qilin-descent": fire_qilin_descent,
+  "fire/qilin-roar": fire_qilin_roar,
   "fire/spirit-flame": fire_spirit_flame,
   "fire/torch": fire_torch,
   "explosions/barrel-explosion": explosions_barrel_explosion,
