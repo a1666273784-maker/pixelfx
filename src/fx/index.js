@@ -94,6 +94,7 @@ import * as melee_crimson_gold_claw from "./melee/crimson-gold-claw.js";
 import * as melee_dagger_flurry from "./melee/dagger-flurry.js";
 import * as melee_double_slash from "./melee/double-slash.js";
 import * as melee_ember_claw from "./melee/ember-claw.js";
+import * as melee_flame_slash from "./melee/flame-slash.js";
 import * as melee_frost_blade from "./melee/frost-blade.js";
 import * as melee_hammer_smash from "./melee/hammer-smash.js";
 import * as melee_heavy_cleave from "./melee/heavy-cleave.js";
@@ -355,6 +356,7 @@ export const effects = {
   "melee/dagger-flurry": melee_dagger_flurry,
   "melee/double-slash": melee_double_slash,
   "melee/ember-claw": melee_ember_claw,
+  "melee/flame-slash": melee_flame_slash,
   "melee/frost-blade": melee_frost_blade,
   "melee/hammer-smash": melee_hammer_smash,
   "melee/heavy-cleave": melee_heavy_cleave,

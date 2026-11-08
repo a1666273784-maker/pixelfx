@@ -1,6 +1,6 @@
 # Catalog
 
-257 effects in 21 categories. Every one is a file in
+258 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -152,6 +152,7 @@ slashes, smears, cleaves, combos.
 | Dagger flurry | `melee/dagger-flurry` | one-shot 0.95s | 148×104 | A flurry of small quick crescents at every angle in front of the fighter, each with a flick of sparks, finished by one big cut that glints and bursts. |
 | Double slash | `melee/double-slash` | one-shot 0.8s | 164×108 | A down cut, then an up cut that crosses it: the moment the X closes both strokes flash white, the crossing bursts with light and sparks, and a dotted X lingers. |
 | Ember claw | `melee/ember-claw` | one-shot 0.68s | 136×96 | Three staggered fiery claw arcs sweep from top-left to bottom-right as translucent heat trails, sparking a white-hot impact, a ring of ground embers and a fast-cooling flame. |
+| Flame slash | `melee/flame-slash` | one-shot 2.25s | 364×224 | A greatsword cleaves the floor to unleash an oppressive, scroll-carved crimson-gold flame crescent that scours the earth and erupts through the target in a roaring pillar of fire. |
 | Frost blade | `melee/frost-blade` | one-shot 0.74s | 204×140 | An expansive overhead downward cleave with a 1-2px blood-red core, wide cyan-white cold wake and 1px white serrated frost rim erupts in snow shavings and blood stars. |
 | Hammer smash | `melee/hammer-smash` | one-shot 2s | 208×112 | A hammer drops in front in a wedge of motion: a white slam with rays, a dome of force, a dent with cracks, rocks thrown up that bounce and settle, and dust. |
 | Heavy cleave | `melee/heavy-cleave` | one-shot 1.9s | 208×116 | A glint over the head, then a thick ember arc accelerates over the top into the floor: a white slam, glowing cracks, dust rolling both ways, grit and rising embers. |
