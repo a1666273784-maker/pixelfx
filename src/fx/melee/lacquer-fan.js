@@ -26,8 +26,9 @@ export const meta = {
   options: {
     palette: ["#150507", "#2a090e", "#4a0f16", "#6f1620", "#9c1f26", "#cb3324", "#f0582c", "#ffb15e"],
     gold: ["#33200a", "#63410f", "#9c6f24", "#d1a03a", "#ffd84a", "#fff3b0"],
-    ink: ["#050304", "#0d080a", "#181013", "#241a1d", "#33241f", "#46332c"],
+    ink: ["#070405", "#100a0d", "#1b1114", "#281c1f", "#352723", "#48362e"],
     seed: 5,
+    shut: 1.34,
   },
 };
 
@@ -79,9 +80,9 @@ function fanDetails(seed) {
   return d;
 }
 
-function drawFan(p, t, C, G, K, seed) {
+function drawFan(p, t, C, G, K, seed, shut = 1.34) {
   const openK = ease.outBack(clamp(t / 0.17), 2.1);
-  const shutK = t < SHUT ? 0 : ease.inQuad(clamp((t - SHUT) / 0.12));
+  const shutK = t < shut ? 0 : ease.inQuad(clamp((t - shut) / 0.12));
   const span = lerp(0.04, HALF, openK) * (1 - shutK) + 0.04 * shutK;
   const Rr = FAN_R * (0.86 + 0.14 * Math.min(1, openK));
   const ax = AXIS + Math.sin(t * 33) * Math.exp(-t * 4.6) * 0.02;
@@ -100,9 +101,9 @@ function drawFan(p, t, C, G, K, seed) {
     let rib = false;
     for (const ra of RIBS) {
       if (Math.abs(ra) > span + 0.02) continue;
-      if (Math.abs(v - Math.tan(ra) * u) < 0.62 && u > 4.3) { rib = true; break; }
+      if (Math.abs(v - Math.tan(ra) * u) < 0.7 && u > 4.3) { rib = true; break; }
     }
-    const edgeRib = aang > span - 0.045 && u > 4.3;
+    const edgeRib = aang > span - 0.07 && u > 4.3;
     let col;
     if (dSun < sunR) {
       // blood-red lacquer sun with a wet gloss crescent high on its left cheek
@@ -111,17 +112,23 @@ function drawFan(p, t, C, G, K, seed) {
       const gq = Math.atan2(v, u - u0);
       if (dSun > sunR * 0.5 && dSun < sunR * 0.78 && Math.cos(gq - 3.85) > 0.55) col = C[7];
     } else {
-      // jet-black wet lacquer: hard steps, one broad specular streak up left
+      // jet-black wet lacquer: hard steps, one broad specular streak up left,
+      // ember bleed from the red sun soaking into the dark half so it never reads as a void
       const sh = (v * 0.82 - u * 0.38) / FAN_R;
-      col = sh > 0.3 ? K[4] : sh > 0.155 ? K[5] : sh > 0.02 ? K[3] : sh > -0.3 ? K[2] : K[1];
-      if (dSun < sunR * 1.5) col = sh > 0.02 ? K[3] : K[2]; // warm bounce off the sun
+      if (sh > 0.155) col = sh > 0.3 ? K[4] : K[5];
+      else {
+        const b = clamp(1 - (dSun - sunR) / (FAN_R * 1.05), 0, 1);
+        col = b > 0.62 ? C[3] : b > 0.3 ? (sh > 0.02 ? K[4] : C[2]) : sh > 0.02 ? K[4] : sh > -0.3 ? K[3] : K[2];
+        if (aang > span - 0.18 && sh < 0.02) col = C[3];
+      }
+      if (dSun < sunR * 1.5) col = sh > 0.02 ? K[4] : K[3];
     }
     if (hot) col = dSun < sunR ? (dSun < sunR * 0.6 ? WHITE : G[5]) : G[4];
     // thin gold ring hugging the sun
     if (Math.abs(dSun - sunR) < 0.72) col = hot ? WHITE : G[3];
     // outer rim: double line of gold
-    if (u > Rr - 2.6 && u <= Rr - 2.0) col = hot ? G[5] : G[1];
-    else if (u > Rr - 2.0) col = hot ? WHITE : u > Rr - 0.85 ? G[4] : G[2];
+    if (u > Rr - 2.6 && u <= Rr - 2.0) col = hot ? G[5] : G[2];
+    else if (u > Rr - 2.0) col = hot ? WHITE : u > Rr - 0.85 ? G[5] : G[3];
     if (rib || edgeRib) col = hot ? WHITE : u > FAN_R * 0.7 ? G[4] : G[3];
     // the brass hub
     if (u < 4.3) col = u < 1.5 ? (hot ? WHITE : G[5]) : u < 2.7 ? G[3] : u < 3.6 ? G[4] : K[0];
@@ -146,7 +153,7 @@ function drawFan(p, t, C, G, K, seed) {
   }
   // the red tassel hanging off the pivot: it kicks out when the fan opens or shuts
   if (shutK < 1) {
-    const kick = Math.exp(-Math.abs(t - OPEN) * 2.1) * 0.55 + Math.exp(-Math.abs(t - SHUT) * 2.6) * 0.7;
+    const kick = Math.exp(-Math.abs(t - OPEN) * 2.1) * 0.55 + Math.exp(-Math.abs(t - (shut ?? 1.34)) * 2.6) * 0.7;
     const sway = Math.sin(t * 12.5 + 0.8) * (0.16 + kick) + kick * 0.5;
     const bx = PX + 1.5, by = PY + 2.5;
     p.dot(bx, by, G[3]);
@@ -176,6 +183,7 @@ export function create(o) {
   const drops = [];
   const splats = [];
   const flakes = [];
+  const shutT = o.shut ?? SHUT;
   let t = 0, opened = false, hitFx = false, shutFx = false, flakeAcc = 0;
   // the jagged splat that blooms on the target: static pattern for this seed
   const sd = fanDetails(o.seed);
@@ -248,7 +256,7 @@ export function create(o) {
         lights.add(TARGET_X, TARGET_Y, 52, C[5], 0.78, 0.42);
         lights.add(TARGET_X, TARGET_Y, 19, WHITE, 0.9, 0.15);
       }
-      if (!shutFx && t >= SHUT) {
+      if (!shutFx && t >= shutT) {
         shutFx = true;
         lights.add(PX, PY, 15, G[4], 0.6, 0.2);
         for (let i = 0; i < 5; i++) {
@@ -297,7 +305,7 @@ export function create(o) {
       // the air itself darkens around the opening fan
       if (tt < 0.62) {
         const q = tt / 0.62;
-        p.disc(PX, PY - 6, 30 + ease.outQuart(q) * 15, K[0], 0.36 * (1 - q));
+        p.disc(PX, PY - 6, 30 + ease.outQuart(q) * 12, K[0], 0.25 * (1 - q));
       }
       // the shockwave laid onto the floor, far half behind him
       const fq = seg(tt, OPEN, OPEN + 0.58);
@@ -320,15 +328,15 @@ export function create(o) {
         p.line(s.x + dripDir * rx * 0.4, 1.55, s.x + dripDir * (rx * 0.4 + 2 + s.r), 1.9, core, fade * 0.9);
       }
       // a warm pool at his feet while the fan is open
-      if (tt > 0 && tt < SHUT) p.glow(PX, 0.5, 36, G[3], 0.1 + 0.02 * Math.sin(tt * 9));
+      if (tt > 0 && tt < shutT) p.glow(PX, 0.5, 36, G[3], 0.1 + 0.02 * Math.sin(tt * 9));
     },
     draw(p) {
       const tt = t;
       // the heat-haze glow bleeding out from behind the open fan
-      const heatK = tt < SHUT ? clamp(tt / 0.1) * (1 - seg(tt, SHUT, SHUT + 0.16)) : 0;
-      if (heatK > 0.02) p.glow(PX, PY - 10, 27, C[4], 0.24 * heatK);
+      const heatK = tt < shutT ? clamp(tt / 0.1) * (1 - seg(tt, shutT, shutT + 0.16)) : 0;
+      if (heatK > 0.02) p.glow(PX, PY - 10, 30, C[4], 0.3 * heatK);
       // the fan, while it is anything like open
-      if (tt < SHUT + 0.18) drawFan(p, tt, C, G, K, o.seed);
+      if (tt < shutT + 0.18) drawFan(p, tt, C, G, K, o.seed, shutT);
       // the aerial shell of the blast: a full lacquer dome over him, clipped where the floor takes over
       const rq = seg(tt, OPEN, OPEN + 0.42);
       if (tt >= OPEN && rq < 1) {
@@ -438,8 +446,8 @@ export function create(o) {
         }
       }
       // the snap-shut click
-      if (tt > SHUT && tt < SHUT + 0.34) {
-        const q = (tt - SHUT) / 0.34;
+      if (tt > shutT && tt < shutT + 0.34) {
+        const q = (tt - shutT) / 0.34;
         if (q < 0.28) sparkle(p, PX, PY - 2, 7 * (1 - q / 0.28) + 2, G[5], C[6], 0.7);
       }
       ps.draw(p);
