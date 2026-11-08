@@ -184,6 +184,7 @@ export function create(o) {
   const splats = [];
   const flakes = [];
   const shutT = o.shut ?? SHUT;
+  const TX = o.targetX ?? TARGET_X;
   let t = 0, opened = false, hitFx = false, shutFx = false, flakeAcc = 0;
   // the jagged splat that blooms on the target: static pattern for this seed
   const sd = fanDetails(o.seed);
@@ -229,7 +230,7 @@ export function create(o) {
       const a = Rd.range(-0.9, 0.9) + (Rd.next() < 0.5 ? 0 : Math.PI);
       const sp = Rd.range(70, 175);
       drops.push({
-        x: TARGET_X, y: TARGET_Y,
+        x: TX, y: TARGET_Y,
         vx: Math.cos(a) * sp + 26, vy: Math.sin(a) * sp - 48,
         r: Rd.range(0.8, 1.8), kind: Rd.next() < 0.55 ? 0.2 : 0.6,
         delay: Rd.range(0, 0.03), seed: Rd.next() * 991,
@@ -237,7 +238,7 @@ export function create(o) {
     }
     for (let i = 0; i < 6; i++) {
       const a = Rd.range(0, TAU);
-      ps.spawn(P.SPARK, TARGET_X, TARGET_Y, Math.cos(a) * Rd.range(80, 220), Math.sin(a) * Rd.range(90, 230) - 30, Rd.range(0.15, 0.32), WHITE);
+      ps.spawn(P.SPARK, TX, TARGET_Y, Math.cos(a) * Rd.range(80, 220), Math.sin(a) * Rd.range(90, 230) - 30, Rd.range(0.15, 0.32), WHITE);
     }
   };
 
@@ -253,8 +254,8 @@ export function create(o) {
       if (!hitFx && t >= HIT_T) {
         hitFx = true;
         spawnHitSplatter();
-        lights.add(TARGET_X, TARGET_Y, 52, C[5], 0.78, 0.42);
-        lights.add(TARGET_X, TARGET_Y, 19, WHITE, 0.9, 0.15);
+        lights.add(TX, TARGET_Y, 52, C[5], 0.78, 0.42);
+        lights.add(TX, TARGET_Y, 19, WHITE, 0.9, 0.15);
       }
       if (!shutFx && t >= shutT) {
         shutFx = true;
@@ -408,41 +409,41 @@ export function create(o) {
         const pts = [], inner = [];
         for (let k = 0; k < 12; k++) {
           const a = (k / 12) * TAU, rr = r * (0.52 + jagOut[k] * 0.78);
-          pts.push([TARGET_X + Math.cos(a) * rr, TARGET_Y + Math.sin(a) * rr * 0.92]);
+          pts.push([TX + Math.cos(a) * rr, TARGET_Y + Math.sin(a) * rr * 0.92]);
         }
         for (let k = 0; k < 9; k++) {
           const a = (k / 9) * TAU + 0.33, rr = r * 0.47 * (0.66 + jagOut[(k * 4 + 3) % 12] * 0.5);
-          inner.push([TARGET_X + Math.cos(a) * rr, TARGET_Y + Math.sin(a) * rr * 0.92]);
+          inner.push([TX + Math.cos(a) * rr, TARGET_Y + Math.sin(a) * rr * 0.92]);
         }
         p.poly(pts, K[0], fade);
         p.poly(inner, hotNow ? C[5] : C[4], fade);
-        if (hotNow) p.circle(TARGET_X, TARGET_Y, r * 0.24, C[6], fade);
+        if (hotNow) p.circle(TX, TARGET_Y, r * 0.24, C[6], fade);
         // specfle glints
         for (let k = 0; k < 12; k += 2) {
           const a = (k / 12) * TAU, rr = r * jagOut[k] * 1.22;
-          p.dot(TARGET_X + Math.cos(a) * rr, TARGET_Y + Math.sin(a) * rr * 0.92, K[0], fade * 0.9);
+          p.dot(TX + Math.cos(a) * rr, TARGET_Y + Math.sin(a) * rr * 0.92, K[0], fade * 0.9);
         }
-        p.dot(TARGET_X - r * 0.4, TARGET_Y - r * 0.35, WHITE, 0.8 * fade);
-        p.dot(TARGET_X + r * 0.34, TARGET_Y - r * 0.1, C[7], 0.7 * fade);
-        p.dot(TARGET_X + r * 0.05, TARGET_Y + r * 0.4, WHITE, 0.6 * fade);
+        p.dot(TX - r * 0.4, TARGET_Y - r * 0.35, WHITE, 0.8 * fade);
+        p.dot(TX + r * 0.34, TARGET_Y - r * 0.1, C[7], 0.7 * fade);
+        p.dot(TX + r * 0.05, TARGET_Y + r * 0.4, WHITE, 0.6 * fade);
         // viscous drips crawling down out of the splat
         const drip = smooth(0.1, 0.66, age);
         for (const [off, len, col] of [[-6, 8.5, C[4]], [0.5, 12, K[1]], [6.5, 6, C[3]]]) {
           const l = drip * len;
           if (l > 0.8) {
-            p.line(TARGET_X + off, TARGET_Y + r * 0.28, TARGET_X + off, TARGET_Y + r * 0.28 + l, col, fade);
-            p.dot(TARGET_X + off, TARGET_Y + r * 0.28 + l, col, fade);
+            p.line(TX + off, TARGET_Y + r * 0.28, TX + off, TARGET_Y + r * 0.28 + l, col, fade);
+            p.dot(TX + off, TARGET_Y + r * 0.28 + l, col, fade);
           }
         }
         // a fast double ring off the impact
         const ringQ = seg(age, 0, 0.3);
         if (ringQ < 1) {
           const rr = 5 + ease.outQuart(ringQ) * 30, rk = 1 - ringQ;
-          band(p, TARGET_X, TARGET_Y, rr, 0.8, Math.max(0.7, 1.8 * (1 - ringQ)), rk * 0.72, [K[0], K[1], G[2]], () => true, false);
+          band(p, TX, TARGET_Y, rr, 0.8, Math.max(0.7, 1.8 * (1 - ringQ)), rk * 0.72, [K[0], K[1], G[2]], () => true, false);
         }
         if (age < 0.12) {
           const hk = 1 - age / 0.12;
-          flare(p, TARGET_X, TARGET_Y - 2, 19 * hk + 6, hk, [C[3], C[5], G[4], WHITE]);
+          flare(p, TX, TARGET_Y - 2, 19 * hk + 6, hk, [C[3], C[5], G[4], WHITE]);
         }
       }
       // the snap-shut click
