@@ -95,7 +95,6 @@ import * as melee_crimson_gold_claw from "./melee/crimson-gold-claw.js";
 import * as melee_dagger_flurry from "./melee/dagger-flurry.js";
 import * as melee_double_slash from "./melee/double-slash.js";
 import * as melee_ember_claw from "./melee/ember-claw.js";
-import * as melee_fan_sweep from "./melee/fan-sweep.js";
 import * as melee_flame_slash from "./melee/flame-slash.js";
 import * as melee_frost_blade from "./melee/frost-blade.js";
 import * as melee_hammer_smash from "./melee/hammer-smash.js";
@@ -107,7 +106,6 @@ import * as melee_spin_slash from "./melee/spin-slash.js";
 import * as melee_sword_slash from "./melee/sword-slash.js";
 import * as melee_thrust from "./melee/thrust.js";
 import * as melee_uppercut from "./melee/uppercut.js";
-import * as melee_verdant_cyclone from "./melee/verdant-cyclone.js";
 import * as melee_whip_crack from "./melee/whip-crack.js";
 import * as impacts_blunt_hit from "./impacts/blunt-hit.js";
 import * as impacts_bullet_impact from "./impacts/bullet-impact.js";
@@ -362,7 +360,6 @@ export const effects = {
   "melee/dagger-flurry": melee_dagger_flurry,
   "melee/double-slash": melee_double_slash,
   "melee/ember-claw": melee_ember_claw,
-  "melee/fan-sweep": melee_fan_sweep,
   "melee/flame-slash": melee_flame_slash,
   "melee/frost-blade": melee_frost_blade,
   "melee/hammer-smash": melee_hammer_smash,
@@ -374,7 +371,6 @@ export const effects = {
   "melee/sword-slash": melee_sword_slash,
   "melee/thrust": melee_thrust,
   "melee/uppercut": melee_uppercut,
-  "melee/verdant-cyclone": melee_verdant_cyclone,
   "melee/whip-crack": melee_whip_crack,
   "impacts/blunt-hit": impacts_blunt_hit,
   "impacts/bullet-impact": impacts_bullet_impact,

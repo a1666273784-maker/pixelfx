@@ -1,6 +1,6 @@
 # Catalog
 
-263 effects in 21 categories. Every one is a file in
+261 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -16,7 +16,7 @@ whole attacks, wind-up to recovery, chained from the effects below.
 | Ground pound | `moves/ground-pound` | one-shot 3.82s | 304×204 | He coils, leaps out of frame height, hangs, and comes down like a rock: the floor cracks, shock waves race out and throw the target about as they pass. |
 | Holy smite | `moves/holy-smite` | one-shot 2.8s | 252×182 | Both hands go up and a glint marks the target; he brings them down and a bolt of light drops like a hammer, leaving the target blanched. |
 | Ice lance throw | `moves/ice-lance-throw` | one-shot 4.34s | 310×136 | Frost gathers into a spear in his hand, he throws it like a javelin, and the target ices over in a burst of snowflakes and shivers. |
-| Lacquer fan combo | `moves/lacquer-fan-combo` | one-shot 3.65s | 346×188 | The lacquer fan bursts open, scythes horizontally through the air, then throws an emerald cyclone ahead of it — one unbroken line of motion, punctuated by the shut. |
+| Lacquer fan combo | `moves/lacquer-fan-combo` | one-shot 3.65s | 346×188 | The lacquer fan bursts open, scythes low and throws an emerald cyclone that bursts into a rain of leaves — one unbroken fan chain. |
 | Lightning call | `moves/lightning-call` | one-shot 3s | 290×266 | An arm goes up, a sigil lights under the target, and on the downswing a thick bolt comes down on it; the target jolts through the aftershocks. |
 | Meteor call | `moves/meteor-call` | one-shot 6.43s | 380×240 | A long chant: a circle draws itself round him, it flares, he points, and a burning rock comes down on the target and flattens the scene. |
 | Pistol shots | `moves/pistol-shots` | one-shot 2.6s | 378×76 | Three aimed shots: the gun kicks up each time and settles, tracers cross the floor, and the target staggers under each hit. |
@@ -153,7 +153,6 @@ slashes, smears, cleaves, combos.
 | Dagger flurry | `melee/dagger-flurry` | one-shot 0.95s | 148×104 | A flurry of small quick crescents at every angle in front of the fighter, each with a flick of sparks, finished by one big cut that glints and bursts. |
 | Double slash | `melee/double-slash` | one-shot 0.8s | 164×108 | A down cut, then an up cut that crosses it: the moment the X closes both strokes flash white, the crossing bursts with light and sparks, and a dotted X lingers. |
 | Ember claw | `melee/ember-claw` | one-shot 0.68s | 136×96 | Three staggered fiery claw arcs sweep from top-left to bottom-right as translucent heat trails, sparking a white-hot impact, a ring of ground embers and a fast-cooling flame. |
-| Fan sweep | `melee/fan-sweep` | one-shot 0.62s | 190×124 | The open fan scythes horizontally through the air: a gold-rimmed black lacquer crescent with a red bite along its inner edge, white-hot at the moment of the cut. |
 | Flame slash | `melee/flame-slash` | one-shot 2.25s | 364×224 | A greatsword cleaves the floor to unleash an oppressive, scroll-carved crimson-gold flame crescent that scours the earth and erupts through the target in a roaring pillar of fire. |
 | Frost blade | `melee/frost-blade` | one-shot 0.74s | 204×140 | An expansive overhead downward cleave with a 1-2px blood-red core, wide cyan-white cold wake and 1px white serrated frost rim erupts in snow shavings and blood stars. |
 | Hammer smash | `melee/hammer-smash` | one-shot 2s | 208×112 | A hammer drops in front in a wedge of motion: a white slam with rays, a dome of force, a dent with cracks, rocks thrown up that bounce and settle, and dust. |
@@ -165,7 +164,6 @@ slashes, smears, cleaves, combos.
 | Sword slash | `melee/sword-slash` | one-shot 0.75s | 136×104 | A tilted crescent whips round in two frames, cools from white to deep blue as it trails off, glints at the tip and throws sparks. |
 | Thrust | `melee/thrust` | one-shot 0.75s | 196×76 | A piercing stab: a bundle of streaks shoots out from the hand to a point, a long four-point star flares at the tip with a pierce ring, sparks and speed lines. |
 | Uppercut | `melee/uppercut` | one-shot 0.85s | 132×128 | A crescent rises from the floor past the face, and at the top a comic impact star bursts: bold outline, hot core, burst lines, twinkles and sparks. |
-| Verdant cyclone | `melee/verdant-cyclone` | one-shot 0.95s | 150×128 | A 碧绿 cyclone thrown ahead: a churning jade funnel with a leaf-strewn crown, wind bands wrapping it front and back, leaves spiralling in and erupting in a green burst. |
 | Whip crack | `melee/whip-crack` | one-shot 0.85s | 192×80 | A whip rolls out to the right as a loop running down its length, faster and faster, until the tip flips over and cracks: a white pop, a ring of air, sparks and a puff of smoke. |
 
 ## impacts
