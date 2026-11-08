@@ -334,4 +334,7 @@ $("#q").addEventListener("input", (e) => {
 });
 setCat(location.hash.slice(1) || "all", true);
 addEventListener("hashchange", () => setCat(location.hash.slice(1) || "all", true));
+// Optional direct link to an effect, e.g. ?effect=fire/qilin-lightfall.
+const linkedEffect = FX.find((fx) => fx.id === new URLSearchParams(location.search).get("effect"));
+if (linkedEffect) openDetail(linkedEffect);
 requestAnimationFrame(frameLoop);
