@@ -1,6 +1,6 @@
 # Catalog
 
-254 effects in 21 categories. Every one is a file in
+255 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -43,6 +43,7 @@ torches, breath, pillars, walls of flame.
 | Meteor | `fire/meteor` | one-shot 5s | 272×232 | A burning rock streaks in from the upper left in a comet of fire and smashes into the floor: a white flash, a fireball, rocks and brands thrown, a glowing crater that cools. |
 | Meteor shower | `fire/meteor-shower` | one-shot 3s | 260×170 | A staggered volley of small burning stones strikes the ground, scattering sparks and smoke over cooling craters. |
 | Qilin descent | `fire/qilin-descent` | one-shot 4.5s | 224×256 | Teal spirit rings contract under four hooffalls, blasting a shockwave and fiery cracks before a golden pillar wrapped in teal mane-fire erupts, shatters, and cools. |
+| 麒麟·赤金光坠 | `fire/qilin-lightfall` | one-shot 2.8s | 320×200 | A crimson-gold boss lightfall: a breathing white-hot pillar, repeated golden lightning and a racing ground shock ring. Dodge sideways out of the central lane. |
 | Spirit flame | `fire/spirit-flame` | loop 3s | 80×124 | A cold blue-teal ghost fire floating in the air: a bright rim round a hollow dark heart, a wave climbing its wispy tail, curls breaking off, cold sparks rising. |
 | Torch | `fire/torch` | loop 2s | 72×120 | A wall torch on an iron bracket: a licking flame leaping off a pitch-soaked wrap, licks and puffs torn off its tips, smoke, embers, a flickering light on the wall. |
 
