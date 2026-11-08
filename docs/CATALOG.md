@@ -146,7 +146,7 @@ slashes, smears, cleaves, combos.
 | effect | id | | size | what it does |
 |---|---|---|---|---|
 | Claw swipe | `melee/claw-swipe` | one-shot 0.9s | 128×96 | Three claw marks rake down one after another, white-hot, cooling through orange to red, then close up from both ends and leave a dotted scar, with hot flecks and drips. |
-| Crimson gold claw | `melee/crimson-gold-claw` | one-shot 2.5s | 224×128 | Three-beat claw combo: a gold-rimmed crimson crescent with jade flecks, a crimson-jade X cross with bone-white burst, and a rune slam raising three spiral fire pillars. |
+| Crimson gold claw | `melee/crimson-gold-claw` | one-shot 2.5s | 340×224 | Giant beast claw combo: a sweeping gold-rimmed crimson 3-talon arc, a wide crimson-jade cross rend, and a rune slam raising three towering spiral fire pillars. |
 | Dagger flurry | `melee/dagger-flurry` | one-shot 0.95s | 148×104 | A flurry of small quick crescents at every angle in front of the fighter, each with a flick of sparks, finished by one big cut that glints and bursts. |
 | Double slash | `melee/double-slash` | one-shot 0.8s | 164×108 | A down cut, then an up cut that crosses it: the moment the X closes both strokes flash white, the crossing bursts with light and sparks, and a dotted X lingers. |
 | Ember claw | `melee/ember-claw` | one-shot 0.68s | 136×96 | Three staggered fiery claw arcs sweep from top-left to bottom-right as translucent heat trails, sparking a white-hot impact, a ring of ground embers and a fast-cooling flame. |
