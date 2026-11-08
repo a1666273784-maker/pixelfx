@@ -1,6 +1,6 @@
 # Catalog
 
-254 effects in 21 categories. Every one is a file in
+255 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -95,6 +95,7 @@ spikes, novas, freezing, shattering.
 | Frost breath | `ice/frost-breath` | loop 1.2s | 184×104 | A cone of icy wind blowing right: frost puffs billow out, swell and sink, wind streaks race through, ice crystals tumble and glint off a white-hot mouth. |
 | Frost nova | `ice/frost-nova` | one-shot 3.4s | 288×192 | Frost spirals into a spinning snowflake, then a wave blooms three rings of ice crystals round the caster; snow drifts, frost creeps, and the ice melts back into the floor. |
 | Frost tread | `ice/frost-tread` | one-shot 1.8s | 236×84 | Bounding white-tiger steps burst cyan-white frost rings and low upward-curling razor-edged cold wakes that cool into thin cyan mist and lingering frost granules. |
+| Ice burst | `ice/ice-burst` | one-shot 3.6s | 320×224 | Cold winds to a point at his chest and detonates: a snowflake flash, needles blown through the air, blades torn up from the floor, a shattering ring, frost settling to melt. |
 | Ice crystal | `ice/ice-crystal` | loop 3s | 96×100 | A floating ice crystal turning slowly in its own cold light: its facets brighten and darken as they turn, glints flash on them, frost motes circle it. |
 | Ice lance | `ice/ice-lance` | loop 0.8s | 176×64 | A faceted ice spear flying right: a light pulse runs through its core, rings of cold air shear off the tip, frost peels off into a wake and crystals shed behind it. |
 | Ice shatter | `ice/ice-shatter` | one-shot 2.8s | 224×112 | A block of ice takes a hit from the left: it jolts, cracks race over its faces, it flashes white and bursts into chunks that tumble, bounce and skid off in a roll of ice dust. |
