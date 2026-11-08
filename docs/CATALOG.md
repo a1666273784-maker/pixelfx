@@ -1,6 +1,6 @@
 # Catalog
 
-259 effects in 21 categories. Every one is a file in
+260 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -156,6 +156,7 @@ slashes, smears, cleaves, combos.
 | Frost blade | `melee/frost-blade` | one-shot 0.74s | 204×140 | An expansive overhead downward cleave with a 1-2px blood-red core, wide cyan-white cold wake and 1px white serrated frost rim erupts in snow shavings and blood stars. |
 | Hammer smash | `melee/hammer-smash` | one-shot 2s | 208×112 | A hammer drops in front in a wedge of motion: a white slam with rays, a dome of force, a dent with cracks, rocks thrown up that bounce and settle, and dust. |
 | Heavy cleave | `melee/heavy-cleave` | one-shot 1.9s | 208×116 | A glint over the head, then a thick ember arc accelerates over the top into the floor: a white slam, glowing cracks, dust rolling both ways, grit and rising embers. |
+| Lacquer fan | `melee/lacquer-fan` | one-shot 2.25s | 296×188 | The folded fan snaps open before his face into a gold-ribbed black half-moon with a red sun; a point-blank ring of red and black lacquer spatters the floor and the target. |
 | Scythe reap | `melee/scythe-reap` | one-shot 2.1s | 184×116 | A slow, huge dark crescent reaps round the front with a pale ghostly edge; it hangs, then tears away from the tail into curling wisps and cold vapour. |
 | Spear sweep | `melee/spear-sweep` | one-shot 1.5s | 216×84 | A wide low sweep at shin height: a long flat crescent swings from behind the legs round the front, and the wind of it kicks a wake of dust and grit along the floor. |
 | Spin slash | `melee/spin-slash` | one-shot 0.8s | 208×104 | The blade whirls once round the waist on a tilted plane, behind the body and back in front; the closed ring flares white, dissolves into a dotted trace and throws sparks. |

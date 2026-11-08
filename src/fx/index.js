@@ -98,6 +98,7 @@ import * as melee_flame_slash from "./melee/flame-slash.js";
 import * as melee_frost_blade from "./melee/frost-blade.js";
 import * as melee_hammer_smash from "./melee/hammer-smash.js";
 import * as melee_heavy_cleave from "./melee/heavy-cleave.js";
+import * as melee_lacquer_fan from "./melee/lacquer-fan.js";
 import * as melee_scythe_reap from "./melee/scythe-reap.js";
 import * as melee_spear_sweep from "./melee/spear-sweep.js";
 import * as melee_spin_slash from "./melee/spin-slash.js";
@@ -361,6 +362,7 @@ export const effects = {
   "melee/frost-blade": melee_frost_blade,
   "melee/hammer-smash": melee_hammer_smash,
   "melee/heavy-cleave": melee_heavy_cleave,
+  "melee/lacquer-fan": melee_lacquer_fan,
   "melee/scythe-reap": melee_scythe_reap,
   "melee/spear-sweep": melee_spear_sweep,
   "melee/spin-slash": melee_spin_slash,
