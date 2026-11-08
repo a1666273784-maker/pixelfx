@@ -15,6 +15,7 @@ import * as moves_sword_combo from "./moves/sword-combo.js";
 import * as fire_brazier from "./fire/brazier.js";
 import * as fire_campfire from "./fire/campfire.js";
 import * as fire_candle from "./fire/candle.js";
+import * as fire_celestial_blaze_seal from "./fire/celestial-blaze-seal.js";
 import * as fire_fire_breath from "./fire/fire-breath.js";
 import * as fire_fire_ring from "./fire/fire-ring.js";
 import * as fire_fire_tornado from "./fire/fire-tornado.js";
@@ -273,6 +274,7 @@ export const effects = {
   "fire/brazier": fire_brazier,
   "fire/campfire": fire_campfire,
   "fire/candle": fire_candle,
+  "fire/celestial-blaze-seal": fire_celestial_blaze_seal,
   "fire/fire-breath": fire_fire_breath,
   "fire/fire-ring": fire_fire_ring,
   "fire/fire-tornado": fire_fire_tornado,

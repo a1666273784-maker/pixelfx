@@ -1,6 +1,6 @@
 # Catalog
 
-254 effects in 21 categories. Every one is a file in
+255 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -31,6 +31,7 @@ torches, breath, pillars, walls of flame.
 | Brazier | `fire/brazier` | loop 3s | 112×148 | An iron bowl on a tripod heaped with glowing coals and a big roaring fire, sparks and embers streaming up off it, light on the iron and the floor. |
 | Campfire | `fire/campfire` | loop 3s | 128×128 | Crossed logs on a bed of coals and a lively fire: tongues that lick and leap, popping sparks, embers drifting up, smoke curling off, a warm pool of light. |
 | Candle | `fire/candle` | loop 4s | 56×76 | A wax candle in a brass dish: a calm flame with a blue root that sways and stretches, a halo of light, motes drifting in it, a bead of wax running down a drip. |
+| Celestial blaze seal | `fire/celestial-blaze-seal` | one-shot 6s | 320×200 | A towering sovereign opens a bronze-jade meander gate and twin glyph rings, raining three waves of crimson meteors before sweeping a three-wave sea of fire across the floor. |
 | Fire breath | `fire/fire-breath` | loop 1.5s | 160×116 | A roaring cone of fire streaming right from the mouth: white-hot at the lips, billowing out and cooling to red and smoke at its edges, sparks thrown out ahead. |
 | Fire ring | `fire/fire-ring` | one-shot 3.9s | 224×128 | A white flash at the feet, then flames race outward along the floor in a ring, flaring as the front passes and burning down behind it over a smouldering scorch. |
 | Fire tornado | `fire/fire-tornado` | loop 2s | 120×152 | A spinning funnel of fire: spiral bands turning round it, licks flung off its sides, a ring of flame whirling at its foot, embers orbiting it in and out of view. |
