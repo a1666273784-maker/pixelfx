@@ -14,6 +14,7 @@ import * as moves_pistol_shots from "./moves/pistol-shots.js";
 import * as moves_rocket_launcher from "./moves/rocket-launcher.js";
 import * as moves_rockfall_call from "./moves/rockfall-call.js";
 import * as moves_sword_combo from "./moves/sword-combo.js";
+import * as moves_sword_dash from "./moves/sword-dash.js";
 import * as fire_brazier from "./fire/brazier.js";
 import * as fire_campfire from "./fire/campfire.js";
 import * as fire_candle from "./fire/candle.js";
@@ -283,6 +284,7 @@ export const effects = {
   "moves/rocket-launcher": moves_rocket_launcher,
   "moves/rockfall-call": moves_rockfall_call,
   "moves/sword-combo": moves_sword_combo,
+  "moves/sword-dash": moves_sword_dash,
   "fire/brazier": fire_brazier,
   "fire/campfire": fire_campfire,
   "fire/candle": fire_candle,
