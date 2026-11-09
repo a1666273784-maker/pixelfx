@@ -2,6 +2,7 @@
 
 import * as moves_arrow_shot from "./moves/arrow-shot.js";
 import * as moves_carapace_spike_burst from "./moves/carapace-spike-burst.js";
+import * as moves_coldflame_fireball from "./moves/coldflame-fireball.js";
 import * as moves_dash_strike from "./moves/dash-strike.js";
 import * as moves_earth_stomp from "./moves/earth-stomp.js";
 import * as moves_fireball_throw from "./moves/fireball-throw.js";
@@ -291,6 +292,7 @@ export { categories } from "./categories.js";
 export const effects = {
   "moves/arrow-shot": moves_arrow_shot,
   "moves/carapace-spike-burst": moves_carapace_spike_burst,
+  "moves/coldflame-fireball": moves_coldflame_fireball,
   "moves/dash-strike": moves_dash_strike,
   "moves/earth-stomp": moves_earth_stomp,
   "moves/fireball-throw": moves_fireball_throw,
