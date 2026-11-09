@@ -1,6 +1,6 @@
 # Catalog
 
-273 effects in 21 categories. Every one is a file in
+275 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -25,6 +25,7 @@ whole attacks, wind-up to recovery, chained from the effects below.
 | Rockfall call | `moves/rockfall-call` | one-shot 7.16s | 480×268 | He reaches skyward, tears both hands down and stamps a glowing rift into the floor; a storm-dust pall gathers and an avalanche of boulders and monoliths pounds the target. |
 | Sword combo | `moves/sword-combo` | one-shot 2.98s | 264×150 | Three strokes walking forward: a slash, a crossing double cut, and a two-handed cleave into the floor that throws the target about. |
 | Sword dash | `moves/sword-dash` | one-shot 2.04s | 444×148 | A ponytail wuxia swordsman crouches low and sprints forward, leaving three fading silver phantoms and white foot-streams before lightly tapping his sword tip to the stone. |
+| Venom spit | `moves/venom-spit` | one-shot 3.1s | 408×204 | Coils and spits a serrated acid fang to poison the target, then blasts a colossal fanged venom orb that erupts in an acid crown, melting drips, and a boiling etched pit. |
 
 ## fire
 
@@ -329,6 +330,7 @@ poison, vines, thorns, quakes.
 | Thorns | `nature/thorns` | one-shot 2.4s | 232×92 | A seam races along the floor and hooked thorns punch up out of it one after another, each bigger than the last, in bursts of dirt and green light; they hold, then sink. |
 | Tornado | `nature/tornado` | loop 2s | 196×168 | A snaking funnel of spinning wind bands under a flared, churning top that flickers with lightning; leaves and debris whirl round it front and back, dust boils at its foot. |
 | Toxic puddle | `nature/toxic-puddle` | loop 4s | 176×100 | Black tar lit from inside by chartreuse veins and a glowing rim, an oily sheen drifting on it; glossy bubbles dome, stretch and pop, vapour curls up in fraying ribbons. |
+| Venom deluge | `nature/venom-deluge` | one-shot 3.15s | 424×212 | A horned beast unhinges dripping fanged jaws and blasts a heavy deluge of liquid venom into a violent splash crown and boiling acid swamp. |
 | Vine whip | `nature/vine-whip` | one-shot 1.4s | 216×128 | A thorny vine bursts from the floor, rears back coiled, then lashes out right in a whip crack that sprays sap and tears off leaves, before sliding back into the ground. |
 
 ## weather
