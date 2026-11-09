@@ -94,20 +94,21 @@ export const act = {
 };
 
 // ---------------------------------------------------------------- blade geometry
-// Four swings, each longer than the last (34 < 56 < 84 px), all silver-white.
-// IMPORTANT: every swing's active arc keeps cos(a) > 0 (purely forward-facing, toward
-// the target at TX = 108) so the blades read as forward strikes, not rings around the character.
-const S1 = swing({ cx: 58, cy: -8, R: 34, sy: 0.28, rot: 0.02, a0: -1.00, dir: 1 });
-const B1 = { ...S1, span: 2.00, W: 10, t0: 0.00, sweep: 0.05, hold: 0.05, trail: 0.14, hot: 0.30 };
-// horizontal smear across the front (flat ellipse, cos(a) > 0 throughout)
+// Four forward-facing silver-white swings, each longer than the last (46 < 68 < 96 px).
+// Every arc crosses the front-most point (screen x = cx + R, toward target TX = 108) so all
+// blades read as forward strikes — none wraps behind the swordsman. Each swing ends where the
+// next begins, so the four strikes form one continuous combo with no return to guard.
+const S1 = swing({ cx: 50, cy: -18, R: 46, sy: 0.30, rot: 0.03, a0: -1.20, dir: 1 });
+const B1 = { ...S1, span: 2.00, W: 11, t0: 0.00, sweep: 0.05, hold: 0.05, trail: 0.14, hot: 0.30 };
+// 1st: horizontal cut across the front, left-front → front → right-front
 
-const S2 = swing({ cx: 52, cy: -32, R: 56, sy: 0.65, rot: -0.05, a0: 1.50, dir: -1 });
-const B2 = { ...S2, span: 2.90, W: 16, t0: 0.18, sweep: 0.07, hold: 0.06, trail: 0.17, hot: 0.50 };
-// over-the-head down-cut on the front face: up (a≈+π/2) → front (a≈0) → down (a≈-π/2)
+const S2 = swing({ cx: 42, cy: -30, R: 68, sy: 0.90, rot: -0.04, a0: 1.10, dir: -1 });
+const B2 = { ...S2, span: 2.30, W: 17, t0: 0.18, sweep: 0.07, hold: 0.06, trail: 0.17, hot: 0.50 };
+// 2nd: from #1's end (right-front), the blade rises over the head and down-cuts from the other side
 
-const S3 = swing({ cx: 28, cy: -18, R: 84, sy: 0.50, rot: 0.12, a0: -0.90, dir: 1 });
-const B3 = { ...S3, span: 1.80, W: 24, t0: 0.42, sweep: 0.08, hold: 0.06, trail: 0.20, hot: 0.70 };
-// long diagonal high-to-low severing line across the front (up-right → down-right)
+const S3 = swing({ cx: 30, cy: -20, R: 96, sy: 0.50, rot: 0.08, a0: -1.30, dir: 1 });
+const B3 = { ...S3, span: 2.20, W: 25, t0: 0.42, sweep: 0.08, hold: 0.06, trail: 0.20, hot: 0.70 };
+// 3rd: from #2's end (head-top/left-front), a long diagonal severing line high → low
 
 // Thrust: from the lunge hand through the target and past it — the longest blade of all.
 const THRUST = { x1: 176, y1: -20 };
