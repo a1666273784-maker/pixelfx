@@ -106,6 +106,7 @@ import * as melee_spear_sweep from "./melee/spear-sweep.js";
 import * as melee_spin_slash from "./melee/spin-slash.js";
 import * as melee_sword_slash from "./melee/sword-slash.js";
 import * as melee_thrust from "./melee/thrust.js";
+import * as melee_triple_slash from "./melee/triple-slash.js";
 import * as melee_uppercut from "./melee/uppercut.js";
 import * as melee_whip_crack from "./melee/whip-crack.js";
 import * as impacts_blunt_hit from "./impacts/blunt-hit.js";
@@ -151,6 +152,7 @@ import * as arcane_blink_out from "./arcane/blink-out.js";
 import * as arcane_lacquer_ward from "./arcane/lacquer-ward.js";
 import * as arcane_magic_circle_cast from "./arcane/magic-circle-cast.js";
 import * as arcane_mana_burst from "./arcane/mana-burst.js";
+import * as arcane_nacre_blades from "./arcane/nacre-blades.js";
 import * as arcane_portal from "./arcane/portal.js";
 import * as arcane_rune_circle from "./arcane/rune-circle.js";
 import * as arcane_spell_charge from "./arcane/spell-charge.js";
@@ -372,6 +374,7 @@ export const effects = {
   "melee/spin-slash": melee_spin_slash,
   "melee/sword-slash": melee_sword_slash,
   "melee/thrust": melee_thrust,
+  "melee/triple-slash": melee_triple_slash,
   "melee/uppercut": melee_uppercut,
   "melee/whip-crack": melee_whip_crack,
   "impacts/blunt-hit": impacts_blunt_hit,
@@ -417,6 +420,7 @@ export const effects = {
   "arcane/lacquer-ward": arcane_lacquer_ward,
   "arcane/magic-circle-cast": arcane_magic_circle_cast,
   "arcane/mana-burst": arcane_mana_burst,
+  "arcane/nacre-blades": arcane_nacre_blades,
   "arcane/portal": arcane_portal,
   "arcane/rune-circle": arcane_rune_circle,
   "arcane/spell-charge": arcane_spell_charge,
