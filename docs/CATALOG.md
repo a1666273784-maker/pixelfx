@@ -1,6 +1,6 @@
 # Catalog
 
-262 effects in 21 categories. Every one is a file in
+264 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -164,6 +164,7 @@ slashes, smears, cleaves, combos.
 | Spin slash | `melee/spin-slash` | one-shot 0.8s | 208×104 | The blade whirls once round the waist on a tilted plane, behind the body and back in front; the closed ring flares white, dissolves into a dotted trace and throws sparks. |
 | Sword slash | `melee/sword-slash` | one-shot 0.75s | 136×104 | A tilted crescent whips round in two frames, cools from white to deep blue as it trails off, glints at the tip and throws sparks. |
 | Thrust | `melee/thrust` | one-shot 0.75s | 196×76 | A piercing stab: a bundle of streaks shoots out from the hand to a point, a long four-point star flares at the tip with a pierce ring, sparks and speed lines. |
+| Triple slash | `melee/triple-slash` | one-shot 1.54s | 376×204 | An unbroken three-hit silver sword combo: a down-cut flows into a brighter rising backhand slash and a colossal 360-degree spin cleave that flashes white on impact. |
 | Uppercut | `melee/uppercut` | one-shot 0.85s | 132×128 | A crescent rises from the floor past the face, and at the top a comic impact star bursts: bold outline, hot core, burst lines, twinkles and sparks. |
 | Whip crack | `melee/whip-crack` | one-shot 0.85s | 192×80 | A whip rolls out to the right as a loop running down its length, faster and faster, until the tip flips over and cracks: a white pop, a ring of air, sparks and a puff of smoke. |
 
@@ -237,6 +238,7 @@ portals, runes, missiles, beams.
 | Lacquer ward | `arcane/lacquer-ward` | loop 3.6s | 268×144 | Black lacquer climbs from underfoot to coat the body in a mirror-gloss membrane with flowing golden huiwen, shattering heavy strikes in gold seals and glossy black splatter. |
 | Magic circle cast | `arcane/magic-circle-cast` | one-shot 3.9s | 200×220 | A circle draws itself on the floor, runes ignite one by one, it flashes, and a column of light fires up and breaks apart into glints. |
 | Mana burst | `arcane/mana-burst` | one-shot 1.8s | 208×150 | Energy rushes into a point and blows out in a white flash and rings, flinging glowing runes that flare and pop into sparks one after another. |
+| Nacre blades | `arcane/nacre-blades` | one-shot 2.95s | 412×208 | Three spinning mother-of-pearl discs with rainbow-glinting rims launch from a black-lacquer halo, cleaving the target and shattering into storms of iridescent flecks. |
 | Portal | `arcane/portal` | loop 2.4s | 152×116 | An upright rift: fibrous spiral arms wind down into the dark, a lit rim wobbles, motes and streaks are pulled in, the floor glows. |
 | Rune circle | `arcane/rune-circle` | loop 4s | 136×100 | A rune circle turns on the floor in perspective: a carousel of runes lit by chasing light, a turning square, ticks, motes rising off it. |
 | Spell charge | `arcane/spell-charge` | loop 1.6s | 120×86 | Energy gathers in the caster's hand: streaks and motes spiral in, rings collapse into a swelling orb that crackles with arcs, ready to fire. |
