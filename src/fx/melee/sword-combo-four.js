@@ -94,13 +94,20 @@ export const act = {
 };
 
 // ---------------------------------------------------------------- blade geometry
-// Four swings, each longer than the last (40 < 62 < 96 px), all silver-white.
-const S1 = swing({ cx: 6, cy: -24, R: 40, sy: 0.28, rot: 0.04, a0: -3.02, dir: 1 });
-const B1 = { ...S1, span: 2.45, W: 10, t0: 0.00, sweep: 0.05, hold: 0.05, trail: 0.14, hot: 0.30 };
-const S2 = swing({ cx: -2, cy: -36, R: 62, sy: 0.62, rot: -0.08, a0: -0.70, dir: -1 });
-const B2 = { ...S2, span: 3.30, W: 16, t0: 0.18, sweep: 0.07, hold: 0.06, trail: 0.17, hot: 0.50 };
-const S3 = swing({ cx: 14, cy: -18, R: 96, sy: 0.50, rot: 0.16, a0: -0.85, dir: 1 });
-const B3 = { ...S3, span: 2.30, W: 24, t0: 0.42, sweep: 0.08, hold: 0.06, trail: 0.20, hot: 0.70 };
+// Four swings, each longer than the last (34 < 56 < 84 px), all silver-white.
+// IMPORTANT: every swing's active arc keeps cos(a) > 0 (purely forward-facing, toward
+// the target at TX = 108) so the blades read as forward strikes, not rings around the character.
+const S1 = swing({ cx: 58, cy: -8, R: 34, sy: 0.28, rot: 0.02, a0: -1.00, dir: 1 });
+const B1 = { ...S1, span: 2.00, W: 10, t0: 0.00, sweep: 0.05, hold: 0.05, trail: 0.14, hot: 0.30 };
+// horizontal smear across the front (flat ellipse, cos(a) > 0 throughout)
+
+const S2 = swing({ cx: 52, cy: -32, R: 56, sy: 0.65, rot: -0.05, a0: 1.50, dir: -1 });
+const B2 = { ...S2, span: 2.90, W: 16, t0: 0.18, sweep: 0.07, hold: 0.06, trail: 0.17, hot: 0.50 };
+// over-the-head down-cut on the front face: up (a≈+π/2) → front (a≈0) → down (a≈-π/2)
+
+const S3 = swing({ cx: 28, cy: -18, R: 84, sy: 0.50, rot: 0.12, a0: -0.90, dir: 1 });
+const B3 = { ...S3, span: 1.80, W: 24, t0: 0.42, sweep: 0.08, hold: 0.06, trail: 0.20, hot: 0.70 };
+// long diagonal high-to-low severing line across the front (up-right → down-right)
 
 // Thrust: from the lunge hand through the target and past it — the longest blade of all.
 const THRUST = { x1: 176, y1: -20 };
