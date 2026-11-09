@@ -4,7 +4,7 @@
 
 # pixelfx.
 
-**<!-- count -->276<!-- /count --> pixel art effects and animations, every one a small piece of code.** Fire,
+**<!-- count -->278<!-- /count --> pixel art effects and animations, every one a small piece of code.** Fire,
 explosions, magic, weather, UI, pickups, critters and more. Play them live, recolor and mirror them, drop them into
 a browser game, or export sprite sheets for any engine. Plus a Claude Code skill that makes new ones the way a
 picky pixel artist would: draft, render, look, refine.
