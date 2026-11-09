@@ -1,6 +1,6 @@
 # Catalog
 
-265 effects in 21 categories. Every one is a file in
+267 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -34,6 +34,7 @@ torches, breath, pillars, walls of flame.
 | Brazier | `fire/brazier` | loop 3s | 112×148 | An iron bowl on a tripod heaped with glowing coals and a big roaring fire, sparks and embers streaming up off it, light on the iron and the floor. |
 | Campfire | `fire/campfire` | loop 3s | 128×128 | Crossed logs on a bed of coals and a lively fire: tongues that lick and leap, popping sparks, embers drifting up, smoke curling off, a warm pool of light. |
 | Candle | `fire/candle` | loop 4s | 56×76 | A wax candle in a brass dish: a calm flame with a blue root that sways and stretches, a halo of light, motes drifting in it, a bead of wax running down a drip. |
+| Dark crimson eruption | `fire/dark-crimson-eruption` | one-shot 2.6s | 320×216 | A dark-crimson omen ring sears the ground, six staggered pillars of black-rooted crimson fire burst from it, then collapse into falling embers over a cooling scorched ring. |
 | Fire breath | `fire/fire-breath` | loop 1.5s | 160×116 | A roaring cone of fire streaming right from the mouth: white-hot at the lips, billowing out and cooling to red and smoke at its edges, sparks thrown out ahead. |
 | Fire ring | `fire/fire-ring` | one-shot 3.9s | 224×128 | A white flash at the feet, then flames race outward along the floor in a ring, flaring as the front passes and burning down behind it over a smouldering scorch. |
 | Fire tornado | `fire/fire-tornado` | loop 2s | 120×152 | A spinning funnel of fire: spiral bands turning round it, licks flung off its sides, a ring of flame whirling at its foot, embers orbiting it in and out of view. |
@@ -153,6 +154,7 @@ slashes, smears, cleaves, combos.
 | Claw swipe | `melee/claw-swipe` | one-shot 0.9s | 128×96 | Three claw marks rake down one after another, white-hot, cooling through orange to red, then close up from both ends and leave a dotted scar, with hot flecks and drips. |
 | Crimson gold claw | `melee/crimson-gold-claw` | one-shot 2.5s | 340×224 | Giant beast claw combo: a sweeping gold-rimmed crimson 3-talon arc, a wide crimson-jade cross rend, and a rune slam raising three towering spiral fire pillars. |
 | Dagger flurry | `melee/dagger-flurry` | one-shot 0.95s | 148×104 | A flurry of small quick crescents at every angle in front of the fighter, each with a flick of sparks, finished by one big cut that glints and bursts. |
+| Dark crimson claw | `melee/dark-crimson-claw` | one-shot 2.26s | 368×236 | A colossal three-talon dark-crimson energy claw rakes down from overhead trailing phantoms; the hit ruptures crimson shards; three parallel molten scars smolder out. |
 | Double slash | `melee/double-slash` | one-shot 0.8s | 164×108 | A down cut, then an up cut that crosses it: the moment the X closes both strokes flash white, the crossing bursts with light and sparks, and a dotted X lingers. |
 | Ember claw | `melee/ember-claw` | one-shot 0.68s | 136×96 | Three staggered fiery claw arcs sweep from top-left to bottom-right as translucent heat trails, sparking a white-hot impact, a ring of ground embers and a fast-cooling flame. |
 | Flame slash | `melee/flame-slash` | one-shot 2.25s | 364×224 | A greatsword cleaves the floor to unleash an oppressive, scroll-carved crimson-gold flame crescent that scours the earth and erupts through the target in a roaring pillar of fire. |
