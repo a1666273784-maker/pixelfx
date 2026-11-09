@@ -18,6 +18,7 @@ import * as moves_sword_dash from "./moves/sword-dash.js";
 import * as fire_brazier from "./fire/brazier.js";
 import * as fire_campfire from "./fire/campfire.js";
 import * as fire_candle from "./fire/candle.js";
+import * as fire_crimson_eruption from "./fire/crimson-eruption.js";
 import * as fire_dark_crimson_eruption from "./fire/dark-crimson-eruption.js";
 import * as fire_fire_breath from "./fire/fire-breath.js";
 import * as fire_fire_ring from "./fire/fire-ring.js";
@@ -290,6 +291,7 @@ export const effects = {
   "fire/brazier": fire_brazier,
   "fire/campfire": fire_campfire,
   "fire/candle": fire_candle,
+  "fire/crimson-eruption": fire_crimson_eruption,
   "fire/dark-crimson-eruption": fire_dark_crimson_eruption,
   "fire/fire-breath": fire_fire_breath,
   "fire/fire-ring": fire_fire_ring,
