@@ -107,16 +107,18 @@ const DUMMY = new Uint32Array(TW * TH);
 export const SKINS = { flash: [TP.white, 1], char: [hex("#1a0c0e"), 0.72], ice: [hex("#a8e8ff"), 0.72], shadow: [hex("#3a1a70"), 0.5], holy: [hex("#fff4c0"), 0.5], red: [hex("#ff2040"), 0.45], shock: [hex("#8fd6ff"), 0.6], poison: [hex("#58c43a"), 0.5] };
 const STRAW = [TP.strawL, TP.straw, TP.straw, TP.burlapD, TP.burlapD];
 
-/** A straw target on a spring: it sways, flashes, takes a skin, shivers and sheds straw. (x, y): the floor under it, local space. */
+/** A straw target on a spring: it sways, flashes, takes a skin, shivers, skids on knockback and sways when dazed. (x, y): the floor under it, local space. */
 export class Target {
   constructor(x, seed = 5) {
-    Object.assign(this, { x, theta: 0, omega: 0, flashT: 0, skin: null, skinFade: 0, shiver: 0, clock: 0, R: new Rng(seed), straw: [] });
+    Object.assign(this, { x, x0: x, dx: 0, goalDx: 0, theta: 0, omega: 0, flashT: 0, skin: null, skinFade: 0, shiver: 0, daze: 0, clock: 0, R: new Rng(seed), straw: [] });
   }
-  hit({ push = 1.2, straw = 8, flash = 0.05, skin, shiver = 0, y = -26 } = {}) {
+  hit({ push = 1.2, straw = 8, flash = 0.05, skin, shiver = 0, slide, daze, y = -26 } = {}) {
     this.omega += push;
     this.flashT = Math.max(this.flashT, flash);
     if (skin !== undefined) this.skin = skin;
     if (shiver) this.shiver = shiver;
+    if (slide !== undefined) this.goalDx = slide;
+    if (daze !== undefined) this.daze = daze;
     const R = this.R;
     for (let k = 0; k < straw; k++) {
       const back = R.next() < 0.3;
@@ -127,8 +129,14 @@ export class Target {
     this.clock += dt;
     this.omega += (-60 * this.theta - 3.4 * this.omega) * dt;
     this.theta = clamp(this.theta + this.omega * dt, -0.4, 0.42);
+    if (this.dx !== this.goalDx) {
+      this.dx += (this.goalDx - this.dx) * (1 - Math.exp(-8.5 * dt));
+      if (Math.abs(this.goalDx - this.dx) < 0.04) this.dx = this.goalDx;
+      this.x = Math.round(this.x0 + this.dx);
+    }
     if (this.flashT > 0) this.flashT -= dt;
     if (this.shiver > 0) this.shiver -= dt;
+    if (this.daze > 0) this.daze = Math.max(0, this.daze - dt);
     for (const s of this.straw) {
       s.age += dt;
       s.vy += 210 * dt;
@@ -139,7 +147,8 @@ export class Target {
     this.straw = this.straw.filter((s) => s.age < s.life);
   }
   draw(C, W, H, X, Y, flip) {
-    const tan = Math.tan(this.theta), sv = this.shiver > 0 ? (Math.floor(this.clock * 30) & 1 ? 1 : -1) : 0, name = this.flashT > 0 ? "flash" : this.skin, sk = name ? SKINS[name] : null;
+    const dz = this.daze > 0 ? Math.sin(this.clock * 8.2) * Math.min(1, this.daze * 2.5) * 0.17 : 0;
+    const tan = Math.tan(this.theta + dz), sv = this.shiver > 0 ? (Math.floor(this.clock * 30) & 1 ? 1 : -1) : 0, name = this.flashT > 0 ? "flash" : this.skin, sk = name ? SKINS[name] : null;
     const base = X + (flip ? -this.x - 1 : this.x);
     for (let r = 0; r < TH; r++) {
       const o = Math.round((TH - 1 - r) * tan * 0.8) + sv;
@@ -460,7 +469,7 @@ export function actTiming(mod) {
     recovery: mod.meta?.loop ? 0 : Math.max(0, to - D),
     onBody: !!a.onBody,
     targets: (a.targets ?? (a.target ? [a.target] : [])).map((g) => g.x ?? 66),
-    hits: (a.hits ?? []).map((h) => ({ t: h.t, freeze: h.stop ?? 0, shake: h.shake ?? 0, amp: h.amp ?? 0, push: h.target === false ? 0 : h.push ?? 1.2, skin: h.skin, at: h.at })),
+    hits: (a.hits ?? []).map((h) => ({ t: h.t, freeze: h.stop ?? 0, shake: h.shake ?? 0, amp: h.amp ?? 0, push: h.target === false ? 0 : h.push ?? 1.2, ...(h.slide ? { slide: h.slide } : {}), ...(h.daze ? { daze: h.daze } : {}), skin: h.skin, at: h.at })),
     poses: (a.poses ?? []).map(([t, pose, how]) => ({ t, how: how ?? "smooth", pose })),
   };
 }
@@ -478,9 +487,11 @@ export function actBounds(mod) {
     for (let t = k[0][0]; t <= k[k.length - 1][0]; t += 1 / 12) see(poseAt(k, t));
     for (const key of k) see(key[1]);
   } else see(STAND);
+  const slides = (a?.hits ?? []).map((h) => h.slide ?? 0);
+  const minS = Math.min(0, ...slides), maxS = Math.max(0, ...slides);
   for (const g of a?.targets ?? (a?.target ? [a.target] : [])) {
     const tx = g.x ?? 66;
-    x0 = Math.min(x0, tx - 30); x1 = Math.max(x1, tx + 36); y0 = Math.min(y0, -56);
+    x0 = Math.min(x0, tx + minS - 30); x1 = Math.max(x1, tx + maxS + 36); y0 = Math.min(y0, -56);
   }
   return { x0, y0, x1, y1 };
 }
