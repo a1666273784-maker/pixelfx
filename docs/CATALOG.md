@@ -1,6 +1,6 @@
 # Catalog
 
-273 effects in 21 categories. Every one is a file in
+274 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -244,6 +244,7 @@ portals, runes, missiles, beams.
 | Lacquer ward | `arcane/lacquer-ward` | loop 3.6s | 268×144 | Black lacquer climbs from underfoot to coat the body in a mirror-gloss membrane with flowing golden huiwen, shattering heavy strikes in gold seals and glossy black splatter. |
 | Magic circle cast | `arcane/magic-circle-cast` | one-shot 3.9s | 200×220 | A circle draws itself on the floor, runes ignite one by one, it flashes, and a column of light fires up and breaks apart into glints. |
 | Mana burst | `arcane/mana-burst` | one-shot 1.8s | 208×150 | Energy rushes into a point and blows out in a white flash and rings, flinging glowing runes that flare and pop into sparks one after another. |
+| Monster missile | `arcane/monster-missile` | one-shot 1.9s | 320×200 | A horned demon phantom looms over the caster as a colossal violet magic missile charges, then blasts straight into the enemy, engulfing them in purple fire, shards and shock rings. |
 | Nacre blades | `arcane/nacre-blades` | one-shot 2.95s | 412×208 | Three spinning mother-of-pearl discs with rainbow-glinting rims launch from a black-lacquer halo, cleaving the target and shattering into storms of iridescent flecks. |
 | Portal | `arcane/portal` | loop 2.4s | 152×116 | An upright rift: fibrous spiral arms wind down into the dark, a lit rim wobbles, motes and streaks are pulled in, the floor glows. |
 | Rune circle | `arcane/rune-circle` | loop 4s | 136×100 | A rune circle turns on the floor in perspective: a carousel of runes lit by chasing light, a turning square, ticks, motes rising off it. |
