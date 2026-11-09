@@ -1,6 +1,6 @@
 # Catalog
 
-282 effects in 21 categories. Every one is a file in
+284 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -27,6 +27,7 @@ whole attacks, wind-up to recovery, chained from the effects below.
 | Rocket launcher | `moves/rocket-launcher` | one-shot 6.56s | 480×244 | He drops to one knee, shoulders the tube and fires: the kick shoves him back along the floor, the rocket crawls out on its jet and the target goes up. |
 | Rockfall call | `moves/rockfall-call` | one-shot 7.16s | 480×268 | He reaches skyward, tears both hands down and stamps a glowing rift into the floor; a storm-dust pall gathers and an avalanche of boulders and monoliths pounds the target. |
 | Shadow wood spike | `moves/shadow-wood-spike` | one-shot 2.95s | 324×204 | Purple-black smoke and churning dirt warn for 0.5s before a deadwood shadow spike impales the target with a shadow shockwave and scattering wood splinters. |
+| Swarm mist bolt | `moves/swarm-mist-bolt` | one-shot 2.65s | 424×208 | Black smoke disperses to launch a compact black-dot insect swarm in dark-crimson miasma, dropping stray specks before exploding into black chitin and gnawing blood-light. |
 | Sword combo | `moves/sword-combo` | one-shot 2.98s | 264×150 | Three strokes walking forward: a slash, a crossing double cut, and a two-handed cleave into the floor that throws the target about. |
 | Sword dash | `moves/sword-dash` | one-shot 2.04s | 444×148 | A ponytail wuxia swordsman crouches low and sprints forward, leaving three fading silver phantoms and white foot-streams before lightly tapping his sword tip to the stone. |
 | Venom spit | `moves/venom-spit` | one-shot 3.1s | 408×204 | Coils and spits a serrated acid fang to poison the target, then blasts a colossal fanged venom orb that erupts in an acid crown, melting drips, and a boiling etched pit. |
@@ -334,6 +335,7 @@ poison, vines, thorns, quakes.
 | Root snare | `nature/root-snare` | one-shot 2.7s | 128×96 | The floor cracks and roots burst up round the character, spiralling round its legs; they cinch tight with a snap, hold, then crack and crumble into bark and dust. |
 | Seismic wave | `nature/seismic-wave` | one-shot 3.2s | 416×240 | A tectonic slam hurls shattered boulders skyward and drives a supersonic ground-quake wave through heaving bedrock crags into a target-shattering hit burst. |
 | Spore burst | `nature/spore-burst` | one-shot 3.2s | 212×132 | A toadstool pushes up, swells and trembles as its gills glow, then squashes and puffs a lumpy cloud of glowing spores that billows up and drifts down twinkling. |
+| Thorn lash | `nature/thorn-lash` | one-shot 1.7s | 320×168 | A coiled crack snaps a thin S-curved thorn-whip arc of dark green, bark-edged light forward; it sheds thorn glints and leaves a diagonal rend bursting emerald and dark-red sparks. |
 | Thorns | `nature/thorns` | one-shot 2.4s | 232×92 | A seam races along the floor and hooked thorns punch up out of it one after another, each bigger than the last, in bursts of dirt and green light; they hold, then sink. |
 | Tornado | `nature/tornado` | loop 2s | 196×168 | A snaking funnel of spinning wind bands under a flared, churning top that flickers with lightning; leaves and debris whirl round it front and back, dust boils at its foot. |
 | Toxic puddle | `nature/toxic-puddle` | loop 4s | 176×100 | Black tar lit from inside by chartreuse veins and a glowing rim, an oily sheen drifting on it; glossy bubbles dome, stretch and pop, vapour curls up in fraying ribbons. |

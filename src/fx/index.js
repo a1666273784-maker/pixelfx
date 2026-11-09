@@ -18,6 +18,7 @@ import * as moves_poison_sting_volley from "./moves/poison-sting-volley.js";
 import * as moves_rocket_launcher from "./moves/rocket-launcher.js";
 import * as moves_rockfall_call from "./moves/rockfall-call.js";
 import * as moves_shadow_wood_spike from "./moves/shadow-wood-spike.js";
+import * as moves_swarm_mist_bolt from "./moves/swarm-mist-bolt.js";
 import * as moves_sword_combo from "./moves/sword-combo.js";
 import * as moves_sword_dash from "./moves/sword-dash.js";
 import * as moves_venom_spit from "./moves/venom-spit.js";
@@ -220,6 +221,7 @@ import * as nature_rockfall from "./nature/rockfall.js";
 import * as nature_root_snare from "./nature/root-snare.js";
 import * as nature_seismic_wave from "./nature/seismic-wave.js";
 import * as nature_spore_burst from "./nature/spore-burst.js";
+import * as nature_thorn_lash from "./nature/thorn-lash.js";
 import * as nature_thorns from "./nature/thorns.js";
 import * as nature_tornado from "./nature/tornado.js";
 import * as nature_toxic_puddle from "./nature/toxic-puddle.js";
@@ -304,6 +306,7 @@ export const effects = {
   "moves/rocket-launcher": moves_rocket_launcher,
   "moves/rockfall-call": moves_rockfall_call,
   "moves/shadow-wood-spike": moves_shadow_wood_spike,
+  "moves/swarm-mist-bolt": moves_swarm_mist_bolt,
   "moves/sword-combo": moves_sword_combo,
   "moves/sword-dash": moves_sword_dash,
   "moves/venom-spit": moves_venom_spit,
@@ -506,6 +509,7 @@ export const effects = {
   "nature/root-snare": nature_root_snare,
   "nature/seismic-wave": nature_seismic_wave,
   "nature/spore-burst": nature_spore_burst,
+  "nature/thorn-lash": nature_thorn_lash,
   "nature/thorns": nature_thorns,
   "nature/tornado": nature_tornado,
   "nature/toxic-puddle": nature_toxic_puddle,
