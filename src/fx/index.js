@@ -124,6 +124,7 @@ import * as impacts_heavy_landing from "./impacts/heavy-landing.js";
 import * as impacts_hit_flash from "./impacts/hit-flash.js";
 import * as impacts_hit_spark from "./impacts/hit-spark.js";
 import * as impacts_impact_frame from "./impacts/impact-frame.js";
+import * as impacts_monster_twin_hit from "./impacts/monster-twin-hit.js";
 import * as impacts_parry from "./impacts/parry.js";
 import * as impacts_ricochet from "./impacts/ricochet.js";
 import * as impacts_shield_block from "./impacts/shield-block.js";
@@ -404,6 +405,7 @@ export const effects = {
   "impacts/hit-flash": impacts_hit_flash,
   "impacts/hit-spark": impacts_hit_spark,
   "impacts/impact-frame": impacts_impact_frame,
+  "impacts/monster-twin-hit": impacts_monster_twin_hit,
   "impacts/parry": impacts_parry,
   "impacts/ricochet": impacts_ricochet,
   "impacts/shield-block": impacts_shield_block,
