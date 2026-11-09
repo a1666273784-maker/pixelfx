@@ -16,6 +16,7 @@ import * as moves_rocket_launcher from "./moves/rocket-launcher.js";
 import * as moves_rockfall_call from "./moves/rockfall-call.js";
 import * as moves_sword_combo from "./moves/sword-combo.js";
 import * as moves_sword_dash from "./moves/sword-dash.js";
+import * as moves_venom_spit from "./moves/venom-spit.js";
 import * as fire_brazier from "./fire/brazier.js";
 import * as fire_campfire from "./fire/campfire.js";
 import * as fire_candle from "./fire/candle.js";
@@ -214,6 +215,7 @@ import * as nature_spore_burst from "./nature/spore-burst.js";
 import * as nature_thorns from "./nature/thorns.js";
 import * as nature_tornado from "./nature/tornado.js";
 import * as nature_toxic_puddle from "./nature/toxic-puddle.js";
+import * as nature_venom_deluge from "./nature/venom-deluge.js";
 import * as nature_vine_whip from "./nature/vine-whip.js";
 import * as weather_aurora from "./weather/aurora.js";
 import * as weather_blizzard from "./weather/blizzard.js";
@@ -292,6 +294,7 @@ export const effects = {
   "moves/rockfall-call": moves_rockfall_call,
   "moves/sword-combo": moves_sword_combo,
   "moves/sword-dash": moves_sword_dash,
+  "moves/venom-spit": moves_venom_spit,
   "fire/brazier": fire_brazier,
   "fire/campfire": fire_campfire,
   "fire/candle": fire_candle,
@@ -490,6 +493,7 @@ export const effects = {
   "nature/thorns": nature_thorns,
   "nature/tornado": nature_tornado,
   "nature/toxic-puddle": nature_toxic_puddle,
+  "nature/venom-deluge": nature_venom_deluge,
   "nature/vine-whip": nature_vine_whip,
   "weather/aurora": weather_aurora,
   "weather/blizzard": weather_blizzard,
