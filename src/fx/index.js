@@ -13,6 +13,7 @@ import * as moves_ice_lance_throw from "./moves/ice-lance-throw.js";
 import * as moves_lacquer_fan_combo from "./moves/lacquer-fan-combo.js";
 import * as moves_lightning_call from "./moves/lightning-call.js";
 import * as moves_meteor_call from "./moves/meteor-call.js";
+import * as moves_miasma_surge from "./moves/miasma-surge.js";
 import * as moves_moss_boulder_throw from "./moves/moss-boulder-throw.js";
 import * as moves_pistol_shots from "./moves/pistol-shots.js";
 import * as moves_poison_sting_volley from "./moves/poison-sting-volley.js";
@@ -217,6 +218,7 @@ import * as nature_boulder from "./nature/boulder.js";
 import * as nature_earth_spike from "./nature/earth-spike.js";
 import * as nature_healing_bloom from "./nature/healing-bloom.js";
 import * as nature_leaf_storm from "./nature/leaf-storm.js";
+import * as nature_miasma_wave from "./nature/miasma-wave.js";
 import * as nature_poison_cloud from "./nature/poison-cloud.js";
 import * as nature_quake from "./nature/quake.js";
 import * as nature_rockfall from "./nature/rockfall.js";
@@ -303,6 +305,7 @@ export const effects = {
   "moves/lacquer-fan-combo": moves_lacquer_fan_combo,
   "moves/lightning-call": moves_lightning_call,
   "moves/meteor-call": moves_meteor_call,
+  "moves/miasma-surge": moves_miasma_surge,
   "moves/moss-boulder-throw": moves_moss_boulder_throw,
   "moves/pistol-shots": moves_pistol_shots,
   "moves/poison-sting-volley": moves_poison_sting_volley,
@@ -507,6 +510,7 @@ export const effects = {
   "nature/earth-spike": nature_earth_spike,
   "nature/healing-bloom": nature_healing_bloom,
   "nature/leaf-storm": nature_leaf_storm,
+  "nature/miasma-wave": nature_miasma_wave,
   "nature/poison-cloud": nature_poison_cloud,
   "nature/quake": nature_quake,
   "nature/rockfall": nature_rockfall,

@@ -4,7 +4,7 @@
 
 # pixelfx.
 
-**<!-- count -->286<!-- /count --> pixel art effects and animations, every one a small piece of code.** Fire,
+**<!-- count -->288<!-- /count --> pixel art effects and animations, every one a small piece of code.** Fire,
 explosions, magic, weather, UI, pickups, critters and more. Play them live, recolor and mirror them, drop them into
 a browser game, or export sprite sheets for any engine. Plus a Claude Code skill that makes new ones the way a
 picky pixel artist would: draft, render, look, refine.
@@ -26,7 +26,7 @@ the idea at library scale, with a skill to keep going.
 <!-- catalog -->
 | category | effects | some of them |
 |---|---|---|
-| **moves** | 24 | arrow shot, carapace spike burst, coldflame fireball, dash strike, earth stomp, fireball throw… |
+| **moves** | 25 | arrow shot, carapace spike burst, coldflame fireball, dash strike, earth stomp, fireball throw… |
 | **fire** | 20 | brazier, campfire, candle, crimson eruption, dark crimson eruption, fire breath… |
 | **explosions** | 12 | barrel explosion, big explosion, cartoon pow, dirt explosion, firework burst, firework rocket… |
 | **water** | 12 | bubbles, drip, fountain, geyser, rain splash, ripples… |
@@ -41,7 +41,7 @@ the idea at library scale, with a skill to keep going.
 | **holy** | 10 | blessing, divine shield, feather burst, halo, heal, healing ring… |
 | **shadow** | 14 | black hole, crimson vortex, curse, dark explosion, eclipse, ghostfire strike… |
 | **status** | 13 | bleeding, burning, charmed, confused, cursed, frozen… |
-| **nature** | 17 | acid splash, boulder, earth spike, healing bloom, leaf storm, poison cloud… |
+| **nature** | 18 | acid splash, boulder, earth spike, healing bloom, leaf storm, miasma wave… |
 | **weather** | 12 | aurora, blizzard, cherry blossoms, clouds, falling leaves, fireflies… |
 | **ui** | 12 | achievement, coin collect, combo counter, confetti, countdown, crit number… |
 | **pickups** | 11 | chest open, coin spin, collect burst, crystal shard, gem spin, heart pickup… |
