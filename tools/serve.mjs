@@ -26,4 +26,4 @@ createServer(async (req, res) => {
   } catch {
     res.writeHead(404).end("not found");
   }
-}).listen(PORT, () => console.log(`gallery: http://localhost:${PORT}/gallery/`));
+}).listen(PORT, "0.0.0.0", () => console.log(`gallery: http://0.0.0.0:${PORT}/gallery/`));
