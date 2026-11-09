@@ -1,6 +1,6 @@
 # Catalog
 
-276 effects in 21 categories. Every one is a file in
+278 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -26,6 +26,7 @@ whole attacks, wind-up to recovery, chained from the effects below.
 | Sword combo | `moves/sword-combo` | one-shot 2.98s | 264×150 | Three strokes walking forward: a slash, a crossing double cut, and a two-handed cleave into the floor that throws the target about. |
 | Sword dash | `moves/sword-dash` | one-shot 2.04s | 444×148 | A ponytail wuxia swordsman crouches low and sprints forward, leaving three fading silver phantoms and white foot-streams before lightly tapping his sword tip to the stone. |
 | Venom spit | `moves/venom-spit` | one-shot 3.1s | 408×204 | Coils and spits a serrated acid fang to poison the target, then blasts a colossal fanged venom orb that erupts in an acid crown, melting drips, and a boiling etched pit. |
+| Web snare | `moves/web-snare` | one-shot 2.75s | 416×224 | Hurls a sharp double-pointed silk needle wrapped in spinning threads that explodes into a complete spiderweb pinning the struck target. |
 
 ## fire
 
