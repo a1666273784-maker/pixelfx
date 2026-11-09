@@ -4,7 +4,7 @@
 
 # pixelfx.
 
-**<!-- count -->270<!-- /count --> pixel art effects and animations, every one a small piece of code.** Fire,
+**<!-- count -->271<!-- /count --> pixel art effects and animations, every one a small piece of code.** Fire,
 explosions, magic, weather, UI, pickups, critters and more. Play them live, recolor and mirror them, drop them into
 a browser game, or export sprite sheets for any engine. Plus a Claude Code skill that makes new ones the way a
 picky pixel artist would: draft, render, look, refine.
@@ -41,7 +41,7 @@ the idea at library scale, with a skill to keep going.
 | **holy** | 10 | blessing, divine shield, feather burst, halo, heal, healing ring… |
 | **shadow** | 13 | black hole, crimson vortex, curse, dark explosion, eclipse, grasping hands… |
 | **status** | 13 | bleeding, burning, charmed, confused, cursed, frozen… |
-| **nature** | 14 | acid splash, boulder, earth spike, healing bloom, leaf storm, poison cloud… |
+| **nature** | 15 | acid splash, boulder, earth spike, healing bloom, leaf storm, poison cloud… |
 | **weather** | 12 | aurora, blizzard, cherry blossoms, clouds, falling leaves, fireflies… |
 | **ui** | 12 | achievement, coin collect, combo counter, confetti, countdown, crit number… |
 | **pickups** | 11 | chest open, coin spin, collect burst, crystal shard, gem spin, heart pickup… |
