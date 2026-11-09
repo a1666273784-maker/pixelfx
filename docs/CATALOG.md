@@ -1,6 +1,6 @@
 # Catalog
 
-268 effects in 21 categories. Every one is a file in
+269 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -34,6 +34,7 @@ torches, breath, pillars, walls of flame.
 | Brazier | `fire/brazier` | loop 3s | 112×148 | An iron bowl on a tripod heaped with glowing coals and a big roaring fire, sparks and embers streaming up off it, light on the iron and the floor. |
 | Campfire | `fire/campfire` | loop 3s | 128×128 | Crossed logs on a bed of coals and a lively fire: tongues that lick and leap, popping sparks, embers drifting up, smoke curling off, a warm pool of light. |
 | Candle | `fire/candle` | loop 4s | 56×76 | A wax candle in a brass dish: a calm flame with a blue root that sways and stretches, a halo of light, motes drifting in it, a bead of wax running down a drip. |
+| Crimson eruption | `fire/crimson-eruption` | one-shot 3.8s | 308×228 | A jagged ring of dark-red omen fire cracks the stone floor, six staggered pillars erupt from black roots to bright-red crowns with a hit burst, then rain dark-red embers. |
 | Dark crimson eruption | `fire/dark-crimson-eruption` | one-shot 2.6s | 320×216 | A dark-crimson omen ring sears the ground, six staggered pillars of black-rooted crimson fire burst from it, then collapse into falling embers over a cooling scorched ring. |
 | Fire breath | `fire/fire-breath` | loop 1.5s | 160×116 | A roaring cone of fire streaming right from the mouth: white-hot at the lips, billowing out and cooling to red and smoke at its edges, sparks thrown out ahead. |
 | Fire ring | `fire/fire-ring` | one-shot 3.9s | 224×128 | A white flash at the feet, then flames race outward along the floor in a ring, flaring as the front passes and burning down behind it over a smouldering scorch. |
