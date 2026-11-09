@@ -1,6 +1,6 @@
 # Catalog
 
-265 effects in 21 categories. Every one is a file in
+266 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -163,6 +163,7 @@ slashes, smears, cleaves, combos.
 | Scythe reap | `melee/scythe-reap` | one-shot 2.1s | 184×116 | A slow, huge dark crescent reaps round the front with a pale ghostly edge; it hangs, then tears away from the tail into curling wisps and cold vapour. |
 | Spear sweep | `melee/spear-sweep` | one-shot 1.5s | 216×84 | A wide low sweep at shin height: a long flat crescent swings from behind the legs round the front, and the wind of it kicks a wake of dust and grit along the floor. |
 | Spin slash | `melee/spin-slash` | one-shot 0.8s | 208×104 | The blade whirls once round the waist on a tilted plane, behind the body and back in front; the closed ring flares white, dissolves into a dotted trace and throws sparks. |
+| Silver quartet | `melee/sword-combo-four` | one-shot 1.62s | 460×300 | Four silver-white strikes in one breath: horizontal cut, windmill down-cut over the head, long diagonal severing line, thrust flashing white on contact. |
 | Sword slash | `melee/sword-slash` | one-shot 0.75s | 136×104 | A tilted crescent whips round in two frames, cools from white to deep blue as it trails off, glints at the tip and throws sparks. |
 | Thrust | `melee/thrust` | one-shot 0.75s | 196×76 | A piercing stab: a bundle of streaks shoots out from the hand to a point, a long four-point star flares at the tip with a pierce ring, sparks and speed lines. |
 | Triple slash | `melee/triple-slash` | one-shot 1.54s | 376×204 | An unbroken three-hit silver sword combo: a down-cut flows into a brighter rising backhand slash and a colossal 360-degree spin cleave that flashes white on impact. |

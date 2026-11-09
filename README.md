@@ -4,7 +4,7 @@
 
 # pixelfx.
 
-**<!-- count -->265<!-- /count --> pixel art effects and animations, every one a small piece of code.** Fire,
+**<!-- count -->266<!-- /count --> pixel art effects and animations, every one a small piece of code.** Fire,
 explosions, magic, weather, UI, pickups, critters and more. Play them live, recolor and mirror them, drop them into
 a browser game, or export sprite sheets for any engine. Plus a Claude Code skill that makes new ones the way a
 picky pixel artist would: draft, render, look, refine.
@@ -33,7 +33,7 @@ the idea at library scale, with a skill to keep going.
 | **ice** | 12 | blizzard vortex, freeze, frost breath, frost nova, frost tread, ice burst… |
 | **lightning** | 11 | ball lightning, chain lightning, charge up, electrified, lightning strike, plasma ball… |
 | **sci-fi** | 12 | emp blast, energy core, force field, glitch, hologram, jetpack… |
-| **melee** | 18 | claw swipe, crimson gold claw, dagger flurry, double slash, ember claw, flame slash… |
+| **melee** | 19 | claw swipe, crimson gold claw, dagger flurry, double slash, ember claw, flame slash… |
 | **impacts** | 11 | blunt hit, bullet impact, critical hit, ground slam, heavy landing, hit flash… |
 | **projectiles** | 14 | arrow, bullet tracer, cannon shot, energy disc, signal flare, homing missile… |
 | **spawn & death** | 10 | coin drop, disintegrate, dissolve burn, egg hatch, poof, respawn beam… |
