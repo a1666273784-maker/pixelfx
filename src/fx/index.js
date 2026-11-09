@@ -209,6 +209,7 @@ import * as nature_poison_cloud from "./nature/poison-cloud.js";
 import * as nature_quake from "./nature/quake.js";
 import * as nature_rockfall from "./nature/rockfall.js";
 import * as nature_root_snare from "./nature/root-snare.js";
+import * as nature_seismic_wave from "./nature/seismic-wave.js";
 import * as nature_spore_burst from "./nature/spore-burst.js";
 import * as nature_thorns from "./nature/thorns.js";
 import * as nature_tornado from "./nature/tornado.js";
@@ -484,6 +485,7 @@ export const effects = {
   "nature/quake": nature_quake,
   "nature/rockfall": nature_rockfall,
   "nature/root-snare": nature_root_snare,
+  "nature/seismic-wave": nature_seismic_wave,
   "nature/spore-burst": nature_spore_burst,
   "nature/thorns": nature_thorns,
   "nature/tornado": nature_tornado,
