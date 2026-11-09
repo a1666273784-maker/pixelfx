@@ -219,6 +219,7 @@ import * as nature_rockfall from "./nature/rockfall.js";
 import * as nature_root_snare from "./nature/root-snare.js";
 import * as nature_seismic_wave from "./nature/seismic-wave.js";
 import * as nature_spore_burst from "./nature/spore-burst.js";
+import * as nature_thorn_lash from "./nature/thorn-lash.js";
 import * as nature_thorns from "./nature/thorns.js";
 import * as nature_tornado from "./nature/tornado.js";
 import * as nature_toxic_puddle from "./nature/toxic-puddle.js";
@@ -504,6 +505,7 @@ export const effects = {
   "nature/root-snare": nature_root_snare,
   "nature/seismic-wave": nature_seismic_wave,
   "nature/spore-burst": nature_spore_burst,
+  "nature/thorn-lash": nature_thorn_lash,
   "nature/thorns": nature_thorns,
   "nature/tornado": nature_tornado,
   "nature/toxic-puddle": nature_toxic_puddle,

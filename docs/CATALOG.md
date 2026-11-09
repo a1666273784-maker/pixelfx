@@ -1,6 +1,6 @@
 # Catalog
 
-281 effects in 21 categories. Every one is a file in
+282 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -333,6 +333,7 @@ poison, vines, thorns, quakes.
 | Root snare | `nature/root-snare` | one-shot 2.7s | 128×96 | The floor cracks and roots burst up round the character, spiralling round its legs; they cinch tight with a snap, hold, then crack and crumble into bark and dust. |
 | Seismic wave | `nature/seismic-wave` | one-shot 3.2s | 416×240 | A tectonic slam hurls shattered boulders skyward and drives a supersonic ground-quake wave through heaving bedrock crags into a target-shattering hit burst. |
 | Spore burst | `nature/spore-burst` | one-shot 3.2s | 212×132 | A toadstool pushes up, swells and trembles as its gills glow, then squashes and puffs a lumpy cloud of glowing spores that billows up and drifts down twinkling. |
+| Thorn lash | `nature/thorn-lash` | one-shot 1.7s | 320×168 | A coiled crack snaps a thin S-curved thorn-whip arc of dark green, bark-edged light forward; it sheds thorn glints and leaves a diagonal rend bursting emerald and dark-red sparks. |
 | Thorns | `nature/thorns` | one-shot 2.4s | 232×92 | A seam races along the floor and hooked thorns punch up out of it one after another, each bigger than the last, in bursts of dirt and green light; they hold, then sink. |
 | Tornado | `nature/tornado` | loop 2s | 196×168 | A snaking funnel of spinning wind bands under a flared, churning top that flickers with lightning; leaves and debris whirl round it front and back, dust boils at its foot. |
 | Toxic puddle | `nature/toxic-puddle` | loop 4s | 176×100 | Black tar lit from inside by chartreuse veins and a glowing rim, an oily sheen drifting on it; glossy bubbles dome, stretch and pop, vapour curls up in fraying ribbons. |
