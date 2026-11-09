@@ -4,6 +4,7 @@ import * as moves_arrow_shot from "./moves/arrow-shot.js";
 import * as moves_dash_strike from "./moves/dash-strike.js";
 import * as moves_earth_stomp from "./moves/earth-stomp.js";
 import * as moves_fireball_throw from "./moves/fireball-throw.js";
+import * as moves_flame_wheel from "./moves/flame-wheel.js";
 import * as moves_ground_pound from "./moves/ground-pound.js";
 import * as moves_holy_smite from "./moves/holy-smite.js";
 import * as moves_ice_lance_throw from "./moves/ice-lance-throw.js";
@@ -278,6 +279,7 @@ export const effects = {
   "moves/dash-strike": moves_dash_strike,
   "moves/earth-stomp": moves_earth_stomp,
   "moves/fireball-throw": moves_fireball_throw,
+  "moves/flame-wheel": moves_flame_wheel,
   "moves/ground-pound": moves_ground_pound,
   "moves/holy-smite": moves_holy_smite,
   "moves/ice-lance-throw": moves_ice_lance_throw,

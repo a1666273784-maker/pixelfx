@@ -1,6 +1,6 @@
 # Catalog
 
-270 effects in 21 categories. Every one is a file in
+271 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -13,6 +13,7 @@ whole attacks, wind-up to recovery, chained from the effects below.
 | Dash strike | `moves/dash-strike` | one-shot 2.3s | 372×156 | A crouch, then he's across the floor in a blur of after-images and already cutting: a critical hit, a beat, and he hops back to where he started. |
 | Earth stomp | `moves/earth-stomp` | one-shot 3.46s | 290×142 | A knee comes up, the boot slams down, the floor heaves under the target and a stone spike rams up through it. |
 | Fireball throw | `moves/fireball-throw` | one-shot 6.81s | 356×244 | He gathers fire in his hand, leans back and hurls it: the ball flies, the target takes it in a blast and comes out charred. |
+| Flame wheel | `moves/flame-wheel` | one-shot 2.85s | 400×196 | Gathers an incandescent serrated fire wheel, hurls it hurtling along the ground in whirling flame arcs, grinds into the target, and erupts in an oppressive molten blast. |
 | Ground pound | `moves/ground-pound` | one-shot 3.82s | 304×204 | He coils, leaps out of frame height, hangs, and comes down like a rock: the floor cracks, shock waves race out and throw the target about as they pass. |
 | Holy smite | `moves/holy-smite` | one-shot 2.8s | 252×182 | Both hands go up and a glint marks the target; he brings them down and a bolt of light drops like a hammer, leaving the target blanched. |
 | Ice lance throw | `moves/ice-lance-throw` | one-shot 4.34s | 310×136 | Frost gathers into a spear in his hand, he throws it like a javelin, and the target ices over in a burst of snowflakes and shivers. |
