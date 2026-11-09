@@ -18,6 +18,8 @@ import * as moves_sword_dash from "./moves/sword-dash.js";
 import * as fire_brazier from "./fire/brazier.js";
 import * as fire_campfire from "./fire/campfire.js";
 import * as fire_candle from "./fire/candle.js";
+import * as fire_crimson_eruption from "./fire/crimson-eruption.js";
+import * as fire_dark_crimson_eruption from "./fire/dark-crimson-eruption.js";
 import * as fire_fire_breath from "./fire/fire-breath.js";
 import * as fire_fire_ring from "./fire/fire-ring.js";
 import * as fire_fire_tornado from "./fire/fire-tornado.js";
@@ -95,6 +97,7 @@ import * as scifi_warp_out from "./scifi/warp-out.js";
 import * as melee_claw_swipe from "./melee/claw-swipe.js";
 import * as melee_crimson_gold_claw from "./melee/crimson-gold-claw.js";
 import * as melee_dagger_flurry from "./melee/dagger-flurry.js";
+import * as melee_dark_crimson_claw from "./melee/dark-crimson-claw.js";
 import * as melee_double_slash from "./melee/double-slash.js";
 import * as melee_ember_claw from "./melee/ember-claw.js";
 import * as melee_flame_slash from "./melee/flame-slash.js";
@@ -289,6 +292,8 @@ export const effects = {
   "fire/brazier": fire_brazier,
   "fire/campfire": fire_campfire,
   "fire/candle": fire_candle,
+  "fire/crimson-eruption": fire_crimson_eruption,
+  "fire/dark-crimson-eruption": fire_dark_crimson_eruption,
   "fire/fire-breath": fire_fire_breath,
   "fire/fire-ring": fire_fire_ring,
   "fire/fire-tornado": fire_fire_tornado,
@@ -366,6 +371,7 @@ export const effects = {
   "melee/claw-swipe": melee_claw_swipe,
   "melee/crimson-gold-claw": melee_crimson_gold_claw,
   "melee/dagger-flurry": melee_dagger_flurry,
+  "melee/dark-crimson-claw": melee_dark_crimson_claw,
   "melee/double-slash": melee_double_slash,
   "melee/ember-claw": melee_ember_claw,
   "melee/flame-slash": melee_flame_slash,
