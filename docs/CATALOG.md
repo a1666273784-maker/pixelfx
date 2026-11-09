@@ -1,6 +1,6 @@
 # Catalog
 
-280 effects in 21 categories. Every one is a file in
+281 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -25,6 +25,7 @@ whole attacks, wind-up to recovery, chained from the effects below.
 | Poison sting volley | `moves/poison-sting-volley` | one-shot 1.9s | 360×184 | Three hair-thin glowing wood-thorn needles whip out of a thorn halo at blinding speed, stick in the enemy and pop into bright green-violet cross sparks with leaking poison smoke. |
 | Rocket launcher | `moves/rocket-launcher` | one-shot 6.56s | 480×244 | He drops to one knee, shoulders the tube and fires: the kick shoves him back along the floor, the rocket crawls out on its jet and the target goes up. |
 | Rockfall call | `moves/rockfall-call` | one-shot 7.16s | 480×268 | He reaches skyward, tears both hands down and stamps a glowing rift into the floor; a storm-dust pall gathers and an avalanche of boulders and monoliths pounds the target. |
+| Shadow wood spike | `moves/shadow-wood-spike` | one-shot 2.95s | 324×204 | Purple-black smoke and churning dirt warn for 0.5s before a deadwood shadow spike impales the target with a shadow shockwave and scattering wood splinters. |
 | Sword combo | `moves/sword-combo` | one-shot 2.98s | 264×150 | Three strokes walking forward: a slash, a crossing double cut, and a two-handed cleave into the floor that throws the target about. |
 | Sword dash | `moves/sword-dash` | one-shot 2.04s | 444×148 | A ponytail wuxia swordsman crouches low and sprints forward, leaving three fading silver phantoms and white foot-streams before lightly tapping his sword tip to the stone. |
 | Venom spit | `moves/venom-spit` | one-shot 3.1s | 408×204 | Coils and spits a serrated acid fang to poison the target, then blasts a colossal fanged venom orb that erupts in an acid crown, melting drips, and a boiling etched pit. |
