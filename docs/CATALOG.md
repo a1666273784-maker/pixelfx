@@ -1,6 +1,6 @@
 # Catalog
 
-266 effects in 21 categories. Every one is a file in
+267 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -271,6 +271,7 @@ curses, voids, tendrils, souls.
 | effect | id | | size | what it does |
 |---|---|---|---|---|
 | Black hole | `shadow/black-hole` | loop 4s | 184×132 | A tilted disk of banded rings turns round a black hole, its far side bent up over the top and under the bottom; debris spirals in, stretches and is swallowed. |
+| Crimson vortex | `shadow/crimson-vortex` | one-shot 1.92s | 300×300 | A pitch-black dark-red vortex pulls shards and airflow inward, compresses tight, and bursts into radial dark-red spikes with hit-confirm cleave and rupture effects. |
 | Curse | `shadow/curse` | one-shot 3.4s | 112×124 | Wisps gather over the head, a skull stamps down with a flash, its eyes burn as the curse floods the body violet, then it cracks and crumbles. |
 | Dark explosion | `shadow/dark-explosion` | one-shot 3.8s | 280×248 | Motes swirl into a pulsing core, a black star cuts across a violet-white flash, and a black sphere burns at the rim, throws lit shards and smoke, then collapses. |
 | Eclipse | `shadow/eclipse` | loop 4s | 160×144 | A black moon over the sun: a breathing pearl corona with long streamers, a thin white rim, and one diamond bead blazing on its edge. |
