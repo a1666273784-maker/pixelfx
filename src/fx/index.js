@@ -174,6 +174,7 @@ import * as holy_resurrection from "./holy/resurrection.js";
 import * as holy_smite from "./holy/smite.js";
 import * as holy_sunburst from "./holy/sunburst.js";
 import * as shadow_black_hole from "./shadow/black-hole.js";
+import * as shadow_crimson_vortex from "./shadow/crimson-vortex.js";
 import * as shadow_curse from "./shadow/curse.js";
 import * as shadow_dark_explosion from "./shadow/dark-explosion.js";
 import * as shadow_eclipse from "./shadow/eclipse.js";
@@ -447,6 +448,7 @@ export const effects = {
   "holy/smite": holy_smite,
   "holy/sunburst": holy_sunburst,
   "shadow/black-hole": shadow_black_hole,
+  "shadow/crimson-vortex": shadow_crimson_vortex,
   "shadow/curse": shadow_curse,
   "shadow/dark-explosion": shadow_dark_explosion,
   "shadow/eclipse": shadow_eclipse,
