@@ -125,6 +125,7 @@ import * as impacts_heavy_landing from "./impacts/heavy-landing.js";
 import * as impacts_hit_flash from "./impacts/hit-flash.js";
 import * as impacts_hit_spark from "./impacts/hit-spark.js";
 import * as impacts_impact_frame from "./impacts/impact-frame.js";
+import * as impacts_monster_twin_hit from "./impacts/monster-twin-hit.js";
 import * as impacts_parry from "./impacts/parry.js";
 import * as impacts_ricochet from "./impacts/ricochet.js";
 import * as impacts_shield_block from "./impacts/shield-block.js";
@@ -160,6 +161,7 @@ import * as arcane_blink_out from "./arcane/blink-out.js";
 import * as arcane_lacquer_ward from "./arcane/lacquer-ward.js";
 import * as arcane_magic_circle_cast from "./arcane/magic-circle-cast.js";
 import * as arcane_mana_burst from "./arcane/mana-burst.js";
+import * as arcane_monster_missile from "./arcane/monster-missile.js";
 import * as arcane_nacre_blades from "./arcane/nacre-blades.js";
 import * as arcane_portal from "./arcane/portal.js";
 import * as arcane_rune_circle from "./arcane/rune-circle.js";
@@ -405,6 +407,7 @@ export const effects = {
   "impacts/hit-flash": impacts_hit_flash,
   "impacts/hit-spark": impacts_hit_spark,
   "impacts/impact-frame": impacts_impact_frame,
+  "impacts/monster-twin-hit": impacts_monster_twin_hit,
   "impacts/parry": impacts_parry,
   "impacts/ricochet": impacts_ricochet,
   "impacts/shield-block": impacts_shield_block,
@@ -440,6 +443,7 @@ export const effects = {
   "arcane/lacquer-ward": arcane_lacquer_ward,
   "arcane/magic-circle-cast": arcane_magic_circle_cast,
   "arcane/mana-burst": arcane_mana_burst,
+  "arcane/monster-missile": arcane_monster_missile,
   "arcane/nacre-blades": arcane_nacre_blades,
   "arcane/portal": arcane_portal,
   "arcane/rune-circle": arcane_rune_circle,
