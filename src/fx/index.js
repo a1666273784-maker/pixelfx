@@ -17,6 +17,7 @@ import * as moves_poison_sting_volley from "./moves/poison-sting-volley.js";
 import * as moves_rocket_launcher from "./moves/rocket-launcher.js";
 import * as moves_rockfall_call from "./moves/rockfall-call.js";
 import * as moves_shadow_wood_spike from "./moves/shadow-wood-spike.js";
+import * as moves_swarm_mist_bolt from "./moves/swarm-mist-bolt.js";
 import * as moves_sword_combo from "./moves/sword-combo.js";
 import * as moves_sword_dash from "./moves/sword-dash.js";
 import * as moves_venom_spit from "./moves/venom-spit.js";
@@ -303,6 +304,7 @@ export const effects = {
   "moves/rocket-launcher": moves_rocket_launcher,
   "moves/rockfall-call": moves_rockfall_call,
   "moves/shadow-wood-spike": moves_shadow_wood_spike,
+  "moves/swarm-mist-bolt": moves_swarm_mist_bolt,
   "moves/sword-combo": moves_sword_combo,
   "moves/sword-dash": moves_sword_dash,
   "moves/venom-spit": moves_venom_spit,
