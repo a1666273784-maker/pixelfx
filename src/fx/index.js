@@ -176,6 +176,7 @@ import * as shadow_black_hole from "./shadow/black-hole.js";
 import * as shadow_curse from "./shadow/curse.js";
 import * as shadow_dark_explosion from "./shadow/dark-explosion.js";
 import * as shadow_eclipse from "./shadow/eclipse.js";
+import * as shadow_ghostfire_strike from "./shadow/ghostfire-strike.js";
 import * as shadow_grasping_hands from "./shadow/grasping-hands.js";
 import * as shadow_hex_sigil from "./shadow/hex-sigil.js";
 import * as shadow_life_steal from "./shadow/life-steal.js";
@@ -448,6 +449,7 @@ export const effects = {
   "shadow/curse": shadow_curse,
   "shadow/dark-explosion": shadow_dark_explosion,
   "shadow/eclipse": shadow_eclipse,
+  "shadow/ghostfire-strike": shadow_ghostfire_strike,
   "shadow/grasping-hands": shadow_grasping_hands,
   "shadow/hex-sigil": shadow_hex_sigil,
   "shadow/life-steal": shadow_life_steal,
