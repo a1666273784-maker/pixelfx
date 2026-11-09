@@ -1,6 +1,6 @@
 # Catalog
 
-286 effects in 21 categories. Every one is a file in
+288 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -22,6 +22,7 @@ whole attacks, wind-up to recovery, chained from the effects below.
 | Lacquer fan combo | `moves/lacquer-fan-combo` | one-shot 3.65s | 346×188 | The lacquer fan bursts open, scythes low and throws an emerald cyclone that bursts into a rain of leaves — one unbroken fan chain. |
 | Lightning call | `moves/lightning-call` | one-shot 3s | 290×266 | An arm goes up, a sigil lights under the target, and on the downswing a thick bolt comes down on it; the target jolts through the aftershocks. |
 | Meteor call | `moves/meteor-call` | one-shot 6.43s | 380×240 | A long chant: a circle draws itself round him, it flares, he points, and a burning rock comes down on the target and flattens the scene. |
+| Miasma surge | `moves/miasma-surge` | one-shot 2.35s | 416×200 | Unleashes a ground-hugging surge of churning dark-yellow and ink-green miasma with popping bottom bubbles that bursts into ink-green smoke, poison bubbles, and dark-green flashes. |
 | Moss boulder throw | `moves/moss-boulder-throw` | one-shot 3.5s | 476×224 | Rips a colossal moss-aura boulder from a trembling dust storm, hurls it in a thick sonic-boom wake, and shatters it on the enemy with a dust shockwave, knockback, and stun. |
 | Pistol shots | `moves/pistol-shots` | one-shot 2.6s | 378×76 | Three aimed shots: the gun kicks up each time and settles, tracers cross the floor, and the target staggers under each hit. |
 | Poison sting volley | `moves/poison-sting-volley` | one-shot 1.9s | 360×184 | Three hair-thin glowing wood-thorn needles whip out of a thorn halo at blinding speed, stick in the enemy and pop into bright green-violet cross sparks with leaking poison smoke. |
@@ -331,6 +332,7 @@ poison, vines, thorns, quakes.
 | Earth spike | `nature/earth-spike` | one-shot 3.4s | 272×150 | The floor cracks with light and heaves, a faceted stone spike rams up with two side shards in a burst of chips, grit and dust; rubble rains, then it splits and crumbles. |
 | Healing bloom | `nature/healing-bloom` | one-shot 3.3s | 124×120 | A sprout pushes up and unfurls, a bud swells and opens round a glowing golden heart in a flare of healing light; its petals lift away one by one as motes. |
 | Leaf storm | `nature/leaf-storm` | loop 2.4s | 112×104 | Leaves tumble up a rising spiral round the character, passing behind and in front, turning and flipping, wrapped in bright bands of wind; litter swirls at their feet. |
+| Miasma wave | `nature/miasma-wave` | loop 1.2s | 236×92 | Ground-hugging miasma surging right in a loop: murky dark-yellow and ink-green mist rolls forward in curling tongues while tiny green bubbles pop along its foot. |
 | Poison cloud | `nature/poison-cloud` | loop 4s | 256×100 | A miasma hugging the floor: ragged sheets of gas lit yellow-green from within, fading to violet, creep out in tongues that curl over at their tips; plumes twist up as ribbons. |
 | Quake | `nature/quake` | one-shot 3.1s | 288×104 | The ground jolts three times: a rift tears out along the floor glowing deep inside, slabs of floor heave up and drop back askew, pebbles hop and dust bursts out of the split. |
 | Rockfall | `nature/rockfall` | one-shot 6.8s | 384×260 | An oppressive storm-dust pall gathers overhead before a relentless avalanche of gravel, stones, boulders and colossal monoliths pounds the earth and slowly subsides. |
