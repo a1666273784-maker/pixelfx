@@ -1,6 +1,6 @@
 # Catalog
 
-269 effects in 21 categories. Every one is a file in
+273 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -13,6 +13,7 @@ whole attacks, wind-up to recovery, chained from the effects below.
 | Dash strike | `moves/dash-strike` | one-shot 2.3s | 372×156 | A crouch, then he's across the floor in a blur of after-images and already cutting: a critical hit, a beat, and he hops back to where he started. |
 | Earth stomp | `moves/earth-stomp` | one-shot 3.46s | 290×142 | A knee comes up, the boot slams down, the floor heaves under the target and a stone spike rams up through it. |
 | Fireball throw | `moves/fireball-throw` | one-shot 6.81s | 356×244 | He gathers fire in his hand, leans back and hurls it: the ball flies, the target takes it in a blast and comes out charred. |
+| Flame wheel | `moves/flame-wheel` | one-shot 2.85s | 400×196 | Gathers an incandescent serrated fire wheel, hurls it hurtling along the ground in whirling flame arcs, grinds into the target, and erupts in an oppressive molten blast. |
 | Ground pound | `moves/ground-pound` | one-shot 3.82s | 304×204 | He coils, leaps out of frame height, hangs, and comes down like a rock: the floor cracks, shock waves race out and throw the target about as they pass. |
 | Holy smite | `moves/holy-smite` | one-shot 2.8s | 252×182 | Both hands go up and a glint marks the target; he brings them down and a bolt of light drops like a hammer, leaving the target blanched. |
 | Ice lance throw | `moves/ice-lance-throw` | one-shot 4.34s | 310×136 | Frost gathers into a spear in his hand, he throws it like a javelin, and the target ices over in a burst of snowflakes and shivers. |
@@ -34,6 +35,7 @@ torches, breath, pillars, walls of flame.
 | Brazier | `fire/brazier` | loop 3s | 112×148 | An iron bowl on a tripod heaped with glowing coals and a big roaring fire, sparks and embers streaming up off it, light on the iron and the floor. |
 | Campfire | `fire/campfire` | loop 3s | 128×128 | Crossed logs on a bed of coals and a lively fire: tongues that lick and leap, popping sparks, embers drifting up, smoke curling off, a warm pool of light. |
 | Candle | `fire/candle` | loop 4s | 56×76 | A wax candle in a brass dish: a calm flame with a blue root that sways and stretches, a halo of light, motes drifting in it, a bead of wax running down a drip. |
+| Crimson eruption | `fire/crimson-eruption` | one-shot 3.8s | 308×228 | A jagged ring of dark-red omen fire cracks the stone floor, six staggered pillars erupt from black roots to bright-red crowns with a hit burst, then rain dark-red embers. |
 | Dark crimson eruption | `fire/dark-crimson-eruption` | one-shot 2.6s | 320×216 | A dark-crimson omen ring sears the ground, six staggered pillars of black-rooted crimson fire burst from it, then collapse into falling embers over a cooling scorched ring. |
 | Fire breath | `fire/fire-breath` | loop 1.5s | 160×116 | A roaring cone of fire streaming right from the mouth: white-hot at the lips, billowing out and cooling to red and smoke at its edges, sparks thrown out ahead. |
 | Fire ring | `fire/fire-ring` | one-shot 3.9s | 224×128 | A white flash at the feet, then flames race outward along the floor in a ring, flaring as the front passes and burning down behind it over a smouldering scorch. |
@@ -273,6 +275,7 @@ curses, voids, tendrils, souls.
 | effect | id | | size | what it does |
 |---|---|---|---|---|
 | Black hole | `shadow/black-hole` | loop 4s | 184×132 | A tilted disk of banded rings turns round a black hole, its far side bent up over the top and under the bottom; debris spirals in, stretches and is swallowed. |
+| Crimson vortex | `shadow/crimson-vortex` | one-shot 1.92s | 300×300 | A pitch-black dark-red vortex pulls shards and airflow inward, compresses tight, and bursts into radial dark-red spikes with hit-confirm cleave and rupture effects. |
 | Curse | `shadow/curse` | one-shot 3.4s | 112×124 | Wisps gather over the head, a skull stamps down with a flash, its eyes burn as the curse floods the body violet, then it cracks and crumbles. |
 | Dark explosion | `shadow/dark-explosion` | one-shot 3.8s | 280×248 | Motes swirl into a pulsing core, a black star cuts across a violet-white flash, and a black sphere burns at the rim, throws lit shards and smoke, then collapses. |
 | Eclipse | `shadow/eclipse` | loop 4s | 160×144 | A black moon over the sun: a breathing pearl corona with long streamers, a thin white rim, and one diamond bead blazing on its edge. |
@@ -321,6 +324,7 @@ poison, vines, thorns, quakes.
 | Quake | `nature/quake` | one-shot 3.1s | 288×104 | The ground jolts three times: a rift tears out along the floor glowing deep inside, slabs of floor heave up and drop back askew, pebbles hop and dust bursts out of the split. |
 | Rockfall | `nature/rockfall` | one-shot 6.8s | 384×260 | An oppressive storm-dust pall gathers overhead before a relentless avalanche of gravel, stones, boulders and colossal monoliths pounds the earth and slowly subsides. |
 | Root snare | `nature/root-snare` | one-shot 2.7s | 128×96 | The floor cracks and roots burst up round the character, spiralling round its legs; they cinch tight with a snap, hold, then crack and crumble into bark and dust. |
+| Seismic wave | `nature/seismic-wave` | one-shot 3.2s | 416×240 | A tectonic slam hurls shattered boulders skyward and drives a supersonic ground-quake wave through heaving bedrock crags into a target-shattering hit burst. |
 | Spore burst | `nature/spore-burst` | one-shot 3.2s | 212×132 | A toadstool pushes up, swells and trembles as its gills glow, then squashes and puffs a lumpy cloud of glowing spores that billows up and drifts down twinkling. |
 | Thorns | `nature/thorns` | one-shot 2.4s | 232×92 | A seam races along the floor and hooked thorns punch up out of it one after another, each bigger than the last, in bursts of dirt and green light; they hold, then sink. |
 | Tornado | `nature/tornado` | loop 2s | 196×168 | A snaking funnel of spinning wind bands under a flared, churning top that flickers with lightning; leaves and debris whirl round it front and back, dust boils at its foot. |

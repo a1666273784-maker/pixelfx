@@ -4,6 +4,7 @@ import * as moves_arrow_shot from "./moves/arrow-shot.js";
 import * as moves_dash_strike from "./moves/dash-strike.js";
 import * as moves_earth_stomp from "./moves/earth-stomp.js";
 import * as moves_fireball_throw from "./moves/fireball-throw.js";
+import * as moves_flame_wheel from "./moves/flame-wheel.js";
 import * as moves_ground_pound from "./moves/ground-pound.js";
 import * as moves_holy_smite from "./moves/holy-smite.js";
 import * as moves_ice_lance_throw from "./moves/ice-lance-throw.js";
@@ -18,6 +19,7 @@ import * as moves_sword_dash from "./moves/sword-dash.js";
 import * as fire_brazier from "./fire/brazier.js";
 import * as fire_campfire from "./fire/campfire.js";
 import * as fire_candle from "./fire/candle.js";
+import * as fire_crimson_eruption from "./fire/crimson-eruption.js";
 import * as fire_dark_crimson_eruption from "./fire/dark-crimson-eruption.js";
 import * as fire_fire_breath from "./fire/fire-breath.js";
 import * as fire_fire_ring from "./fire/fire-ring.js";
@@ -173,6 +175,7 @@ import * as holy_resurrection from "./holy/resurrection.js";
 import * as holy_smite from "./holy/smite.js";
 import * as holy_sunburst from "./holy/sunburst.js";
 import * as shadow_black_hole from "./shadow/black-hole.js";
+import * as shadow_crimson_vortex from "./shadow/crimson-vortex.js";
 import * as shadow_curse from "./shadow/curse.js";
 import * as shadow_dark_explosion from "./shadow/dark-explosion.js";
 import * as shadow_eclipse from "./shadow/eclipse.js";
@@ -207,6 +210,7 @@ import * as nature_poison_cloud from "./nature/poison-cloud.js";
 import * as nature_quake from "./nature/quake.js";
 import * as nature_rockfall from "./nature/rockfall.js";
 import * as nature_root_snare from "./nature/root-snare.js";
+import * as nature_seismic_wave from "./nature/seismic-wave.js";
 import * as nature_spore_burst from "./nature/spore-burst.js";
 import * as nature_thorns from "./nature/thorns.js";
 import * as nature_tornado from "./nature/tornado.js";
@@ -277,6 +281,7 @@ export const effects = {
   "moves/dash-strike": moves_dash_strike,
   "moves/earth-stomp": moves_earth_stomp,
   "moves/fireball-throw": moves_fireball_throw,
+  "moves/flame-wheel": moves_flame_wheel,
   "moves/ground-pound": moves_ground_pound,
   "moves/holy-smite": moves_holy_smite,
   "moves/ice-lance-throw": moves_ice_lance_throw,
@@ -291,6 +296,7 @@ export const effects = {
   "fire/brazier": fire_brazier,
   "fire/campfire": fire_campfire,
   "fire/candle": fire_candle,
+  "fire/crimson-eruption": fire_crimson_eruption,
   "fire/dark-crimson-eruption": fire_dark_crimson_eruption,
   "fire/fire-breath": fire_fire_breath,
   "fire/fire-ring": fire_fire_ring,
@@ -446,6 +452,7 @@ export const effects = {
   "holy/smite": holy_smite,
   "holy/sunburst": holy_sunburst,
   "shadow/black-hole": shadow_black_hole,
+  "shadow/crimson-vortex": shadow_crimson_vortex,
   "shadow/curse": shadow_curse,
   "shadow/dark-explosion": shadow_dark_explosion,
   "shadow/eclipse": shadow_eclipse,
@@ -480,6 +487,7 @@ export const effects = {
   "nature/quake": nature_quake,
   "nature/rockfall": nature_rockfall,
   "nature/root-snare": nature_root_snare,
+  "nature/seismic-wave": nature_seismic_wave,
   "nature/spore-burst": nature_spore_burst,
   "nature/thorns": nature_thorns,
   "nature/tornado": nature_tornado,
