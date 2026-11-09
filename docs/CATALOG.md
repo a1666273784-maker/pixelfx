@@ -1,6 +1,6 @@
 # Catalog
 
-278 effects in 21 categories. Every one is a file in
+279 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -21,6 +21,7 @@ whole attacks, wind-up to recovery, chained from the effects below.
 | Lightning call | `moves/lightning-call` | one-shot 3s | 290×266 | An arm goes up, a sigil lights under the target, and on the downswing a thick bolt comes down on it; the target jolts through the aftershocks. |
 | Meteor call | `moves/meteor-call` | one-shot 6.43s | 380×240 | A long chant: a circle draws itself round him, it flares, he points, and a burning rock comes down on the target and flattens the scene. |
 | Pistol shots | `moves/pistol-shots` | one-shot 2.6s | 378×76 | Three aimed shots: the gun kicks up each time and settles, tracers cross the floor, and the target staggers under each hit. |
+| Poison sting volley | `moves/poison-sting-volley` | one-shot 1.9s | 360×184 | Three hair-thin glowing wood-thorn needles whip out of a thorn halo at blinding speed, stick in the enemy and pop into bright green-violet cross sparks with leaking poison smoke. |
 | Rocket launcher | `moves/rocket-launcher` | one-shot 6.56s | 480×244 | He drops to one knee, shoulders the tube and fires: the kick shoves him back along the floor, the rocket crawls out on its jet and the target goes up. |
 | Rockfall call | `moves/rockfall-call` | one-shot 7.16s | 480×268 | He reaches skyward, tears both hands down and stamps a glowing rift into the floor; a storm-dust pall gathers and an avalanche of boulders and monoliths pounds the target. |
 | Sword combo | `moves/sword-combo` | one-shot 2.98s | 264×150 | Three strokes walking forward: a slash, a crossing double cut, and a two-handed cleave into the floor that throws the target about. |
