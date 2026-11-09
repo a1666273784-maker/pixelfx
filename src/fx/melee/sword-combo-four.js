@@ -32,8 +32,8 @@ export const meta = {
   bg: "ground",
   actor: 2,
   options: {
-    palette: ["#141a2e", "#425a7f", "#93aed4", "#cfe0f4", "#eefbff", "#ffffff"],
-    sparks: ["#ffffff", "#eefbff", "#cfe0f4", "#93aed4"],
+    palette: ["#0c1222", "#1b2847", "#354c78", "#5f7fae", "#9ab8e0", "#d2e5fc", "#eef6ff", "#ffffff"],
+    sparks: ["#ffffff", "#eef6ff", "#d2e5fc", "#9ab8e0"],
     seed: 1,
   },
 };
@@ -148,7 +148,7 @@ function hitSparks(ps, R, cx, cy, aim, fan, n, speed, life, colors) {
 }
 
 export function create(o) {
-  const C = fit(o.palette, 6), R = new Rng(o.seed), floor = () => 0;
+  const C = fit(o.palette, 8), R = new Rng(o.seed), floor = () => 0;
   const ps = new Particles({ rng: R, ground: floor, sparks: o.sparks, haze: C[3] });
   const bits = new Bits({ ground: floor }), lights = new Lights();
 
@@ -202,7 +202,7 @@ export function create(o) {
       // HIT 3: the long diagonal severing cut — silver spray and gouged dust
       if (!h3 && t >= T3) {
         h3 = true;
-        lights.add(TX - 1, TY - 4, 52, C[5], 0.8, 0.24);
+        lights.add(TX - 1, TY - 4, 64, C[6], 0.9, 0.26);
         hitSparks(ps, R, TX - 1, TY - 4, 0.0, 1.05, 42, 280, 0.44, [WHITE, C[6], C[5]]);
         for (let i = 0; i < 10; i++) {
           const a = -Math.PI / 2 + R.range(-0.8, 1.05);
@@ -216,7 +216,7 @@ export function create(o) {
       if (!h4 && t >= T4) {
         h4 = true;
         lights.add(TX + 2, TY, 56, WHITE, 1.0, 0.42);
-        lights.add(TX + 2, TY, 64, C[5], 0.5, 0.25);
+        lights.add(TX + 2, TY, 96, C[6], 0.6, 0.28);
         for (let i = 0; i < 52; i++) {
           const forward = i % 4 !== 0;
           const a = forward ? R.range(-0.85, 0.85) : R.range(2.35, 3.95);
@@ -301,7 +301,7 @@ export function create(o) {
           const side = (i % 2 ? 1 : -1) * (1.6 + 0.9 * i);
           const nx = -sa / L * side, ny = ca / L * side;
           const k = 1 - phase;
-          const col = phase > 0.82 ? WHITE : phase > 0.5 ? C[6] : C[4];
+          const col = phase > 0.75 ? WHITE : phase > 0.45 ? C[6] : C[5];
           p.line(hx + ca / L * d + nx, hy + sa / L * d + ny,
                  hx + ca / L * (d - 7 * k) + nx, hy + sa / L * (d - 7 * k) + ny,
                  col, 0.85 * k * (isFlash ? 1.4 : 1));
@@ -311,7 +311,7 @@ export function create(o) {
           const f = (u - 0.62) / 0.38, r = 3 + 6 * ease.outCubic(f), aRing = 1 - smooth(0.62, 1.0, u);
           for (let a = 0; a < TAU; a += 0.12) {
             const aa = a + f * 1.2;
-            const hot = aRing > 0.5 ? WHITE : (a < Math.PI / 2 || a > Math.PI * 1.5) ? C[6] : C[4];
+            const hot = aRing > 0.5 ? WHITE : (a < Math.PI / 2 || a > Math.PI * 1.5) ? C[6] : C[5];
             p.dot(TX + 2 + Math.cos(aa) * r, TY + Math.sin(aa) * r * 0.5, hot, aRing * 0.9);
           }
         }
@@ -340,7 +340,7 @@ export function create(o) {
         cutScar(p, TX + 2, TY, 0.02, 112, 5.0, 1.0, C, true);
         const g = 1 - (t - T4) / FRAME;
         sparkle(p, TX + 2, TY, 16 * g, WHITE, C[5], 0.9);
-        flare(p, TX + 2, TY, 34, 1.0, [WHITE, WHITE, C[5], C[4]]);
+        flare(p, TX + 2, TY, 34, 1.0, [WHITE, WHITE, C[6], C[5]]);
         p.glow(TX + 2, TY, 44, WHITE, 0.5);
       } else if (t > T4 && t < T4 + 0.5) {
         const age = t - T4, f = age / 0.5;
