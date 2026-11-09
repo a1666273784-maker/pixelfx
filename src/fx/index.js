@@ -107,6 +107,7 @@ import * as melee_lacquer_fan from "./melee/lacquer-fan.js";
 import * as melee_scythe_reap from "./melee/scythe-reap.js";
 import * as melee_spear_sweep from "./melee/spear-sweep.js";
 import * as melee_spin_slash from "./melee/spin-slash.js";
+import * as melee_sword_combo_four from "./melee/sword-combo-four.js";
 import * as melee_sword_slash from "./melee/sword-slash.js";
 import * as melee_thrust from "./melee/thrust.js";
 import * as melee_triple_slash from "./melee/triple-slash.js";
@@ -378,6 +379,7 @@ export const effects = {
   "melee/scythe-reap": melee_scythe_reap,
   "melee/spear-sweep": melee_spear_sweep,
   "melee/spin-slash": melee_spin_slash,
+  "melee/sword-combo-four": melee_sword_combo_four,
   "melee/sword-slash": melee_sword_slash,
   "melee/thrust": melee_thrust,
   "melee/triple-slash": melee_triple_slash,
