@@ -1,6 +1,6 @@
 # Catalog
 
-283 effects in 21 categories. Every one is a file in
+284 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -10,6 +10,7 @@ whole attacks, wind-up to recovery, chained from the effects below.
 | effect | id | | size | what it does |
 |---|---|---|---|---|
 | Arrow shot | `moves/arrow-shot` | one-shot 1.9s | 300×74 | He raises the bow, draws to his cheek, holds his breath and looses: the string snaps forward, the arrow crosses the floor and thuds home. |
+| Carapace spike burst | `moves/carapace-spike-burst` | one-shot 1.9s | 368×184 | Bursts short dark-brown cold-glint spikes and black shell shards from the caster, drilling across in a spinning flight cycle to pierce the target in a tight red-white flash. |
 | Dash strike | `moves/dash-strike` | one-shot 2.3s | 372×156 | A crouch, then he's across the floor in a blur of after-images and already cutting: a critical hit, a beat, and he hops back to where he started. |
 | Earth stomp | `moves/earth-stomp` | one-shot 3.46s | 290×142 | A knee comes up, the boot slams down, the floor heaves under the target and a stone spike rams up through it. |
 | Fireball throw | `moves/fireball-throw` | one-shot 6.81s | 356×244 | He gathers fire in his hand, leans back and hurls it: the ball flies, the target takes it in a blast and comes out charred. |
