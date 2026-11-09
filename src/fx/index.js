@@ -11,6 +11,7 @@ import * as moves_ice_lance_throw from "./moves/ice-lance-throw.js";
 import * as moves_lacquer_fan_combo from "./moves/lacquer-fan-combo.js";
 import * as moves_lightning_call from "./moves/lightning-call.js";
 import * as moves_meteor_call from "./moves/meteor-call.js";
+import * as moves_moss_boulder_throw from "./moves/moss-boulder-throw.js";
 import * as moves_pistol_shots from "./moves/pistol-shots.js";
 import * as moves_poison_sting_volley from "./moves/poison-sting-volley.js";
 import * as moves_rocket_launcher from "./moves/rocket-launcher.js";
@@ -294,6 +295,7 @@ export const effects = {
   "moves/lacquer-fan-combo": moves_lacquer_fan_combo,
   "moves/lightning-call": moves_lightning_call,
   "moves/meteor-call": moves_meteor_call,
+  "moves/moss-boulder-throw": moves_moss_boulder_throw,
   "moves/pistol-shots": moves_pistol_shots,
   "moves/poison-sting-volley": moves_poison_sting_volley,
   "moves/rocket-launcher": moves_rocket_launcher,
