@@ -1,6 +1,6 @@
 # Catalog
 
-288 effects in 21 categories. Every one is a file in
+289 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -16,6 +16,7 @@ whole attacks, wind-up to recovery, chained from the effects below.
 | Crimson claw rupture | `moves/crimson-claw-rupture` | one-shot 2.65s | 368×224 | Black-purple cold mist and churning soil boil under the foe before three dark-crimson claw arcs rip upward, branding a crimson cross scar amid shadow smoke and red light. |
 | Dash strike | `moves/dash-strike` | one-shot 2.3s | 372×156 | A crouch, then he's across the floor in a blur of after-images and already cutting: a critical hit, a beat, and he hops back to where he started. |
 | Earth stomp | `moves/earth-stomp` | one-shot 3.46s | 290×142 | A knee comes up, the boot slams down, the floor heaves under the target and a stone spike rams up through it. |
+| Ember flash | `moves/ember-flash` | one-shot 2.45s | 232×144 | A warm yellow spark swells on the foe, its air sucked inward, then pops into a small fire wave and dust; the body flashes white, leaving a thin wisp and ash. |
 | Fireball throw | `moves/fireball-throw` | one-shot 6.81s | 356×244 | He gathers fire in his hand, leans back and hurls it: the ball flies, the target takes it in a blast and comes out charred. |
 | Flame wheel | `moves/flame-wheel` | one-shot 2.85s | 400×196 | Gathers an incandescent serrated fire wheel, hurls it hurtling along the ground in whirling flame arcs, grinds into the target, and erupts in an oppressive molten blast. |
 | Ground pound | `moves/ground-pound` | one-shot 3.82s | 304×204 | He coils, leaps out of frame height, hangs, and comes down like a rock: the floor cracks, shock waves race out and throw the target about as they pass. |
