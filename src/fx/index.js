@@ -7,6 +7,7 @@ import * as moves_coldflame_fireball from "./moves/coldflame-fireball.js";
 import * as moves_crimson_claw_rupture from "./moves/crimson-claw-rupture.js";
 import * as moves_dash_strike from "./moves/dash-strike.js";
 import * as moves_earth_stomp from "./moves/earth-stomp.js";
+import * as moves_ember_flash from "./moves/ember-flash.js";
 import * as moves_fireball_throw from "./moves/fireball-throw.js";
 import * as moves_flame_wheel from "./moves/flame-wheel.js";
 import * as moves_ground_pound from "./moves/ground-pound.js";
@@ -299,6 +300,7 @@ export const effects = {
   "moves/crimson-claw-rupture": moves_crimson_claw_rupture,
   "moves/dash-strike": moves_dash_strike,
   "moves/earth-stomp": moves_earth_stomp,
+  "moves/ember-flash": moves_ember_flash,
   "moves/fireball-throw": moves_fireball_throw,
   "moves/flame-wheel": moves_flame_wheel,
   "moves/ground-pound": moves_ground_pound,
