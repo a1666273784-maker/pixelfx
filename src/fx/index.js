@@ -108,6 +108,7 @@ import * as scifi_warp_in from "./scifi/warp-in.js";
 import * as scifi_warp_out from "./scifi/warp-out.js";
 import * as melee_claw_swipe from "./melee/claw-swipe.js";
 import * as melee_crimson_gold_claw from "./melee/crimson-gold-claw.js";
+import * as melee_crimson_ripple from "./melee/crimson-ripple.js";
 import * as melee_dagger_flurry from "./melee/dagger-flurry.js";
 import * as melee_dark_crimson_claw from "./melee/dark-crimson-claw.js";
 import * as melee_double_slash from "./melee/double-slash.js";
@@ -402,6 +403,7 @@ export const effects = {
   "scifi/warp-out": scifi_warp_out,
   "melee/claw-swipe": melee_claw_swipe,
   "melee/crimson-gold-claw": melee_crimson_gold_claw,
+  "melee/crimson-ripple": melee_crimson_ripple,
   "melee/dagger-flurry": melee_dagger_flurry,
   "melee/dark-crimson-claw": melee_dark_crimson_claw,
   "melee/double-slash": melee_double_slash,
