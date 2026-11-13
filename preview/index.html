@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>水墨云海区域提示横幅 · ink cloud banner</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #0a0b10; color: #cdd4dc;
+    font: 13px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    display: flex; flex-direction: column; align-items: center; gap: 18px; padding: 22px 16px 40px;
+  }
+  h1 { font-size: 15px; font-weight: 600; letter-spacing: .08em; margin: 0; color: #eef2f5; }
+  h1 span { color: #7f8b96; font-weight: 400; letter-spacing: 0; }
+  .stage {
+    position: relative; background: #0d0e14; padding: 14px; border: 1px solid #1e222c; border-radius: 6px;
+    box-shadow: 0 18px 50px rgba(0,0,0,.55);
+  }
+  .screen { position: relative; }
+  canvas { display: block; image-rendering: pixelated; image-rendering: crisp-edges; background: #000; }
+  #hud { position: absolute; inset: 0; pointer-events: none; }
+  .bar { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; justify-content: center; }
+  button {
+    font: inherit; color: #dfe5ea; background: #171b23; border: 1px solid #2b323d; border-radius: 4px;
+    padding: 5px 11px; cursor: pointer;
+  }
+  button:hover { background: #1f2530; border-color: #3b4451; }
+  button.on { background: #2b3a3f; border-color: #557076; color: #eaf6f4; }
+  label { display: flex; align-items: center; gap: 6px; color: #98a2ad; }
+  input[type=range] { width: 130px; accent-color: #7fa8a4; }
+  input[type=number] { width: 58px; font: inherit; background: #12151c; color: #dfe5ea; border: 1px solid #2b323d; border-radius: 3px; padding: 3px 5px; }
+  .marks { display: flex; gap: 0; width: min(88vw, 860px); }
+  .phase { position: relative; height: 34px; border-left: 1px solid #232a34; }
+  .phase b { position: absolute; left: 5px; top: 2px; font-weight: 500; font-size: 11px; color: #8b95a1; white-space: nowrap; }
+  .phase i { position: absolute; left: 5px; top: 17px; font-style: normal; font-size: 10px; color: #5d6672; }
+  .legend { color: #6c7581; font-size: 11px; max-width: min(88vw, 860px); }
+  .legend em { color: #b9c3cd; font-style: normal; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+  .card { border: 1px solid #1e222c; border-radius: 5px; background: #0d0e14; padding: 8px; }
+  .card p { margin: 0 0 6px; color: #8b95a1; font-size: 11px; text-align: center; }
+  .card canvas { image-rendering: pixelated; }
+</style>
+</head>
+<body>
+  <h1>水墨云海 · 区域提示横幅 <span>ui/ink-cloud-banner — release → hit → open → hold → scatter</span></h1>
+
+  <div class="stage">
+    <div class="screen">
+      <canvas id="screen"></canvas>
+      <canvas id="hud"></canvas>
+    </div>
+  </div>
+
+  <div class="bar">
+    <button id="play">暂停</button>
+    <button id="replay">重播</button>
+    <label>时间 <input id="scrub" type="range" min="0" max="1" step="0.0005" value="0"><output id="clock">0.00s</output></label>
+    <label>速度 <input id="speed" type="range" min="0.1" max="2" step="0.05" value="1"><output id="speedOut">1.0×</output></label>
+    <label>放大 <input id="zoom" type="number" min="1" max="4" step="1" value="2"></label>
+    <label>seed <input id="seed" type="number" value="11"></label>
+    <label>风向 <button id="wind">→</button></label>
+    <label>底色 <button id="bg">dark</button></label>
+    <label>场景 <button id="scene" class="on">山水</button></label>
+  </div>
+
+  <div class="marks" id="marks"></div>
+  <p class="legend" id="legend"></p>
+
+  <div class="row" id="cards"></div>
+
+<script type="module">
+import { createFrame, clearFrame, createFx, composite, backdrop, hex, mix } from "../src/core/index.js";
+import * as banner from "../src/fx/ui/ink-cloud-banner.js";
+
+const PHASES = [
+  ["释放 · 聚拢", "两股黛青与苍白像素云雾气流向屏幕上方中央横向涌入、堆叠", 0, 0.84],
+  ["命中 · 推开", "冷白英雄帧：云雾向左右平缓推开，中心亮起纤细枯黄微光横线", 0.84, 1.46],
+  ["浮现 · 展开", "冷白区域提示光影由虚变实，横线两端绽放灰白雾气涟漪与枯黄光尘", 0.94, 2.1],
+  ["压迫 · 停留", "墨幕压顶、光柱垂落、墨滴悬挂，横幅沉沉压住整个画面", 1.7, 3.14],
+  ["消散 · 随风", "整个光影顺水平方向化作层层叠叠的淡青像素薄雾与微尘随风散去", 3.14, 4.6],
+];
+
+const screenCv = document.getElementById("screen"), hudCv = document.getElementById("hud");
+const sctx = screenCv.getContext("2d"), hctx = hudCv.getContext("2d");
+const W = banner.meta.size[0], H = banner.meta.size[1], [OX, OY] = banner.meta.origin, D = banner.meta.duration;
+let zoom = 2, bgKind = "dark", scene = true, wind = 1, seed = 11;
+let frame, img, bgBuf, fx, t = 0, playing = true, speed = 1;
+
+function build() {
+  screenCv.width = hudCv.width = W * zoom;
+  screenCv.height = hudCv.height = H * zoom;
+  screenCv.style.width = hudCv.style.width = W * zoom + "px";
+  screenCv.style.height = hudCv.style.height = H * zoom + "px";
+  sctx.imageSmoothingEnabled = false;
+  frame = createFrame(W, H);
+  img = sctx.createImageData(W, H);
+  bgBuf = bgKind === "none" ? null : backdrop(bgKind, W, H, OY);
+  fx = createFx(banner, { x: OX, y: OY, seed, wind });
+  t = 0;
+}
+
+// a faint ink-wash landscape behind the banner, so the oppression and the light read as a real screen
+function scenery(out) {
+  const ridge = (x, k) => 96 + k * 26 + Math.sin(x * 0.021 + k * 2.2) * 13 + Math.sin(x * 0.053 + k) * 6;
+  for (let y = 0; y < H; y++)
+    for (let x = 0; x < W; x++) {
+      const i = y * W + x;
+      if (y > ridge(x, 0) && y < ridge(x, 0) + 40) out[i] = mix(out[i], hex("#191c28"), 0.75);
+      if (y > ridge(x, 1) && y < ridge(x, 1) + 60) out[i] = mix(out[i], hex("#131621"), 0.8);
+      if (y > 158) out[i] = mix(out[i], hex("#101320"), 0.85);
+    }
+  return out;
+}
+
+function drawHud() {
+  const c = hctx, s = zoom;
+  c.clearRect(0, 0, W * s, H * s);
+  c.font = `${9 * s}px ui-monospace, monospace`;
+  c.textBaseline = "top";
+  c.fillStyle = "rgba(230,238,244,.62)";
+  c.fillText("水墨云海 · 区域提示", 8 * s, 8 * s);
+  c.fillStyle = "rgba(190,205,214,.34)";
+  c.font = `${7 * s}px ui-monospace, monospace`;
+  c.fillText("UI BANNER / INK CLOUD SEA", 8 * s, 20 * s);
+  c.fillText(`${t.toFixed(2)}s / ${D.toFixed(2)}s`, 8 * s, 30 * s);
+  const bw = 34 * s, bh = 3 * s, bx = W * s - bw - 8 * s, by = 10 * s;
+  c.strokeStyle = "rgba(210,225,232,.35)"; c.strokeRect(bx - s, by - s, bw + 2 * s, bh + 2 * s);
+  c.fillStyle = "rgba(150,190,186,.55)"; c.fillRect(bx, by, bw * 0.72, bh);
+  c.strokeStyle = "rgba(210,225,232,.18)";
+  c.strokeRect(6 * s, 6 * s, (W - 12) * s, (H - 12) * s);
+}
+
+function render() {
+  clearFrame(frame);
+  fx.draw(frame);
+  const bg = bgBuf ? (scene ? scenery(bgBuf.slice()) : bgBuf) : null;
+  composite(frame, img.data, bg);
+  sctx.putImageData(img, 0, 0);
+  if (zoom > 1) {
+    const off = document.createElement("canvas");
+    off.width = W; off.height = H;
+    off.getContext("2d").putImageData(img, 0, 0);
+    sctx.imageSmoothingEnabled = false;
+    sctx.clearRect(0, 0, W * zoom, H * zoom);
+    sctx.drawImage(off, 0, 0, W * zoom, H * zoom);
+  }
+  drawHud();
+  document.getElementById("clock").textContent = t.toFixed(2) + "s";
+  const scrub = document.getElementById("scrub");
+  scrub.value = String(t / D);
+  const ph = PHASES.find((p) => t >= p[2] && t < p[3]);
+  document.getElementById("legend").innerHTML = ph ? `<em>${ph[0]}</em> — ${ph[1]}` : `<em>结束</em> — 画面已空，可点重播再看一遍`;
+  for (const el of document.querySelectorAll(".phase")) el.style.background = el.dataset.p === (ph ? ph[0] : "") ? "rgba(90,130,132,.18)" : "";
+}
+
+let last = performance.now();
+function loop(now) {
+  const dt = Math.min(0.05, (now - last) / 1000);
+  last = now;
+  if (playing) {
+    t += dt * speed;
+    if (t >= D + 0.35) { build(); }
+    else fx.update(dt * speed);
+    render();
+  }
+  requestAnimationFrame(loop);
+}
+
+const marks = document.getElementById("marks");
+for (const [name, what, a, b] of PHASES) {
+  const d = document.createElement("div");
+  d.className = "phase"; d.dataset.p = name;
+  d.style.flex = String(b - a);
+  d.innerHTML = `<b>${name}</b><i>${a.toFixed(2)}–${b.toFixed(2)}s</i>`;
+  d.title = what;
+  marks.append(d);
+}
+
+document.getElementById("play").onclick = (e) => { playing = !playing; e.target.textContent = playing ? "暂停" : "播放"; };
+document.getElementById("replay").onclick = () => { build(); playing = true; document.getElementById("play").textContent = "暂停"; render(); };
+document.getElementById("scrub").oninput = (e) => {
+  const want = +e.target.value * D;
+  build();
+  const step = 1 / banner.meta.fps;
+  while (t < want) { fx.update(step); t += step; }
+  playing = false; document.getElementById("play").textContent = "播放";
+  render();
+};
+document.getElementById("speed").oninput = (e) => { speed = +e.target.value; document.getElementById("speedOut").textContent = speed.toFixed(1) + "×"; };
+document.getElementById("zoom").onchange = (e) => { zoom = Math.max(1, Math.min(4, +e.target.value || 2)); build(); render(); };
+document.getElementById("seed").onchange = (e) => { seed = +e.target.value || 1; build(); render(); };
+document.getElementById("wind").onclick = (e) => { wind = -wind; e.target.textContent = wind > 0 ? "→" : "←"; build(); render(); };
+document.getElementById("bg").onclick = (e) => {
+  const kinds = ["dark", "sky", "black", "none"];
+  bgKind = kinds[(kinds.indexOf(bgKind) + 1) % kinds.length];
+  e.target.textContent = bgKind; build(); render();
+};
+document.getElementById("scene").onclick = (e) => { scene = !scene; e.target.classList.toggle("on", scene); render(); };
+
+// freeze frames of the key beats, so every phase can be judged on its own
+const cards = document.getElementById("cards");
+for (const [name, , at] of PHASES) {
+  const times = [at + 0.02, at + (PHASES.find((p) => p[0] === name)[3] - at) * 0.72];
+  const card = document.createElement("div");
+  card.className = "card";
+  card.innerHTML = `<p>${name}</p>`;
+  const cv = document.createElement("canvas");
+  const z = 2, cw = W * z * 2 + 6;
+  cv.width = cw; cv.height = H * z;
+  cv.style.width = cw + "px"; cv.style.height = H * z + "px";
+  card.append(cv);
+  cards.append(card);
+  const cc = cv.getContext("2d");
+  cc.imageSmoothingEnabled = false;
+  cc.fillStyle = "#0d0e14"; cc.fillRect(0, 0, cw, H * z);
+  times.forEach((tt, k) => {
+    const f2 = createFrame(W, H), im = cc.createImageData(W, H);
+    const inst = createFx(banner, { x: OX, y: OY, seed, wind });
+    const step = 1 / banner.meta.fps;
+    for (let s = 0; s < Math.round(tt * banner.meta.fps); s++) inst.update(step);
+    clearFrame(f2);
+    inst.draw(f2);
+    composite(f2, im.data, scenery(backdrop("dark", W, H, OY)));
+    const off = document.createElement("canvas"); off.width = W; off.height = H;
+    off.getContext("2d").putImageData(im, 0, 0);
+    cc.drawImage(off, k * (W * z + 6), 0, W * z, H * z);
+    cc.fillStyle = "rgba(220,230,236,.5)"; cc.font = "10px ui-monospace, monospace";
+    cc.fillText(tt.toFixed(2) + "s", k * (W * z + 6) + 4, 12);
+  });
+}
+
+build();
+render();
+requestAnimationFrame(loop);
+</script>
+</body>
+</html>
