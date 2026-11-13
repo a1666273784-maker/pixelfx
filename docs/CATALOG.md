@@ -1,6 +1,6 @@
 # Catalog
 
-291 effects in 21 categories. Every one is a file in
+292 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -381,6 +381,7 @@ level ups, numbers, toasts, countdowns.
 | Countdown | `ui/countdown` | one-shot 3.1s | 152×136 | 3, 2, 1 slam into a timer ring that drains like a burning fuse, throwing sparks; then GO! bursts out as the ring blows into a shockwave with rays. |
 | Crit number | `ui/crit-number` | one-shot 1.5s | 152×120 | CRIT 128! slams in huge and white over a jagged starburst with a hard shake and speed lines, cools to fire, holds with a shine, then pops into sparks. |
 | Damage number | `ui/damage-number` | one-shot 1.05s | 76×68 | A red -27 punches out of a hit spark, white for a frame, arcs up, lands with a squash and a little hop, then fades as it lifts away. |
+| Energy bar charge | `ui/energy-bar-charge` | one-shot 3.25s | 212×100 | Purple-crimson and withered-yellow motes converge into a dark-grey UI bar, filling it rightwards with a bubbling white edge, a purple-and-cyan frame shockwave, and mist. |
 | Exclamation | `ui/exclamation` | one-shot 1.4s | 84×104 | A bold ! springs up off the hero's head, stretching as it shoots up and squashing as it lands; surprise ticks flick out, it wobbles, then pops away. |
 | Health bar hit | `ui/health-bar-hit` | one-shot 2s | 160×64 | A segmented health bar takes a hit: it jolts and dips, the lost chunk flashes white and sheds chips, holds, then drains away behind a sparking edge. |
 | Heart lost | `ui/heart-lost` | one-shot 1.5s | 96×88 | A HUD heart is hit: it flashes white and jolts, a crack runs down it, it splits into two halves that tumble away, leaving an empty socket that fades. |

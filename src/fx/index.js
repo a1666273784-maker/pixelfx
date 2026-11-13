@@ -253,6 +253,7 @@ import * as ui_confetti from "./ui/confetti.js";
 import * as ui_countdown from "./ui/countdown.js";
 import * as ui_crit_number from "./ui/crit-number.js";
 import * as ui_damage_number from "./ui/damage-number.js";
+import * as ui_energy_bar_charge from "./ui/energy-bar-charge.js";
 import * as ui_exclamation from "./ui/exclamation.js";
 import * as ui_health_bar_hit from "./ui/health-bar-hit.js";
 import * as ui_heart_lost from "./ui/heart-lost.js";
@@ -548,6 +549,7 @@ export const effects = {
   "ui/countdown": ui_countdown,
   "ui/crit-number": ui_crit_number,
   "ui/damage-number": ui_damage_number,
+  "ui/energy-bar-charge": ui_energy_bar_charge,
   "ui/exclamation": ui_exclamation,
   "ui/health-bar-hit": ui_health_bar_hit,
   "ui/heart-lost": ui_heart_lost,
