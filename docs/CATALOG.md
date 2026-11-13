@@ -1,6 +1,6 @@
 # Catalog
 
-289 effects in 21 categories. Every one is a file in
+291 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -166,6 +166,7 @@ slashes, smears, cleaves, combos.
 |---|---|---|---|---|
 | Claw swipe | `melee/claw-swipe` | one-shot 0.9s | 128×96 | Three claw marks rake down one after another, white-hot, cooling through orange to red, then close up from both ends and leave a dotted scar, with hot flecks and drips. |
 | Crimson gold claw | `melee/crimson-gold-claw` | one-shot 2.5s | 340×224 | Giant beast claw combo: a sweeping gold-rimmed crimson 3-talon arc, a wide crimson-jade cross rend, and a rune slam raising three towering spiral fire pillars. |
+| Crimson ripple | `melee/crimson-ripple` | one-shot 1.5s | 140×88 | A small crimson blast: a red light kindles at the palm, two translucent gas rings roll forward, and the enemy takes a tremor and a scatter of dark-red embers. |
 | Dagger flurry | `melee/dagger-flurry` | one-shot 0.95s | 148×104 | A flurry of small quick crescents at every angle in front of the fighter, each with a flick of sparks, finished by one big cut that glints and bursts. |
 | Dark crimson claw | `melee/dark-crimson-claw` | one-shot 2.26s | 368×236 | A colossal three-talon dark-crimson energy claw rakes down from overhead trailing phantoms; the hit ruptures crimson shards; three parallel molten scars smolder out. |
 | Double slash | `melee/double-slash` | one-shot 0.8s | 164×108 | A down cut, then an up cut that crosses it: the moment the X closes both strokes flash white, the crossing bursts with light and sparks, and a dotted X lingers. |
