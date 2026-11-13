@@ -1,6 +1,6 @@
 # Catalog
 
-287 effects in 21 categories. Every one is a file in
+288 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -11,6 +11,7 @@ whole attacks, wind-up to recovery, chained from the effects below.
 |---|---|---|---|---|
 | Arrow shot | `moves/arrow-shot` | one-shot 1.9s | 300×74 | He raises the bow, draws to his cheek, holds his breath and looses: the string snaps forward, the arrow crosses the floor and thuds home. |
 | Carapace spike burst | `moves/carapace-spike-burst` | one-shot 1.9s | 368×184 | Bursts short dark-brown cold-glint spikes and black shell shards from the caster, drilling across in a spinning flight cycle to pierce the target in a tight red-white flash. |
+| Carrion beetle venom | `moves/carrion-beetle-venom` | one-shot 3.55s | 480×226 | Dark-crimson fog and slime gather into a hissing blood-red venom orb that screams into the target and bursts into a sticky corrosion splash, black rot smoke and biting blood-worms. |
 | Coldflame fireball | `moves/coldflame-fireball` | one-shot 2.95s | 416×216 | Crimson light ignites at the caster, firing a ghostly-blue rimmed pale fireball in an S-wave dropping white sparks, erupting into rising pale cold flames and blue flamelets. |
 | Crimson claw rupture | `moves/crimson-claw-rupture` | one-shot 2.65s | 368×224 | Black-purple cold mist and churning soil boil under the foe before three dark-crimson claw arcs rip upward, branding a crimson cross scar amid shadow smoke and red light. |
 | Dash strike | `moves/dash-strike` | one-shot 2.3s | 372×156 | A crouch, then he's across the floor in a blur of after-images and already cutting: a critical hit, a beat, and he hops back to where he started. |
