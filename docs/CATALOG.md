@@ -1,6 +1,6 @@
 # Catalog
 
-292 effects in 21 categories. Every one is a file in
+293 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -386,6 +386,7 @@ level ups, numbers, toasts, countdowns.
 | Health bar hit | `ui/health-bar-hit` | one-shot 2s | 160×64 | A segmented health bar takes a hit: it jolts and dips, the lost chunk flashes white and sheds chips, holds, then drains away behind a sparking edge. |
 | Heart lost | `ui/heart-lost` | one-shot 1.5s | 96×88 | A HUD heart is hit: it flashes white and jolts, a crack runs down it, it splits into two halves that tumble away, leaving an empty socket that fades. |
 | Level up | `ui/level-up` | one-shot 3.2s | 176×138 | Gold gathers at the feet and bursts up as a pillar of light round the hero; rings climb it, LEVEL UP! drops in letter by letter, a shine sweeps it, sparkles twinkle. |
+| Map fog dispel | `ui/map-fog-dispel` | one-shot 3.45s | 216×148 | Ink-cyan and pale fog over a dark UI map grid swirls inward; a rectangular amber-and-purple halo blasts outward, vaporizing the fog into cyan-white motes and unlocking the grid. |
 | Quest complete | `ui/quest-complete` | one-shot 2.6s | 204×92 | A stitched ribbon unrolls from the middle, QUEST COMPLETE types on letter by letter, a gold seal stamps down and ticks, stars pop; then it all rolls away. |
 
 ## pickups
