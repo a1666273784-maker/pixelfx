@@ -257,6 +257,7 @@ import * as ui_energy_bar_charge from "./ui/energy-bar-charge.js";
 import * as ui_exclamation from "./ui/exclamation.js";
 import * as ui_health_bar_hit from "./ui/health-bar-hit.js";
 import * as ui_heart_lost from "./ui/heart-lost.js";
+import * as ui_ink_cloud_banner from "./ui/ink-cloud-banner.js";
 import * as ui_level_up from "./ui/level-up.js";
 import * as ui_quest_complete from "./ui/quest-complete.js";
 import * as pickups_chest_open from "./pickups/chest-open.js";
@@ -553,6 +554,7 @@ export const effects = {
   "ui/exclamation": ui_exclamation,
   "ui/health-bar-hit": ui_health_bar_hit,
   "ui/heart-lost": ui_heart_lost,
+  "ui/ink-cloud-banner": ui_ink_cloud_banner,
   "ui/level-up": ui_level_up,
   "ui/quest-complete": ui_quest_complete,
   "pickups/chest-open": pickups_chest_open,
