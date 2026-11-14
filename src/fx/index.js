@@ -259,6 +259,7 @@ import * as ui_health_bar_hit from "./ui/health-bar-hit.js";
 import * as ui_heart_lost from "./ui/heart-lost.js";
 import * as ui_ink_cloud_banner from "./ui/ink-cloud-banner.js";
 import * as ui_level_up from "./ui/level-up.js";
+import * as ui_map_fog_dispel from "./ui/map-fog-dispel.js";
 import * as ui_quest_complete from "./ui/quest-complete.js";
 import * as pickups_chest_open from "./pickups/chest-open.js";
 import * as pickups_coin_spin from "./pickups/coin-spin.js";
@@ -556,6 +557,7 @@ export const effects = {
   "ui/heart-lost": ui_heart_lost,
   "ui/ink-cloud-banner": ui_ink_cloud_banner,
   "ui/level-up": ui_level_up,
+  "ui/map-fog-dispel": ui_map_fog_dispel,
   "ui/quest-complete": ui_quest_complete,
   "pickups/chest-open": pickups_chest_open,
   "pickups/coin-spin": pickups_coin_spin,
