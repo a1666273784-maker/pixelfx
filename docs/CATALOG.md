@@ -1,6 +1,6 @@
 # Catalog
 
-293 effects in 21 categories. Every one is a file in
+295 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -383,6 +383,7 @@ level ups, numbers, toasts, countdowns.
 | Damage number | `ui/damage-number` | one-shot 1.05s | 76×68 | A red -27 punches out of a hit spark, white for a frame, arcs up, lands with a squash and a little hop, then fades as it lifts away. |
 | Energy bar charge | `ui/energy-bar-charge` | one-shot 3.25s | 212×100 | Purple-crimson and withered-yellow motes converge into a dark-grey UI bar, filling it rightwards with a bubbling white edge, a purple-and-cyan frame shockwave, and mist. |
 | Exclamation | `ui/exclamation` | one-shot 1.4s | 84×104 | A bold ! springs up off the hero's head, stretching as it shoots up and squashing as it lands; surprise ticks flick out, it wobbles, then pops away. |
+| Foe encounter banner | `ui/foe-encounter-banner` | one-shot 4.7s | 320×180 | Ink-teal mist pours from the screen edges as a gleam burns left; a coral-white beam slashes open a flame-edged grey banner that glitches, rings out and shatters on the wind. |
 | Health bar hit | `ui/health-bar-hit` | one-shot 2s | 160×64 | A segmented health bar takes a hit: it jolts and dips, the lost chunk flashes white and sheds chips, holds, then drains away behind a sparking edge. |
 | Heart lost | `ui/heart-lost` | one-shot 1.5s | 96×88 | A HUD heart is hit: it flashes white and jolts, a crack runs down it, it splits into two halves that tumble away, leaving an empty socket that fades. |
 | Ink cloud banner | `ui/ink-cloud-banner` | one-shot 4.62s | 320×180 | Two currents of ink-blue and pale pixel cloud gather up top, part as a withered-yellow line ignites and a cold-white zone notice swells solid, then stream off as pale-cyan mist. |
