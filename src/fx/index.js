@@ -255,6 +255,7 @@ import * as ui_crit_number from "./ui/crit-number.js";
 import * as ui_damage_number from "./ui/damage-number.js";
 import * as ui_energy_bar_charge from "./ui/energy-bar-charge.js";
 import * as ui_exclamation from "./ui/exclamation.js";
+import * as ui_foe_encounter_banner from "./ui/foe-encounter-banner.js";
 import * as ui_health_bar_hit from "./ui/health-bar-hit.js";
 import * as ui_heart_lost from "./ui/heart-lost.js";
 import * as ui_ink_cloud_banner from "./ui/ink-cloud-banner.js";
@@ -552,6 +553,7 @@ export const effects = {
   "ui/damage-number": ui_damage_number,
   "ui/energy-bar-charge": ui_energy_bar_charge,
   "ui/exclamation": ui_exclamation,
+  "ui/foe-encounter-banner": ui_foe_encounter_banner,
   "ui/health-bar-hit": ui_health_bar_hit,
   "ui/heart-lost": ui_heart_lost,
   "ui/ink-cloud-banner": ui_ink_cloud_banner,
