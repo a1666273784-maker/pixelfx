@@ -247,6 +247,7 @@ import * as weather_shooting_stars from "./weather/shooting-stars.js";
 import * as weather_snow from "./weather/snow.js";
 import * as weather_storm from "./weather/storm.js";
 import * as ui_achievement from "./ui/achievement.js";
+import * as ui_acquire_toast_unfold from "./ui/acquire-toast-unfold.js";
 import * as ui_coin_collect from "./ui/coin-collect.js";
 import * as ui_combo_counter from "./ui/combo-counter.js";
 import * as ui_confetti from "./ui/confetti.js";
@@ -547,6 +548,7 @@ export const effects = {
   "weather/snow": weather_snow,
   "weather/storm": weather_storm,
   "ui/achievement": ui_achievement,
+  "ui/acquire-toast-unfold": ui_acquire_toast_unfold,
   "ui/coin-collect": ui_coin_collect,
   "ui/combo-counter": ui_combo_counter,
   "ui/confetti": ui_confetti,

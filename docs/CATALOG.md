@@ -1,6 +1,6 @@
 # Catalog
 
-295 effects in 21 categories. Every one is a file in
+297 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -375,6 +375,7 @@ level ups, numbers, toasts, countdowns.
 | effect | id | | size | what it does |
 |---|---|---|---|---|
 | Achievement | `ui/achievement` | one-shot 2.4s | 220×72 | A toast slides in on speed lines and settles; a gold medal pops onto it in a burst of sparkles, a shine sweeps the whole toast, then it slides away. |
+| Acquire toast unfold | `ui/acquire-toast-unfold` | one-shot 3.45s | 240×132 | A central white line ringed by spinning amber motes pulls open into an ash-grey UI frame, bursting into falling snow crystals, corner geometric flashes, and rising gold dust. |
 | Coin collect | `ui/coin-collect` | one-shot 2.45s | 176×116 | A coin bursts into a fountain of spinning coins that hang, then zip one by one into a HUD counter that pops and ticks up, glints and folds away. |
 | Combo counter | `ui/combo-counter` | one-shot 1.45s | 208×100 | x5 COMBO rockets in on streaming speed lines, smearing, and slams to a stop: a white flash, a ring, sparks; it pulses while a timer bar drains, then whooshes out. |
 | Confetti | `ui/confetti` | one-shot 3.4s | 200×140 | Two party poppers bang one after the other: paper bits and curly streamers burst out, stall, then tumble and flutter down, flipping, and settle on the floor. |
