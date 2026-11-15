@@ -261,6 +261,7 @@ import * as ui_ink_cloud_banner from "./ui/ink-cloud-banner.js";
 import * as ui_level_up from "./ui/level-up.js";
 import * as ui_map_fog_dispel from "./ui/map-fog-dispel.js";
 import * as ui_quest_complete from "./ui/quest-complete.js";
+import * as ui_status_bar_flush from "./ui/status-bar-flush.js";
 import * as pickups_chest_open from "./pickups/chest-open.js";
 import * as pickups_coin_spin from "./pickups/coin-spin.js";
 import * as pickups_collect_burst from "./pickups/collect-burst.js";
@@ -559,6 +560,7 @@ export const effects = {
   "ui/level-up": ui_level_up,
   "ui/map-fog-dispel": ui_map_fog_dispel,
   "ui/quest-complete": ui_quest_complete,
+  "ui/status-bar-flush": ui_status_bar_flush,
   "pickups/chest-open": pickups_chest_open,
   "pickups/coin-spin": pickups_coin_spin,
   "pickups/collect-burst": pickups_collect_burst,

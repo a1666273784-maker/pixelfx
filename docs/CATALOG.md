@@ -1,6 +1,6 @@
 # Catalog
 
-293 effects in 21 categories. Every one is a file in
+295 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -389,6 +389,7 @@ level ups, numbers, toasts, countdowns.
 | Level up | `ui/level-up` | one-shot 3.2s | 176×138 | Gold gathers at the feet and bursts up as a pillar of light round the hero; rings climb it, LEVEL UP! drops in letter by letter, a shine sweeps it, sparkles twinkle. |
 | Map fog dispel | `ui/map-fog-dispel` | one-shot 3.45s | 216×148 | Ink-cyan and pale fog over a dark UI map grid swirls inward; a rectangular amber-and-purple halo blasts outward, vaporizing the fog into cyan-white motes and unlocking the grid. |
 | Quest complete | `ui/quest-complete` | one-shot 2.6s | 204×92 | A stitched ribbon unrolls from the middle, QUEST COMPLETE types on letter by letter, a gold seal stamps down and ticks, stars pop; then it all rolls away. |
+| Status bar flush | `ui/status-bar-flush` | one-shot 3.45s | 236×108 | Cloud-white and warm-yellow orbs ignite at the left of a dual HP and energy bar; a white-and-amber wave flushes right, filling and bouncing cells into a tri-color burst and mist. |
 
 ## pickups
 
