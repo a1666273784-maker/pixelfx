@@ -101,6 +101,7 @@ import * as scifi_glitch from "./scifi/glitch.js";
 import * as scifi_hologram from "./scifi/hologram.js";
 import * as scifi_jetpack from "./scifi/jetpack.js";
 import * as scifi_laser_grid from "./scifi/laser-grid.js";
+import * as scifi_rocket_launch from "./scifi/rocket-launch.js";
 import * as scifi_scanner from "./scifi/scanner.js";
 import * as scifi_teleporter_pad from "./scifi/teleporter-pad.js";
 import * as scifi_tractor_beam from "./scifi/tractor-beam.js";
@@ -403,6 +404,7 @@ export const effects = {
   "scifi/hologram": scifi_hologram,
   "scifi/jetpack": scifi_jetpack,
   "scifi/laser-grid": scifi_laser_grid,
+  "scifi/rocket-launch": scifi_rocket_launch,
   "scifi/scanner": scifi_scanner,
   "scifi/teleporter-pad": scifi_teleporter_pad,
   "scifi/tractor-beam": scifi_tractor_beam,
