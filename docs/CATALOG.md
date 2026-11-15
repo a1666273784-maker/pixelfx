@@ -1,6 +1,6 @@
 # Catalog
 
-298 effects in 21 categories. Every one is a file in
+299 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -152,6 +152,7 @@ holograms, shields, scanners, warps.
 | Hologram | `scifi/hologram` | loop 4s | 112×104 | A floor projector throws a cone of light holding a turning wireframe model: scanlines roll through it, a data ring circles it, and it flickers, tears and jitters. |
 | Jetpack | `scifi/jetpack` | loop 2s | 96×116 | Twin thrusters fire straight down: white-hot cores with shock diamonds inside ragged flames, puffs that cool into smoke billowing below, lit by the fire. |
 | Laser grid | `scifi/laser-grid` | loop 3s | 128×84 | Security lasers between two steel posts: red beams slide and scissor across, dust and haze light up only where they cut through, and the floor sweepers scorch and spark. |
+| Rocket launch | `scifi/rocket-launch` | one-shot 5.5s | 264×284 | A heavy booster assembles on the pad and vents cryo-mist; igniters shower sparks, three engines roar into a split trench cloud, clamps release and it climbs on shock diamonds. |
 | Scanner | `scifi/scanner` | loop 3.2s | 112×78 | Brackets snap onto the hero, a scan line sweeps head to toe leaving a cooling outline, and a readout counts up to OK before it all lets go. |
 | Teleporter pad | `scifi/teleporter-pad` | loop 2.4s | 96×104 | A steel pad glows on the floor, its rings rippling outward; a soft column of light rises off it and rings of light lift away, sparkles drifting up through them. |
 | Tractor beam | `scifi/tractor-beam` | loop 3s | 120×132 | A hovering pod projects a cone of light to the floor; rocks tear loose in puffs of dust and spiral up spinning into the lens while rings of light climb the beam. |
