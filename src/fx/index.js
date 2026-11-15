@@ -260,6 +260,7 @@ import * as ui_foe_encounter_banner from "./ui/foe-encounter-banner.js";
 import * as ui_health_bar_hit from "./ui/health-bar-hit.js";
 import * as ui_heart_lost from "./ui/heart-lost.js";
 import * as ui_ink_cloud_banner from "./ui/ink-cloud-banner.js";
+import * as ui_item_drop_glow from "./ui/item-drop-glow.js";
 import * as ui_level_up from "./ui/level-up.js";
 import * as ui_map_fog_dispel from "./ui/map-fog-dispel.js";
 import * as ui_quest_complete from "./ui/quest-complete.js";
@@ -561,6 +562,7 @@ export const effects = {
   "ui/health-bar-hit": ui_health_bar_hit,
   "ui/heart-lost": ui_heart_lost,
   "ui/ink-cloud-banner": ui_ink_cloud_banner,
+  "ui/item-drop-glow": ui_item_drop_glow,
   "ui/level-up": ui_level_up,
   "ui/map-fog-dispel": ui_map_fog_dispel,
   "ui/quest-complete": ui_quest_complete,
