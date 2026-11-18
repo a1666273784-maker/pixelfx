@@ -5,6 +5,7 @@ import * as moves_carapace_spike_burst from "./moves/carapace-spike-burst.js";
 import * as moves_carrion_beetle_venom from "./moves/carrion-beetle-venom.js";
 import * as moves_coldflame_fireball from "./moves/coldflame-fireball.js";
 import * as moves_crimson_claw_rupture from "./moves/crimson-claw-rupture.js";
+import * as moves_crimson_gold_torrent from "./moves/crimson-gold-torrent.js";
 import * as moves_dash_strike from "./moves/dash-strike.js";
 import * as moves_earth_stomp from "./moves/earth-stomp.js";
 import * as moves_ember_flash from "./moves/ember-flash.js";
@@ -310,6 +311,7 @@ export const effects = {
   "moves/carrion-beetle-venom": moves_carrion_beetle_venom,
   "moves/coldflame-fireball": moves_coldflame_fireball,
   "moves/crimson-claw-rupture": moves_crimson_claw_rupture,
+  "moves/crimson-gold-torrent": moves_crimson_gold_torrent,
   "moves/dash-strike": moves_dash_strike,
   "moves/earth-stomp": moves_earth_stomp,
   "moves/ember-flash": moves_ember_flash,
