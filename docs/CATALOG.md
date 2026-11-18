@@ -1,6 +1,6 @@
 # Catalog
 
-299 effects in 21 categories. Every one is a file in
+300 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -57,6 +57,7 @@ torches, breath, pillars, walls of flame.
 | Flame ridge | `fire/flame-ridge` | one-shot 3.5s | 280×124 | A magma seam races ahead as volcanic rock spikes crowned in fire burst up in a rising wave, surge white-hot, shatter into fireballs and smoke, and leave a breathing rift. |
 | Flamethrower | `fire/flamethrower` | loop 1.6s | 184×104 | A pressurised jet shooting right: a blue pilot at the nozzle, a tight stream with surges racing down it, a sputter, burning drops falling off, a tip that curls up into smoke. |
 | Giant meteor | `fire/giant-meteor` | one-shot 5.1s | 320×260 | A colossal magma-cracked asteroid screams down with trailing fragments, crushes into the floor, and erupts into a mushrooming fireball and breathing crater. |
+| Lava boulder | `fire/lava-boulder` | one-shot 4.6s | 336×156 | A colossal magma-cracked boulder heaves from a volcanic rift and rolls heavily across the floor, leaving a bubbling river of molten lava and flames before erupting. |
 | Meteor | `fire/meteor` | one-shot 5s | 272×232 | A burning rock streaks in from the upper left in a comet of fire and smashes into the floor: a white flash, a fireball, rocks and brands thrown, a glowing crater that cools. |
 | Meteor shower | `fire/meteor-shower` | one-shot 3s | 260×170 | A staggered volley of small burning stones strikes the ground, scattering sparks and smoke over cooling craters. |
 | Qilin descent | `fire/qilin-descent` | one-shot 4.5s | 224×256 | Teal spirit rings contract under four hooffalls, blasting a shockwave and fiery cracks before a golden pillar wrapped in teal mane-fire erupts, shatters, and cools. |

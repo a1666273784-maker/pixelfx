@@ -41,6 +41,7 @@ import * as fire_flame_pillar from "./fire/flame-pillar.js";
 import * as fire_flame_ridge from "./fire/flame-ridge.js";
 import * as fire_flamethrower from "./fire/flamethrower.js";
 import * as fire_giant_meteor from "./fire/giant-meteor.js";
+import * as fire_lava_boulder from "./fire/lava-boulder.js";
 import * as fire_meteor from "./fire/meteor.js";
 import * as fire_meteor_shower from "./fire/meteor-shower.js";
 import * as fire_qilin_descent from "./fire/qilin-descent.js";
@@ -344,6 +345,7 @@ export const effects = {
   "fire/flame-ridge": fire_flame_ridge,
   "fire/flamethrower": fire_flamethrower,
   "fire/giant-meteor": fire_giant_meteor,
+  "fire/lava-boulder": fire_lava_boulder,
   "fire/meteor": fire_meteor,
   "fire/meteor-shower": fire_meteor_shower,
   "fire/qilin-descent": fire_qilin_descent,
