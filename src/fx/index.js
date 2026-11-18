@@ -117,6 +117,7 @@ import * as melee_double_slash from "./melee/double-slash.js";
 import * as melee_ember_claw from "./melee/ember-claw.js";
 import * as melee_flame_slash from "./melee/flame-slash.js";
 import * as melee_frost_blade from "./melee/frost-blade.js";
+import * as melee_gilded_crimson_tri_arc from "./melee/gilded-crimson-tri-arc.js";
 import * as melee_hammer_smash from "./melee/hammer-smash.js";
 import * as melee_heavy_cleave from "./melee/heavy-cleave.js";
 import * as melee_lacquer_fan from "./melee/lacquer-fan.js";
@@ -421,6 +422,7 @@ export const effects = {
   "melee/ember-claw": melee_ember_claw,
   "melee/flame-slash": melee_flame_slash,
   "melee/frost-blade": melee_frost_blade,
+  "melee/gilded-crimson-tri-arc": melee_gilded_crimson_tri_arc,
   "melee/hammer-smash": melee_hammer_smash,
   "melee/heavy-cleave": melee_heavy_cleave,
   "melee/lacquer-fan": melee_lacquer_fan,
