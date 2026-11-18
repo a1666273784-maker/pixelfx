@@ -1,6 +1,6 @@
 # Catalog
 
-299 effects in 21 categories. Every one is a file in
+300 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -174,6 +174,7 @@ slashes, smears, cleaves, combos.
 | Ember claw | `melee/ember-claw` | one-shot 0.68s | 136×96 | Three staggered fiery claw arcs sweep from top-left to bottom-right as translucent heat trails, sparking a white-hot impact, a ring of ground embers and a fast-cooling flame. |
 | Flame slash | `melee/flame-slash` | one-shot 2.25s | 364×224 | A greatsword cleaves the floor to unleash an oppressive, scroll-carved crimson-gold flame crescent that scours the earth and erupts through the target in a roaring pillar of fire. |
 | Frost blade | `melee/frost-blade` | one-shot 0.74s | 204×140 | An expansive overhead downward cleave with a 1-2px blood-red core, wide cyan-white cold wake and 1px white serrated frost rim erupts in snow shavings and blood stars. |
+| Gilded crimson tri-arc | `melee/gilded-crimson-tri-arc` | one-shot 2s | 320×224 | Boss gilded crimson triple crescent slash: three white-gold glints with dark-red heat waves erupt into three parallel tearing crescents, cross-slash impact, and lingering ash. |
 | Hammer smash | `melee/hammer-smash` | one-shot 2s | 208×112 | A hammer drops in front in a wedge of motion: a white slam with rays, a dome of force, a dent with cracks, rocks thrown up that bounce and settle, and dust. |
 | Heavy cleave | `melee/heavy-cleave` | one-shot 1.9s | 208×116 | A glint over the head, then a thick ember arc accelerates over the top into the floor: a white slam, glowing cracks, dust rolling both ways, grit and rising embers. |
 | Lacquer fan | `melee/lacquer-fan` | one-shot 2.25s | 296×188 | The folded fan snaps open before his face into a gold-ribbed black half-moon with a red sun; a point-blank ring of red and black lacquer spatters the floor and the target. |
