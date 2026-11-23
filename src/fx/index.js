@@ -13,6 +13,7 @@ import * as moves_earth_stomp from "./moves/earth-stomp.js";
 import * as moves_ember_flash from "./moves/ember-flash.js";
 import * as moves_fireball_throw from "./moves/fireball-throw.js";
 import * as moves_flame_wheel from "./moves/flame-wheel.js";
+import * as moves_flurry_cross_slash from "./moves/flurry-cross-slash.js";
 import * as moves_ground_pound from "./moves/ground-pound.js";
 import * as moves_holy_smite from "./moves/holy-smite.js";
 import * as moves_ice_lance_throw from "./moves/ice-lance-throw.js";
@@ -325,6 +326,7 @@ export const effects = {
   "moves/ember-flash": moves_ember_flash,
   "moves/fireball-throw": moves_fireball_throw,
   "moves/flame-wheel": moves_flame_wheel,
+  "moves/flurry-cross-slash": moves_flurry_cross_slash,
   "moves/ground-pound": moves_ground_pound,
   "moves/holy-smite": moves_holy_smite,
   "moves/ice-lance-throw": moves_ice_lance_throw,

@@ -1,6 +1,6 @@
 # Catalog
 
-308 effects in 21 categories. Every one is a file in
+309 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -22,6 +22,7 @@ whole attacks, wind-up to recovery, chained from the effects below.
 | Ember flash | `moves/ember-flash` | one-shot 2.45s | 232×144 | A warm yellow spark swells on the foe, its air sucked inward, then pops into a small fire wave and dust; the body flashes white, leaving a thin wisp and ash. |
 | Fireball throw | `moves/fireball-throw` | one-shot 6.81s | 356×244 | He gathers fire in his hand, leans back and hurls it: the ball flies, the target takes it in a blast and comes out charred. |
 | Flame wheel | `moves/flame-wheel` | one-shot 2.85s | 400×196 | Gathers an incandescent serrated fire wheel, hurls it hurtling along the ground in whirling flame arcs, grinds into the target, and erupts in an oppressive molten blast. |
+| Flurry cross slash | `moves/flurry-cross-slash` | one-shot 2.6s | 416×248 | Omnidirectional curved blade slashes cage the target in bursting sparks before two colossal blades intersect to cleave open a glowing cross-shaped fissure. |
 | Ground pound | `moves/ground-pound` | one-shot 3.82s | 304×204 | He coils, leaps out of frame height, hangs, and comes down like a rock: the floor cracks, shock waves race out and throw the target about as they pass. |
 | Holy smite | `moves/holy-smite` | one-shot 2.8s | 252×182 | Both hands go up and a glint marks the target; he brings them down and a bolt of light drops like a hammer, leaving the target blanched. |
 | Ice lance throw | `moves/ice-lance-throw` | one-shot 4.34s | 310×136 | Frost gathers into a spear in his hand, he throws it like a javelin, and the target ices over in a burst of snowflakes and shivers. |
