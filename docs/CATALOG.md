@@ -1,6 +1,6 @@
 # Catalog
 
-311 effects in 21 categories. Every one is a file in
+312 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -369,6 +369,7 @@ rain, snow, fog, aurora.
 | effect | id | | size | what it does |
 |---|---|---|---|---|
 | Aurora | `weather/aurora` | loop 12s | 320×180 | Rippling curtains of green-to-violet light over a starfield: folding hems burn bright, rays shimmer up into violet, and the whole sky slowly breathes. |
+| Bioluminescent forest | `weather/bioluminescent-forest` | loop 12s | 320×180 | Woodland dusk slowly deepens into night as 3D mushroom colonies and trunk vines wake from near to far in breathing cyan and violet light amid dandelion fluff and fireflies. |
 | Blizzard | `weather/blizzard` | loop 8s | 320×180 | Snow driven almost flat by a gale: streaks at three depths race past, gusts throw translucent sheets of snow across the sky and spindrift streams off the drifts. |
 | Cherry blossoms | `weather/cherry-blossoms` | loop 10s | 320×180 | Pink petals flutter down on a spring breeze, tumbling in little spirals and flashing as they catch the light, with a few whole blossoms spinning among them. |
 | Clouds | `weather/clouds` | loop 12s | 320×180 | Layers of clouds drift past a bright moon at night: silver-lit tops, dark bellies, edges that flare where they cross the moon, forming and thinning as they go. |
