@@ -1,6 +1,6 @@
 # Catalog
 
-301 effects in 21 categories. Every one is a file in
+303 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -15,6 +15,7 @@ whole attacks, wind-up to recovery, chained from the effects below.
 | Coldflame fireball | `moves/coldflame-fireball` | one-shot 2.95s | 416×216 | Crimson light ignites at the caster, firing a ghostly-blue rimmed pale fireball in an S-wave dropping white sparks, erupting into rising pale cold flames and blue flamelets. |
 | Crimson claw rupture | `moves/crimson-claw-rupture` | one-shot 2.65s | 368×224 | Black-purple cold mist and churning soil boil under the foe before three dark-crimson claw arcs rip upward, branding a crimson cross scar amid shadow smoke and red light. |
 | Crimson gold torrent | `moves/crimson-gold-torrent` | one-shot 3.85s | 448×216 | Heat distortion and spiraling crimson-gold motes collapse to a white core, firing gold sonic rings and a crimson-gold flame torrent with white hit strobes and smoke. |
+| Crimson spire chain | `moves/crimson-spire-chain` | one-shot 4.1s | 424×240 | Dark-crimson and gold energy slams into a grey-crimson ground wave, racing a crimson-gold ray that erupts three spiralling flame pillars with white hit flashes and ash. |
 | Dash strike | `moves/dash-strike` | one-shot 2.3s | 372×156 | A crouch, then he's across the floor in a blur of after-images and already cutting: a critical hit, a beat, and he hops back to where he started. |
 | Earth stomp | `moves/earth-stomp` | one-shot 3.46s | 290×142 | A knee comes up, the boot slams down, the floor heaves under the target and a stone spike rams up through it. |
 | Ember flash | `moves/ember-flash` | one-shot 2.45s | 232×144 | A warm yellow spark swells on the foe, its air sucked inward, then pops into a small fire wave and dust; the body flashes white, leaving a thin wisp and ash. |
