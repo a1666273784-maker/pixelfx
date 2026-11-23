@@ -1,6 +1,6 @@
 # Catalog
 
-305 effects in 21 categories. Every one is a file in
+306 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -35,6 +35,7 @@ whole attacks, wind-up to recovery, chained from the effects below.
 | Rocket launcher | `moves/rocket-launcher` | one-shot 6.56s | 480×244 | He drops to one knee, shoulders the tube and fires: the kick shoves him back along the floor, the rocket crawls out on its jet and the target goes up. |
 | Rockfall call | `moves/rockfall-call` | one-shot 7.16s | 480×268 | He reaches skyward, tears both hands down and stamps a glowing rift into the floor; a storm-dust pall gathers and an avalanche of boulders and monoliths pounds the target. |
 | Shadow wood spike | `moves/shadow-wood-spike` | one-shot 2.95s | 324×204 | Purple-black smoke and churning dirt warn for 0.5s before a deadwood shadow spike impales the target with a shadow shockwave and scattering wood splinters. |
+| Starfall collapse | `moves/starfall-collapse` | one-shot 4.2s | 436×264 | A falling star collapses into a lensed black hole that rips light and boulders inward, crushes to a single point, and detonates in a space-warping supernova. |
 | Swarm mist bolt | `moves/swarm-mist-bolt` | one-shot 2.65s | 424×208 | Black smoke disperses to launch a compact black-dot insect swarm in dark-crimson miasma, dropping stray specks before exploding into black chitin and gnawing blood-light. |
 | Sword combo | `moves/sword-combo` | one-shot 2.98s | 264×150 | Three strokes walking forward: a slash, a crossing double cut, and a two-handed cleave into the floor that throws the target about. |
 | Sword dash | `moves/sword-dash` | one-shot 2.04s | 444×148 | A ponytail wuxia swordsman crouches low and sprints forward, leaving three fading silver phantoms and white foot-streams before lightly tapping his sword tip to the stone. |
