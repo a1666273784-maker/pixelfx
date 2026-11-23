@@ -1,6 +1,6 @@
 # Catalog
 
-304 effects in 21 categories. Every one is a file in
+305 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -12,6 +12,7 @@ whole attacks, wind-up to recovery, chained from the effects below.
 | Arrow shot | `moves/arrow-shot` | one-shot 1.9s | 300×74 | He raises the bow, draws to his cheek, holds his breath and looses: the string snaps forward, the arrow crosses the floor and thuds home. |
 | Carapace spike burst | `moves/carapace-spike-burst` | one-shot 1.9s | 368×184 | Bursts short dark-brown cold-glint spikes and black shell shards from the caster, drilling across in a spinning flight cycle to pierce the target in a tight red-white flash. |
 | Carrion beetle venom | `moves/carrion-beetle-venom` | one-shot 3.55s | 480×226 | Dark-crimson fog and slime gather into a hissing blood-red venom orb that screams into the target and bursts into a sticky corrosion splash, black rot smoke and biting blood-worms. |
+| Celestial thunder talisman | `moves/celestial-thunder-talisman` | one-shot 4.15s | 436×268 | A Daoist cinnabar talisman ignites to summon dark thunderclouds and a colossal golden lightning pillar that shatters the earth with branching electric cracks and arcs. |
 | Coldflame fireball | `moves/coldflame-fireball` | one-shot 2.95s | 416×216 | Crimson light ignites at the caster, firing a ghostly-blue rimmed pale fireball in an S-wave dropping white sparks, erupting into rising pale cold flames and blue flamelets. |
 | Crimson claw rupture | `moves/crimson-claw-rupture` | one-shot 2.65s | 368×224 | Black-purple cold mist and churning soil boil under the foe before three dark-crimson claw arcs rip upward, branding a crimson cross scar amid shadow smoke and red light. |
 | Crimson gold torrent | `moves/crimson-gold-torrent` | one-shot 3.85s | 448×216 | Heat distortion and spiraling crimson-gold motes collapse to a white core, firing gold sonic rings and a crimson-gold flame torrent with white hit strobes and smoke. |
