@@ -26,6 +26,7 @@ import * as moves_poison_sting_volley from "./moves/poison-sting-volley.js";
 import * as moves_rocket_launcher from "./moves/rocket-launcher.js";
 import * as moves_rockfall_call from "./moves/rockfall-call.js";
 import * as moves_shadow_wood_spike from "./moves/shadow-wood-spike.js";
+import * as moves_spatial_zipper_blink from "./moves/spatial-zipper-blink.js";
 import * as moves_starfall_collapse from "./moves/starfall-collapse.js";
 import * as moves_swarm_mist_bolt from "./moves/swarm-mist-bolt.js";
 import * as moves_sword_array_ward from "./moves/sword-array-ward.js";
@@ -337,6 +338,7 @@ export const effects = {
   "moves/rocket-launcher": moves_rocket_launcher,
   "moves/rockfall-call": moves_rockfall_call,
   "moves/shadow-wood-spike": moves_shadow_wood_spike,
+  "moves/spatial-zipper-blink": moves_spatial_zipper_blink,
   "moves/starfall-collapse": moves_starfall_collapse,
   "moves/swarm-mist-bolt": moves_swarm_mist_bolt,
   "moves/sword-array-ward": moves_sword_array_ward,

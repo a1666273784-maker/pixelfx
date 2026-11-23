@@ -1,6 +1,6 @@
 # Catalog
 
-307 effects in 21 categories. Every one is a file in
+308 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -35,6 +35,7 @@ whole attacks, wind-up to recovery, chained from the effects below.
 | Rocket launcher | `moves/rocket-launcher` | one-shot 6.56s | 480×244 | He drops to one knee, shoulders the tube and fires: the kick shoves him back along the floor, the rocket crawls out on its jet and the target goes up. |
 | Rockfall call | `moves/rockfall-call` | one-shot 7.16s | 480×268 | He reaches skyward, tears both hands down and stamps a glowing rift into the floor; a storm-dust pall gathers and an avalanche of boulders and monoliths pounds the target. |
 | Shadow wood spike | `moves/shadow-wood-spike` | one-shot 2.95s | 324×204 | Purple-black smoke and churning dirt warn for 0.5s before a deadwood shadow spike impales the target with a shadow shockwave and scattering wood splinters. |
+| Spatial zipper blink | `moves/spatial-zipper-blink` | one-shot 3.75s | 384×208 | A giant metallic zipper rips open a starry black hole to swallow the hero, then a destination zipper spits them out and slams shut in an air-blast. |
 | Starfall collapse | `moves/starfall-collapse` | one-shot 4.2s | 436×264 | A falling star collapses into a lensed black hole that rips light and boulders inward, crushes to a single point, and detonates in a space-warping supernova. |
 | Swarm mist bolt | `moves/swarm-mist-bolt` | one-shot 2.65s | 424×208 | Black smoke disperses to launch a compact black-dot insect swarm in dark-crimson miasma, dropping stray specks before exploding into black chitin and gnawing blood-light. |
 | Sword array ward | `moves/sword-array-ward` | one-shot 3.75s | 316×196 | Eight glowing spirit swords emerge around the hero and whirl into a circular blade-light barrier, parrying fierce strikes in showers of crisp metallic sparks. |
