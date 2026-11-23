@@ -21,6 +21,7 @@ import * as moves_ice_lance_throw from "./moves/ice-lance-throw.js";
 import * as moves_lacquer_fan_combo from "./moves/lacquer-fan-combo.js";
 import * as moves_lightning_call from "./moves/lightning-call.js";
 import * as moves_meteor_call from "./moves/meteor-call.js";
+import * as moves_mobius_infinity_lock from "./moves/mobius-infinity-lock.js";
 import * as moves_moss_boulder_throw from "./moves/moss-boulder-throw.js";
 import * as moves_myriad_sword_convergence from "./moves/myriad-sword-convergence.js";
 import * as moves_pistol_shots from "./moves/pistol-shots.js";
@@ -335,6 +336,7 @@ export const effects = {
   "moves/lacquer-fan-combo": moves_lacquer_fan_combo,
   "moves/lightning-call": moves_lightning_call,
   "moves/meteor-call": moves_meteor_call,
+  "moves/mobius-infinity-lock": moves_mobius_infinity_lock,
   "moves/moss-boulder-throw": moves_moss_boulder_throw,
   "moves/myriad-sword-convergence": moves_myriad_sword_convergence,
   "moves/pistol-shots": moves_pistol_shots,
