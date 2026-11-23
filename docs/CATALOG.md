@@ -1,6 +1,6 @@
 # Catalog
 
-308 effects in 21 categories. Every one is a file in
+309 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -28,6 +28,7 @@ whole attacks, wind-up to recovery, chained from the effects below.
 | Lacquer fan combo | `moves/lacquer-fan-combo` | one-shot 3.65s | 346×188 | The lacquer fan bursts open, scythes low and throws an emerald cyclone that bursts into a rain of leaves — one unbroken fan chain. |
 | Lightning call | `moves/lightning-call` | one-shot 3s | 290×266 | An arm goes up, a sigil lights under the target, and on the downswing a thick bolt comes down on it; the target jolts through the aftershocks. |
 | Meteor call | `moves/meteor-call` | one-shot 6.43s | 380×240 | A long chant: a circle draws itself round him, it flares, he points, and a burning rock comes down on the target and flattens the scene. |
+| Mobius infinity lock | `moves/mobius-infinity-lock` | one-shot 3.9s | 288×204 | Two glowing colorful ribbons weave around the target and snap-lock into a 3D infinity Mobius halo with accelerating light streams and crushing light-pressure waves. |
 | Moss boulder throw | `moves/moss-boulder-throw` | one-shot 3.5s | 476×224 | Rips a colossal moss-aura boulder from a trembling dust storm, hurls it in a thick sonic-boom wake, and shatters it on the enemy with a dust shockwave, knockback, and stun. |
 | Myriad sword convergence | `moves/myriad-sword-convergence` | one-shot 4.15s | 436×248 | Dozens of summoned spirit swords swirl together to forge a colossal greatsword that cleaves down in a blinding blast, leaving embedded blades and sword-qi mist. |
 | Pistol shots | `moves/pistol-shots` | one-shot 2.6s | 378×76 | Three aimed shots: the gun kicks up each time and settles, tracers cross the floor, and the target staggers under each hit. |
