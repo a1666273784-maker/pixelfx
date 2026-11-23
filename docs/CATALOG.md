@@ -1,6 +1,6 @@
 # Catalog
 
-309 effects in 21 categories. Every one is a file in
+310 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -25,6 +25,7 @@ whole attacks, wind-up to recovery, chained from the effects below.
 | Flurry cross slash | `moves/flurry-cross-slash` | one-shot 2.6s | 416×248 | Omnidirectional curved blade slashes cage the target in bursting sparks before two colossal blades intersect to cleave open a glowing cross-shaped fissure. |
 | Ground pound | `moves/ground-pound` | one-shot 3.82s | 304×204 | He coils, leaps out of frame height, hangs, and comes down like a rock: the floor cracks, shock waves race out and throw the target about as they pass. |
 | Holy smite | `moves/holy-smite` | one-shot 2.8s | 252×182 | Both hands go up and a glint marks the target; he brings them down and a bolt of light drops like a hammer, leaving the target blanched. |
+| Hourglass rewind heal | `moves/hourglass-rewind-heal` | one-shot 3.64s | 320×216 | A giant glass hourglass emerges from the hero and shatters; pouring golden sand freezes mid-air, rewinds with glowing shards to heal wounds, and pulses golden ripples. |
 | Ice lance throw | `moves/ice-lance-throw` | one-shot 4.34s | 310×136 | Frost gathers into a spear in his hand, he throws it like a javelin, and the target ices over in a burst of snowflakes and shivers. |
 | Lacquer fan combo | `moves/lacquer-fan-combo` | one-shot 3.65s | 346×188 | The lacquer fan bursts open, scythes low and throws an emerald cyclone that bursts into a rain of leaves — one unbroken fan chain. |
 | Lightning call | `moves/lightning-call` | one-shot 3s | 290×266 | An arm goes up, a sigil lights under the target, and on the downswing a thick bolt comes down on it; the target jolts through the aftershocks. |
