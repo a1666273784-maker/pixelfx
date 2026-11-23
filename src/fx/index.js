@@ -28,6 +28,7 @@ import * as moves_rockfall_call from "./moves/rockfall-call.js";
 import * as moves_shadow_wood_spike from "./moves/shadow-wood-spike.js";
 import * as moves_starfall_collapse from "./moves/starfall-collapse.js";
 import * as moves_swarm_mist_bolt from "./moves/swarm-mist-bolt.js";
+import * as moves_sword_array_ward from "./moves/sword-array-ward.js";
 import * as moves_sword_combo from "./moves/sword-combo.js";
 import * as moves_sword_dash from "./moves/sword-dash.js";
 import * as moves_venom_spit from "./moves/venom-spit.js";
@@ -338,6 +339,7 @@ export const effects = {
   "moves/shadow-wood-spike": moves_shadow_wood_spike,
   "moves/starfall-collapse": moves_starfall_collapse,
   "moves/swarm-mist-bolt": moves_swarm_mist_bolt,
+  "moves/sword-array-ward": moves_sword_array_ward,
   "moves/sword-combo": moves_sword_combo,
   "moves/sword-dash": moves_sword_dash,
   "moves/venom-spit": moves_venom_spit,
