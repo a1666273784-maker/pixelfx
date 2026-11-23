@@ -1,6 +1,6 @@
 # Catalog
 
-306 effects in 21 categories. Every one is a file in
+307 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -37,6 +37,7 @@ whole attacks, wind-up to recovery, chained from the effects below.
 | Shadow wood spike | `moves/shadow-wood-spike` | one-shot 2.95s | 324×204 | Purple-black smoke and churning dirt warn for 0.5s before a deadwood shadow spike impales the target with a shadow shockwave and scattering wood splinters. |
 | Starfall collapse | `moves/starfall-collapse` | one-shot 4.2s | 436×264 | A falling star collapses into a lensed black hole that rips light and boulders inward, crushes to a single point, and detonates in a space-warping supernova. |
 | Swarm mist bolt | `moves/swarm-mist-bolt` | one-shot 2.65s | 424×208 | Black smoke disperses to launch a compact black-dot insect swarm in dark-crimson miasma, dropping stray specks before exploding into black chitin and gnawing blood-light. |
+| Sword array ward | `moves/sword-array-ward` | one-shot 3.75s | 316×196 | Eight glowing spirit swords emerge around the hero and whirl into a circular blade-light barrier, parrying fierce strikes in showers of crisp metallic sparks. |
 | Sword combo | `moves/sword-combo` | one-shot 2.98s | 264×150 | Three strokes walking forward: a slash, a crossing double cut, and a two-handed cleave into the floor that throws the target about. |
 | Sword dash | `moves/sword-dash` | one-shot 2.04s | 444×148 | A ponytail wuxia swordsman crouches low and sprints forward, leaving three fading silver phantoms and white foot-streams before lightly tapping his sword tip to the stone. |
 | Venom spit | `moves/venom-spit` | one-shot 3.1s | 408×204 | Coils and spits a serrated acid fang to poison the target, then blasts a colossal fanged venom orb that erupts in an acid crown, melting drips, and a boiling etched pit. |
