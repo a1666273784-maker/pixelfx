@@ -1,6 +1,6 @@
 # Catalog
 
-316 effects in 21 categories. Every one is a file in
+317 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -372,6 +372,7 @@ rain, snow, fog, aurora.
 |---|---|---|---|---|
 | Aurora | `weather/aurora` | loop 12s | 320×180 | Rippling curtains of green-to-violet light over a starfield: folding hems burn bright, rays shimmer up into violet, and the whole sky slowly breathes. |
 | Aurora starfall | `weather/aurora-starfall` | one-shot 4.5s | 320×180 | Soft curtains of interwoven emerald and magenta-violet aurora wave over a starry sky, shedding gentle stardust and long-tailed shooting stars across aurora-lit ground. |
+| Battlefield embers | `weather/battlefield-embers` | loop 8s | 320×180 | Overlayable battlefield heat: scorching orange-red glow wells from below as bright orange sparks and smoldering ash spiral upward through shimmering air, popping and forking. |
 | Bioluminescent forest | `weather/bioluminescent-forest` | loop 12s | 320×180 | Woodland dusk slowly deepens into night as 3D mushroom colonies and trunk vines wake from near to far in breathing cyan and violet light amid dandelion fluff and fireflies. |
 | Bioluminescent tide | `weather/bioluminescent-tide` | loop 12s | 320×180 | Dark ocean swells roll in and ignite into piercing neon-blue curls, crashing into glowing spray before receding to leave dimming blue rivulet veins across wet night sand. |
 | Blizzard | `weather/blizzard` | loop 8s | 320×180 | Snow driven almost flat by a gale: streaks at three depths race past, gusts throw translucent sheets of snow across the sky and spindrift streams off the drifts. |
