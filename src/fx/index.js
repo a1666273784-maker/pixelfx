@@ -319,6 +319,7 @@ import * as critters_ghost from "./critters/ghost.js";
 import * as critters_jellyfish from "./critters/jellyfish.js";
 import * as critters_slime from "./critters/slime.js";
 import * as critters_snake from "./critters/snake.js";
+import * as critters_starlight_slime from "./critters/starlight-slime.js";
 import * as critters_wisp from "./critters/wisp.js";
 
 export { categories } from "./categories.js";
@@ -643,5 +644,6 @@ export const effects = {
   "critters/jellyfish": critters_jellyfish,
   "critters/slime": critters_slime,
   "critters/snake": critters_snake,
+  "critters/starlight-slime": critters_starlight_slime,
   "critters/wisp": critters_wisp,
 };
