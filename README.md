@@ -29,7 +29,7 @@ the idea at library scale, with a skill to keep going.
 | **moves** | 37 | arrow shot, carapace spike burst, carrion beetle venom, celestial thunder talisman, coldflame fireball, crimson claw rupture… |
 | **fire** | 21 | brazier, campfire, candle, crimson eruption, dark crimson eruption, fire breath… |
 | **explosions** | 12 | barrel explosion, big explosion, cartoon pow, dirt explosion, firework burst, firework rocket… |
-| **water** | 12 | bubbles, drip, fountain, geyser, rain splash, ripples… |
+| **water** | 13 | bubbles, drip, fountain, geyser, rain splash, ripples… |
 | **ice** | 12 | blizzard vortex, freeze, frost breath, frost nova, frost tread, ice burst… |
 | **lightning** | 11 | ball lightning, chain lightning, charge up, electrified, lightning strike, plasma ball… |
 | **sci-fi** | 13 | emp blast, energy core, force field, glitch, hologram, jetpack… |

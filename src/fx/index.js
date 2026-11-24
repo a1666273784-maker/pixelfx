@@ -77,6 +77,7 @@ import * as water_geyser from "./water/geyser.js";
 import * as water_rain_splash from "./water/rain-splash.js";
 import * as water_ripples from "./water/ripples.js";
 import * as water_splash from "./water/splash.js";
+import * as water_starlight_waterfall from "./water/starlight-waterfall.js";
 import * as water_water_jet from "./water/water-jet.js";
 import * as water_water_orb from "./water/water-orb.js";
 import * as water_waterfall from "./water/waterfall.js";
@@ -394,6 +395,7 @@ export const effects = {
   "water/rain-splash": water_rain_splash,
   "water/ripples": water_ripples,
   "water/splash": water_splash,
+  "water/starlight-waterfall": water_starlight_waterfall,
   "water/water-jet": water_water_jet,
   "water/water-orb": water_water_orb,
   "water/waterfall": water_waterfall,
