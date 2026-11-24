@@ -32,7 +32,7 @@ the idea at library scale, with a skill to keep going.
 | **water** | 13 | bubbles, drip, fountain, geyser, rain splash, ripples… |
 | **ice** | 12 | blizzard vortex, freeze, frost breath, frost nova, frost tread, ice burst… |
 | **lightning** | 11 | ball lightning, chain lightning, charge up, electrified, lightning strike, plasma ball… |
-| **sci-fi** | 13 | emp blast, energy core, force field, glitch, hologram, jetpack… |
+| **sci-fi** | 14 | emp blast, energy core, force field, glitch, hologram, hologram scan… |
 | **melee** | 24 | claw swipe, crimson gold claw, crimson ripple, dagger flurry, dark crimson claw, double slash… |
 | **impacts** | 12 | blunt hit, bullet impact, critical hit, ground slam, heavy landing, hit flash… |
 | **projectiles** | 14 | arrow, bullet tracer, cannon shot, energy disc, signal flare, homing missile… |
