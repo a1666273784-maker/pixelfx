@@ -1,6 +1,6 @@
 # Catalog
 
-319 effects in 21 categories. Every one is a file in
+320 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -351,6 +351,7 @@ poison, vines, thorns, quakes.
 | Acid splash | `nature/acid-splash` | one-shot 2.8s | 184×116 | A gob of acid bursts into a crown and spatters; it eats a glowing, smoking pit into the floor and boils down into it, spitting bright beads, pale steam curling off. |
 | Boulder | `nature/boulder` | one-shot 2.3s | 264×120 | A spinning boulder arcs right shedding dust and pebbles, smashes into the floor in a white flash and bursts into tumbling chunks, gravel and rolling dust. |
 | Earth spike | `nature/earth-spike` | one-shot 3.4s | 272×150 | The floor cracks with light and heaves, a faceted stone spike rams up with two side shards in a burst of chips, grit and dust; rubble rains, then it splits and crumbles. |
+| Firefly vines | `nature/firefly-vines` | loop 12s | 320×180 | Dark silhouette boughs and swaying vines drape from both upper corners with moonlight rim glints as yellow-green fireflies wake in the leaves, swim inward with trails, and fade. |
 | Healing bloom | `nature/healing-bloom` | one-shot 3.3s | 124×120 | A sprout pushes up and unfurls, a bud swells and opens round a glowing golden heart in a flare of healing light; its petals lift away one by one as motes. |
 | Leaf storm | `nature/leaf-storm` | loop 2.4s | 112×104 | Leaves tumble up a rising spiral round the character, passing behind and in front, turning and flipping, wrapped in bright bands of wind; litter swirls at their feet. |
 | Poison cloud | `nature/poison-cloud` | loop 4s | 256×100 | A miasma hugging the floor: ragged sheets of gas lit yellow-green from within, fading to violet, creep out in tongues that curl over at their tips; plumes twist up as ribbons. |
