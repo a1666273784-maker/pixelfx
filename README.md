@@ -27,7 +27,7 @@ the idea at library scale, with a skill to keep going.
 | category | effects | some of them |
 |---|---|---|
 | **moves** | 37 | arrow shot, carapace spike burst, carrion beetle venom, celestial thunder talisman, coldflame fireball, crimson claw rupture… |
-| **fire** | 21 | brazier, campfire, candle, crimson eruption, dark crimson eruption, fire breath… |
+| **fire** | 22 | brazier, campfire, candle, crimson eruption, dark crimson eruption, fire breath… |
 | **explosions** | 12 | barrel explosion, big explosion, cartoon pow, dirt explosion, firework burst, firework rocket… |
 | **water** | 13 | bubbles, drip, fountain, geyser, rain splash, ripples… |
 | **ice** | 12 | blizzard vortex, freeze, frost breath, frost nova, frost tread, ice burst… |

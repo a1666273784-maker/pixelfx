@@ -74,6 +74,7 @@ torches, breath, pillars, walls of flame.
 | Qilin roar | `fire/qilin-roar` | one-shot 3.8s | 308×228 | The warrior coils as cracked-earth boulders levitate, then roars skyward with a towering Crimson-Gold Qilin phantom while an oppressive solar-flame halo forces outward. |
 | Spirit flame | `fire/spirit-flame` | loop 3s | 80×124 | A cold blue-teal ghost fire floating in the air: a bright rim round a hollow dark heart, a wave climbing its wispy tail, curls breaking off, cold sparks rising. |
 | Torch | `fire/torch` | loop 2s | 72×120 | A wall torch on an iron bracket: a licking flame leaping off a pitch-soaked wrap, licks and puffs torn off its tips, smoke, embers, a flickering light on the wall. |
+| Tricolor lacquer flame | `fire/tricolor-lacquer-flame` | loop 3s | 204×132 | Three stationary Chinese lacquer flames — gilded gold, frost white, and mineral celadon green — burn in place with coiling ascending wisps, heavy urushi hearts, and flowing sheen. |
 
 ## explosions
 
