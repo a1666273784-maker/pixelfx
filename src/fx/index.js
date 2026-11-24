@@ -251,6 +251,7 @@ import * as nature_vine_whip from "./nature/vine-whip.js";
 import * as weather_aurora from "./weather/aurora.js";
 import * as weather_aurora_starfall from "./weather/aurora-starfall.js";
 import * as weather_bioluminescent_forest from "./weather/bioluminescent-forest.js";
+import * as weather_bioluminescent_tide from "./weather/bioluminescent-tide.js";
 import * as weather_blizzard from "./weather/blizzard.js";
 import * as weather_cherry_blossoms from "./weather/cherry-blossoms.js";
 import * as weather_clouds from "./weather/clouds.js";
@@ -569,6 +570,7 @@ export const effects = {
   "weather/aurora": weather_aurora,
   "weather/aurora-starfall": weather_aurora_starfall,
   "weather/bioluminescent-forest": weather_bioluminescent_forest,
+  "weather/bioluminescent-tide": weather_bioluminescent_tide,
   "weather/blizzard": weather_blizzard,
   "weather/cherry-blossoms": weather_cherry_blossoms,
   "weather/clouds": weather_clouds,
