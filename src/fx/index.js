@@ -58,6 +58,7 @@ import * as fire_qilin_descent from "./fire/qilin-descent.js";
 import * as fire_qilin_roar from "./fire/qilin-roar.js";
 import * as fire_spirit_flame from "./fire/spirit-flame.js";
 import * as fire_torch from "./fire/torch.js";
+import * as fire_tricolor_lacquer_flame from "./fire/tricolor-lacquer-flame.js";
 import * as explosions_barrel_explosion from "./explosions/barrel-explosion.js";
 import * as explosions_big_explosion from "./explosions/big-explosion.js";
 import * as explosions_cartoon_pow from "./explosions/cartoon-pow.js";
@@ -378,6 +379,7 @@ export const effects = {
   "fire/qilin-roar": fire_qilin_roar,
   "fire/spirit-flame": fire_spirit_flame,
   "fire/torch": fire_torch,
+  "fire/tricolor-lacquer-flame": fire_tricolor_lacquer_flame,
   "explosions/barrel-explosion": explosions_barrel_explosion,
   "explosions/big-explosion": explosions_big_explosion,
   "explosions/cartoon-pow": explosions_cartoon_pow,
