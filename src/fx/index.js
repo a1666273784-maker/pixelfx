@@ -317,6 +317,7 @@ import * as critters_fish_school from "./critters/fish-school.js";
 import * as critters_flying_skull from "./critters/flying-skull.js";
 import * as critters_frog from "./critters/frog.js";
 import * as critters_ghost from "./critters/ghost.js";
+import * as critters_ink_soot from "./critters/ink-soot.js";
 import * as critters_jellyfish from "./critters/jellyfish.js";
 import * as critters_slime from "./critters/slime.js";
 import * as critters_snake from "./critters/snake.js";
@@ -643,6 +644,7 @@ export const effects = {
   "critters/flying-skull": critters_flying_skull,
   "critters/frog": critters_frog,
   "critters/ghost": critters_ghost,
+  "critters/ink-soot": critters_ink_soot,
   "critters/jellyfish": critters_jellyfish,
   "critters/slime": critters_slime,
   "critters/snake": critters_snake,
