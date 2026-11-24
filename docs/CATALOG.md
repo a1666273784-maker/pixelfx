@@ -1,6 +1,6 @@
 # Catalog
 
-320 effects in 21 categories. Every one is a file in
+322 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -163,6 +163,7 @@ holograms, shields, scanners, warps.
 | Force field | `scifi/force-field` | loop 2.4s | 184×104 | A glassy dome of hex plates over the hero: plates glint, tracers from the right slam into it, a ripple and cracks of light race across, sparks glance off. |
 | Glitch | `scifi/glitch` | loop 2.4s | 88×64 | The hero's signal breaks up in bursts: an RGB split, slices torn sideways, rows smeared out, junk blocks and dead pixels, then snaps back clean. |
 | Hologram | `scifi/hologram` | loop 4s | 112×104 | A floor projector throws a cone of light holding a turning wireframe model: scanlines roll through it, a data ring circles it, and it flickers, tears and jitters. |
+| Hologram scan | `scifi/hologram-scan` | loop 3.6s | 320×180 | A thin cyan laser line sweeps uniformly down the screen, briefly revealing a translucent hex grid and jumping digital code amid fine CRT scanlines and edge RGB glitch splits. |
 | Jetpack | `scifi/jetpack` | loop 2s | 96×116 | Twin thrusters fire straight down: white-hot cores with shock diamonds inside ragged flames, puffs that cool into smoke billowing below, lit by the fire. |
 | Laser grid | `scifi/laser-grid` | loop 3s | 128×84 | Security lasers between two steel posts: red beams slide and scissor across, dust and haze light up only where they cut through, and the floor sweepers scorch and spark. |
 | Rocket launch | `scifi/rocket-launch` | one-shot 5.5s | 264×284 | A heavy booster assembles on the pad and vents cryo-mist; igniters shower sparks, three engines roar into a split trench cloud, clamps release and it climbs on shock diamonds. |
@@ -468,4 +469,5 @@ slimes, bats, ghosts, frogs.
 | Jellyfish | `critters/jellyfish` | loop 3.2s | 96×120 | A see-through jellyfish pulses: its bell squeezes to shove it up and relaxes as it sinks, frilled arms and long tentacles trailing, a glow inside, bubbles drifting by. |
 | Slime | `critters/slime` | loop 1.8s | 112×88 | A glossy slime hops in place: it squashes to wind up, stretches into the jump, rounds out in the air, splats down flinging droplets that creep back, then wobbles and blinks. |
 | Snake | `critters/snake` | loop 2.4s | 136×56 | A snake slithers along the floor, head raised: humps rise and roll back down its patterned body to the tail, dust puffs where it touches down, its forked tongue flicks. |
+| Starlight slime | `critters/starlight-slime` | loop 2.4s | 160×124 | A translucent water-drop slime holding a swirling purple-blue nebula and two glowing bean eyes squashes down, leaps high, and splats in a ring of colorful stardust splash. |
 | Wisp | `critters/wisp` | loop 3.2s | 128×104 | A will-o'-the-wisp loops a figure-eight over the floor: a little soul-flame with a face, its flame tail licking up and streaming behind, shedding puffs and sparks. |

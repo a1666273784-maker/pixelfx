@@ -4,7 +4,11 @@
 
 # pixelfx.
 
-**<!-- count -->320<!-- /count --> pixel art effects and animations, every one a small piece of code.** Fire,
+<<<<<<< HEAD
+**<!-- count -->322<!-- /count --> pixel art effects and animations, every one a small piece of code.** Fire,
+=======
+**<!-- count -->321<!-- /count --> pixel art effects and animations, every one a small piece of code.** Fire,
+>>>>>>> origin/main
 explosions, magic, weather, UI, pickups, critters and more. Play them live, recolor and mirror them, drop them into
 a browser game, or export sprite sheets for any engine. Plus a Claude Code skill that makes new ones the way a
 picky pixel artist would: draft, render, look, refine.
@@ -32,7 +36,7 @@ the idea at library scale, with a skill to keep going.
 | **water** | 13 | bubbles, drip, fountain, geyser, rain splash, ripples… |
 | **ice** | 12 | blizzard vortex, freeze, frost breath, frost nova, frost tread, ice burst… |
 | **lightning** | 11 | ball lightning, chain lightning, charge up, electrified, lightning strike, plasma ball… |
-| **sci-fi** | 13 | emp blast, energy core, force field, glitch, hologram, jetpack… |
+| **sci-fi** | 14 | emp blast, energy core, force field, glitch, hologram, hologram scan… |
 | **melee** | 24 | claw swipe, crimson gold claw, crimson ripple, dagger flurry, dark crimson claw, double slash… |
 | **impacts** | 12 | blunt hit, bullet impact, critical hit, ground slam, heavy landing, hit flash… |
 | **projectiles** | 14 | arrow, bullet tracer, cannon shot, energy disc, signal flare, homing missile… |
@@ -46,7 +50,7 @@ the idea at library scale, with a skill to keep going.
 | **ui** | 19 | achievement, acquire toast unfold, coin collect, combo counter, confetti, countdown… |
 | **pickups** | 11 | chest open, coin spin, collect burst, crystal shard, gem spin, heart pickup… |
 | **transitions** | 10 | blinds, burn away, crt off, diamond wipe, glitch wipe, iris… |
-| **critters** | 12 | bat, bird, butterfly, eyeball, fish school, flying skull… |
+| **critters** | 13 | bat, bird, butterfly, eyeball, fish school, flying skull… |
 <!-- /catalog -->
 
 Every effect is a file in `src/fx/<category>/<name>.js`. The [catalog](docs/CATALOG.md) lists them all.

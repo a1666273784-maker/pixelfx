@@ -112,6 +112,7 @@ import * as scifi_energy_core from "./scifi/energy-core.js";
 import * as scifi_force_field from "./scifi/force-field.js";
 import * as scifi_glitch from "./scifi/glitch.js";
 import * as scifi_hologram from "./scifi/hologram.js";
+import * as scifi_hologram_scan from "./scifi/hologram-scan.js";
 import * as scifi_jetpack from "./scifi/jetpack.js";
 import * as scifi_laser_grid from "./scifi/laser-grid.js";
 import * as scifi_rocket_launch from "./scifi/rocket-launch.js";
@@ -319,6 +320,7 @@ import * as critters_ghost from "./critters/ghost.js";
 import * as critters_jellyfish from "./critters/jellyfish.js";
 import * as critters_slime from "./critters/slime.js";
 import * as critters_snake from "./critters/snake.js";
+import * as critters_starlight_slime from "./critters/starlight-slime.js";
 import * as critters_wisp from "./critters/wisp.js";
 
 export { categories } from "./categories.js";
@@ -436,6 +438,7 @@ export const effects = {
   "scifi/force-field": scifi_force_field,
   "scifi/glitch": scifi_glitch,
   "scifi/hologram": scifi_hologram,
+  "scifi/hologram-scan": scifi_hologram_scan,
   "scifi/jetpack": scifi_jetpack,
   "scifi/laser-grid": scifi_laser_grid,
   "scifi/rocket-launch": scifi_rocket_launch,
@@ -643,5 +646,6 @@ export const effects = {
   "critters/jellyfish": critters_jellyfish,
   "critters/slime": critters_slime,
   "critters/snake": critters_snake,
+  "critters/starlight-slime": critters_starlight_slime,
   "critters/wisp": critters_wisp,
 };
