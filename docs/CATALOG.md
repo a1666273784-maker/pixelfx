@@ -1,6 +1,6 @@
 # Catalog
 
-325 effects in 21 categories. Every one is a file in
+326 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -458,6 +458,7 @@ slimes, bats, ghosts, frogs.
 
 | effect | id | | size | what it does |
 |---|---|---|---|---|
+| Astrolabe eye | `critters/astrolabe-eye` | one-shot 7.6s | 296×156 | A sapphire eye in three rotating rune-gold rings snaps into a saucer trailing stardust, locks into a front crosshair firing a solar laser, then petrifies as its rings shatter. |
 | Bat | `critters/bat` | loop 2.4s | 112×80 | A bat flaps in four snappy wing frames along a figure-eight, its body lifting on each downbeat, moonlight on its wing bones, red eyes glowing and glinting. |
 | Bird | `critters/bird` | loop 2.4s | 112×80 | A songbird flies in place: bursts of wingbeats that lift its body on each downstroke, a glide on spread wings, its tail fanning, a loose feather drifting away. |
 | Butterfly | `critters/butterfly` | loop 3.2s | 128×88 | An iridescent butterfly wanders a loop in bursts of quick wingbeats and open-winged glides, its veined, spotted wings shedding a twinkling trail of glowing dust. |
