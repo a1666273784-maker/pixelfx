@@ -323,6 +323,7 @@ import * as critters_ink_soot from "./critters/ink-soot.js";
 import * as critters_jellyfish from "./critters/jellyfish.js";
 import * as critters_lava_slug from "./critters/lava-slug.js";
 import * as critters_magnet_lith from "./critters/magnet-lith.js";
+import * as critters_quicksand_mimic from "./critters/quicksand-mimic.js";
 import * as critters_slime from "./critters/slime.js";
 import * as critters_snake from "./critters/snake.js";
 import * as critters_spore_mushroom from "./critters/spore-mushroom.js";
@@ -659,6 +660,7 @@ export const effects = {
   "critters/jellyfish": critters_jellyfish,
   "critters/lava-slug": critters_lava_slug,
   "critters/magnet-lith": critters_magnet_lith,
+  "critters/quicksand-mimic": critters_quicksand_mimic,
   "critters/slime": critters_slime,
   "critters/snake": critters_snake,
   "critters/spore-mushroom": critters_spore_mushroom,
