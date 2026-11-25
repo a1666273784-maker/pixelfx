@@ -1,6 +1,6 @@
 # Catalog
 
-333 effects in 21 categories. Every one is a file in
+334 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -468,6 +468,7 @@ slimes, bats, ghosts, frogs.
 | Fish school | `critters/fish-school` | loop 4.8s | 136×80 | A school of fish holds station in two depth rows: bodies wag into swinging tails, one darts ahead now and then, bubbles rise and caustic light ripples over them. |
 | Flying skull | `critters/flying-skull` | loop 2.4s | 96×132 | A cracked bone skull bobs in the air, jaw chattering, eyes burning, a fire roaring off its crown that sheds flame puffs, embers and smoke and throws warm light. |
 | Frog | `critters/frog` | loop 2.6s | 112×88 | A frog puffs its throat, blinks, crouches and leaps to snap a buzzing fly out of the air, then lands with a squash and a puff of dust, gulps and settles. |
+| Frost snowball | `critters/frost-snowball` | loop 10.5s | 288×160 | A goofy snowball beast rolls a mini ball, wobbles and faceplants, gathers frost as it rolls, inhales a blizzard to blast icicles, then freezes into a glass sphere and shatters. |
 | Ghost | `critters/ghost` | loop 2.4s | 96×100 | A sheet ghost bobs over the floor: its scalloped hem ripples and trails its drift, little arms flutter, it glances about and blinks, motes trickle off its hem. |
 | Ink soot | `critters/ink-soot` | loop 2.8s | 176×128 | A fuzzy black soot ball steaming ink smoke opens two big yellow eyes, shudders in fright flinging ink blotches, then huddles down peeking left and right under glowing ? motes. |
 | Jellyfish | `critters/jellyfish` | loop 3.2s | 96×120 | A see-through jellyfish pulses: its bell squeezes to shove it up and relaxes as it sinks, frilled arms and long tentacles trailing, a glow inside, bubbles drifting by. |
