@@ -320,6 +320,7 @@ import * as critters_frog from "./critters/frog.js";
 import * as critters_ghost from "./critters/ghost.js";
 import * as critters_ink_soot from "./critters/ink-soot.js";
 import * as critters_jellyfish from "./critters/jellyfish.js";
+import * as critters_magnet_lith from "./critters/magnet-lith.js";
 import * as critters_slime from "./critters/slime.js";
 import * as critters_snake from "./critters/snake.js";
 import * as critters_spore_mushroom from "./critters/spore-mushroom.js";
@@ -650,6 +651,7 @@ export const effects = {
   "critters/ghost": critters_ghost,
   "critters/ink-soot": critters_ink_soot,
   "critters/jellyfish": critters_jellyfish,
+  "critters/magnet-lith": critters_magnet_lith,
   "critters/slime": critters_slime,
   "critters/snake": critters_snake,
   "critters/spore-mushroom": critters_spore_mushroom,

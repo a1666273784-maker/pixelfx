@@ -1,6 +1,6 @@
 # Catalog
 
-326 effects in 21 categories. Every one is a file in
+327 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -469,6 +469,7 @@ slimes, bats, ghosts, frogs.
 | Ghost | `critters/ghost` | loop 2.4s | 96×100 | A sheet ghost bobs over the floor: its scalloped hem ripples and trails its drift, little arms flutter, it glances about and blinks, motes trickle off its hem. |
 | Ink soot | `critters/ink-soot` | loop 2.8s | 176×128 | A fuzzy black soot ball steaming ink smoke opens two big yellow eyes, shudders in fright flinging ink blotches, then huddles down peeking left and right under glowing ? motes. |
 | Jellyfish | `critters/jellyfish` | loop 3.2s | 96×120 | A see-through jellyfish pulses: its bell squeezes to shove it up and relaxes as it sinks, frilled arms and long tentacles trailing, a glow inside, bubbles drifting by. |
+| Magnet lith | `critters/magnet-lith` | loop 4.8s | 240×124 | A cyan core orbited by four tethered black stones dashes on a spinning stone thruster, locks them into a lightning rock fist to shatter the floor, then shatters and drops. |
 | Slime | `critters/slime` | loop 1.8s | 112×88 | A glossy slime hops in place: it squashes to wind up, stretches into the jump, rounds out in the air, splats down flinging droplets that creep back, then wobbles and blinks. |
 | Snake | `critters/snake` | loop 2.4s | 136×56 | A snake slithers along the floor, head raised: humps rise and roll back down its patterned body to the tail, dust puffs where it touches down, its forked tongue flicks. |
 | Spore mushroom | `critters/spore-mushroom` | loop 4.8s | 236×136 | A purple mushroom critter with breathing cyan spots sways in idle, squashes to hop with dust, inhales to spray toxic spore smoke and orbs, then topples and withers grey-white. |
