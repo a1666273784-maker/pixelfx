@@ -1,6 +1,6 @@
 # Catalog
 
-331 effects in 21 categories. Every one is a file in
+332 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -479,4 +479,5 @@ slimes, bats, ghosts, frogs.
 | Starry frog | `critters/starry-frog` | one-shot 12s | 340×184 | A plump cosmic-jelly toad drools over its swirling belly nebula, snaps a golden mote, hops leaving starry ripples, blasts a meteor torrent, and bursts into fireworks. |
 | Thundercloud puff | `critters/thundercloud-puff` | one-shot 7.2s | 224×148 | A white cloud puff blinks yellow bean eyes, glides on static sparks leaving mist, swells into a dark-purple thunderhead to cleave a golden Z-bolt, then deflates in smoke. |
 | Volt furball | `critters/volt-furball` | loop 7.5s | 248×136 | A golden static furball with twin lightning tufts hops, self-zaps into a 3x sea-urchin with swirl eyes, Z-bounces, cleaves a purple-gold bolt, and pops into black smoke. |
+| Weeping wisp | `critters/weeping-wisp` | one-shot 12s | 336×184 | A weeping green ghostfire cries spark-tears burning holes, sneaks a sly giggle, glides in a flowing liquid flame tail, turns purple firing sonic rings, and blows out to smoke. |
 | Wisp | `critters/wisp` | loop 3.2s | 128×104 | A will-o'-the-wisp loops a figure-eight over the floor: a little soul-flame with a face, its flame tail licking up and streaming behind, shedding puffs and sparks. |

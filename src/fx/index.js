@@ -330,6 +330,7 @@ import * as critters_starlight_slime from "./critters/starlight-slime.js";
 import * as critters_starry_frog from "./critters/starry-frog.js";
 import * as critters_thundercloud_puff from "./critters/thundercloud-puff.js";
 import * as critters_volt_furball from "./critters/volt-furball.js";
+import * as critters_weeping_wisp from "./critters/weeping-wisp.js";
 import * as critters_wisp from "./critters/wisp.js";
 
 export { categories } from "./categories.js";
@@ -665,5 +666,6 @@ export const effects = {
   "critters/starry-frog": critters_starry_frog,
   "critters/thundercloud-puff": critters_thundercloud_puff,
   "critters/volt-furball": critters_volt_furball,
+  "critters/weeping-wisp": critters_weeping_wisp,
   "critters/wisp": critters_wisp,
 };
