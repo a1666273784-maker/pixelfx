@@ -1,6 +1,6 @@
 # Catalog
 
-324 effects in 21 categories. Every one is a file in
+325 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -470,6 +470,7 @@ slimes, bats, ghosts, frogs.
 | Jellyfish | `critters/jellyfish` | loop 3.2s | 96×120 | A see-through jellyfish pulses: its bell squeezes to shove it up and relaxes as it sinks, frilled arms and long tentacles trailing, a glow inside, bubbles drifting by. |
 | Slime | `critters/slime` | loop 1.8s | 112×88 | A glossy slime hops in place: it squashes to wind up, stretches into the jump, rounds out in the air, splats down flinging droplets that creep back, then wobbles and blinks. |
 | Snake | `critters/snake` | loop 2.4s | 136×56 | A snake slithers along the floor, head raised: humps rise and roll back down its patterned body to the tail, dust puffs where it touches down, its forked tongue flicks. |
+| Spore mushroom | `critters/spore-mushroom` | loop 4.8s | 236×136 | A purple mushroom critter with breathing cyan spots sways in idle, squashes to hop with dust, inhales to spray toxic spore smoke and orbs, then topples and withers grey-white. |
 | Starlight slime | `critters/starlight-slime` | loop 2.4s | 160×124 | A translucent water-drop slime holding a swirling purple-blue nebula and two glowing bean eyes squashes down, leaps high, and splats in a ring of colorful stardust splash. |
 | Thundercloud puff | `critters/thundercloud-puff` | one-shot 7.2s | 224×148 | A white cloud puff blinks yellow bean eyes, glides on static sparks leaving mist, swells into a dark-purple thunderhead to cleave a golden Z-bolt, then deflates in smoke. |
 | Wisp | `critters/wisp` | loop 3.2s | 128×104 | A will-o'-the-wisp loops a figure-eight over the floor: a little soul-flame with a face, its flame tail licking up and streaming behind, shedding puffs and sparks. |
