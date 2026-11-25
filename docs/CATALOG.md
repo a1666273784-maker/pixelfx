@@ -1,6 +1,6 @@
 # Catalog
 
-333 effects in 21 categories. Every one is a file in
+334 effects in 21 categories. Every one is a file in
 `src/fx/<category>/<name>.js`; render any of them with `node tools/render.mjs <id> --gif`.
 
 ## moves
@@ -473,6 +473,7 @@ slimes, bats, ghosts, frogs.
 | Jellyfish | `critters/jellyfish` | loop 3.2s | 96×120 | A see-through jellyfish pulses: its bell squeezes to shove it up and relaxes as it sinks, frilled arms and long tentacles trailing, a glow inside, bubbles drifting by. |
 | Lava slug | `critters/lava-slug` | one-shot 12s | 308×168 | A drowsy magma slug blows and pops a lava snot-bubble, inchworms forward leaving smoking scorch, swells red to spit arcing fireballs, catches its breath, then cools to ash. |
 | Magnet lith | `critters/magnet-lith` | loop 4.8s | 240×124 | A cyan core orbited by four tethered black stones dashes on a spinning stone thruster, locks them into a lightning rock fist to shatter the floor, then shatters and drops. |
+| Quicksand mimic | `critters/quicksand-mimic` | one-shot 12s | 320×184 | A shifting golden sand mimic with sapphire eyes fails to hold a crown and splats flat, spins as a sand tornado, slams a giant golden sand-hammer, then collapses to a dune. |
 | Slime | `critters/slime` | loop 1.8s | 112×88 | A glossy slime hops in place: it squashes to wind up, stretches into the jump, rounds out in the air, splats down flinging droplets that creep back, then wobbles and blinks. |
 | Snake | `critters/snake` | loop 2.4s | 136×56 | A snake slithers along the floor, head raised: humps rise and roll back down its patterned body to the tail, dust puffs where it touches down, its forked tongue flicks. |
 | Spore mushroom | `critters/spore-mushroom` | loop 4.8s | 236×136 | A purple mushroom critter with breathing cyan spots sways in idle, squashes to hop with dust, inhales to spray toxic spore smoke and orbs, then topples and withers grey-white. |
