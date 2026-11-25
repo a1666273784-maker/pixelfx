@@ -321,6 +321,7 @@ import * as critters_ink_soot from "./critters/ink-soot.js";
 import * as critters_jellyfish from "./critters/jellyfish.js";
 import * as critters_slime from "./critters/slime.js";
 import * as critters_snake from "./critters/snake.js";
+import * as critters_spore_mushroom from "./critters/spore-mushroom.js";
 import * as critters_starlight_slime from "./critters/starlight-slime.js";
 import * as critters_wisp from "./critters/wisp.js";
 
@@ -648,6 +649,7 @@ export const effects = {
   "critters/jellyfish": critters_jellyfish,
   "critters/slime": critters_slime,
   "critters/snake": critters_snake,
+  "critters/spore-mushroom": critters_spore_mushroom,
   "critters/starlight-slime": critters_starlight_slime,
   "critters/wisp": critters_wisp,
 };
