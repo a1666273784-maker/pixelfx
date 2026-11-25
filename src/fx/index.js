@@ -309,6 +309,7 @@ import * as transitions_pixel_dissolve from "./transitions/pixel-dissolve.js";
 import * as transitions_shatter_wipe from "./transitions/shatter-wipe.js";
 import * as transitions_slash_wipe from "./transitions/slash-wipe.js";
 import * as transitions_star_iris from "./transitions/star-iris.js";
+import * as critters_astrolabe_eye from "./critters/astrolabe-eye.js";
 import * as critters_bat from "./critters/bat.js";
 import * as critters_bird from "./critters/bird.js";
 import * as critters_butterfly from "./critters/butterfly.js";
@@ -638,6 +639,7 @@ export const effects = {
   "transitions/shatter-wipe": transitions_shatter_wipe,
   "transitions/slash-wipe": transitions_slash_wipe,
   "transitions/star-iris": transitions_star_iris,
+  "critters/astrolabe-eye": critters_astrolabe_eye,
   "critters/bat": critters_bat,
   "critters/bird": critters_bird,
   "critters/butterfly": critters_butterfly,
