@@ -311,6 +311,7 @@ import * as transitions_slash_wipe from "./transitions/slash-wipe.js";
 import * as transitions_star_iris from "./transitions/star-iris.js";
 import * as critters_angler_fry from "./critters/angler-fry.js";
 import * as critters_astrolabe_eye from "./critters/astrolabe-eye.js";
+import * as critters_aurora_moth from "./critters/aurora-moth.js";
 import * as critters_bat from "./critters/bat.js";
 import * as critters_bird from "./critters/bird.js";
 import * as critters_butterfly from "./critters/butterfly.js";
@@ -648,6 +649,7 @@ export const effects = {
   "transitions/star-iris": transitions_star_iris,
   "critters/angler-fry": critters_angler_fry,
   "critters/astrolabe-eye": critters_astrolabe_eye,
+  "critters/aurora-moth": critters_aurora_moth,
   "critters/bat": critters_bat,
   "critters/bird": critters_bird,
   "critters/butterfly": critters_butterfly,
